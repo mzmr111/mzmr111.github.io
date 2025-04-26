@@ -97,12 +97,35 @@
     font-size: 1.1rem;
   }
   
-  .charIcon {
+  .char-icon {
     width: 80px;
     height: 80px;
     object-fit: cover;
     border: 3px solid #5a5ad6;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .side-chars {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    margin-top: 1em;
+  }
+
+  .side-characters .char {
+    text-align: center;
+    flex: 0 0 auto; 
+  }
+
+  .side-count-1, .side-count-2, .side-count-3 {
+    justify-content: center;
+  }
+
+  .side-count-4, .side-count-5 {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   span {
@@ -534,7 +557,7 @@
       <div class="relationship">
         ${mainRelationship.map(c => `
           <div class="char">
-            <img src="${c.image}" alt="${c.name}" class="charIcon">
+            <img src="${c.image}" alt="${c.name}" class="char-icon">
             <p>${c.name}</p>
           </div>
         `).join(`<span>${getEmoji()}</span>`)}
@@ -565,7 +588,14 @@
 
       ${sideCharacters.length > 0 ? `
         <h3>Второстепенные персонажи:</h3>
-        <ul>${sideCharacters.map(c => `<li>${c.name}</li>`).join('')}</ul>
+          <div class="side-chars side-count-${sideCharacters.length}">
+            ${sideCharacters.map(c => `
+              <div class="char">
+                <img src="${c.image}" alt="${c.name}" class="char-icon">
+                <p>${c.name}</p>
+              </div>
+            `).join('')}
+          </div>
       ` : ''}
     `;
   });
