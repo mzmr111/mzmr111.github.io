@@ -559,97 +559,97 @@
     ];
 
     function getRandom(arr, count = 1) {
-    const copy = [...arr];
-    const picks = [];
-    while (count-- && copy.length) {
-      const i = Math.floor(Math.random() * copy.length);
-      picks.push(copy.splice(i, 1)[0]);
+      const copy = [...arr];
+      const picks = [];
+      while (count-- && copy.length) {
+        const i = Math.floor(Math.random() * copy.length);
+        picks.push(copy.splice(i, 1)[0]);
+      }
+      return picks;
     }
-    return picks;
-  }
-
-  function getEmoji() {
-    const emojis = ['❤️', '✨', '⚔️', '❄️', '🔥', '⚡️', '☠️', '🍓', '🌙', '💀', '🩸', '🌸', '🕊️', '🧨', '🔮'];
-    return emojis[Math.floor(Math.random() * emojis.length)];
-  }
-
-  document.getElementById('ficForm').addEventListener('submit', function (e) {
-    e.preventDefault();
-    const form = new FormData(e.target);
-
-    const data = {
-      relationshipSize: parseInt(form.get('relationshipSize')) || 1,
-      type: form.get('type') || 'gen',
-      sideCount: parseInt(form.get('sideCount')) || 0,
-      nsfw: form.get('nsfw') === 'on'
-    };
-
-    let genderFilter = () => true;
-    if (data.type === 'slash') genderFilter = c => c.gender === 'male';
-    if (data.type === 'femslash') genderFilter = c => c.gender === 'female';
-
-    const filteredChars = characters.filter(genderFilter);
-    const mainRelationship = getRandom(filteredChars, data.relationshipSize);
-
-    const usedNames = new Set(mainRelationship.map(c => c.name));
-    const remainingChars = characters.filter(c => !usedNames.has(c.name));
-    const sideCharacters = getRandom(remainingChars, data.sideCount);
-
-    const genre = getRandom(genres)[0];
-    const setting = getRandom(settings)[0];
-    const situation = getRandom(situations)[0];
-    const trope = getRandom(tropes)[0];
-    const kink = data.nsfw ? getRandom(kinks)[0] : null;
-    const keywords = getRandom(ficKeywords, 3);
-
-    const resultDiv = document.getElementById('result');
-    resultDiv.innerHTML = `
-      <h3>Основные персонажи</h3>
-      <div class="relationship">
-        ${mainRelationship.map(c => `
-          <div class="char">
-            <img src="${c.image}" alt="${c.name}" class="char-icon">
-            <p>${c.name}</p>
-          </div>
-        `).join(`<span>${getEmoji()}</span>`)}
-      </div>
-
-      <h3>Жанр</h3>
-      <p class='name-highlight'>${genre.name}</p>
-      <p>${genre.description}</p>
-
-      <h3>Сеттинг</h3>
-      <p class='name-highlight'>${setting}</p>
-
-      <h3>Ситуация</h3>
-      <p class='name-highlight'>${situation}</p>
-
-      <h3>Троп</h3>
-      <p class='name-highlight'>${trope.name}</p>
-      <p>${trope.description}</p>
-
-      <h3>Ключевые слова</h3>
-      <p class='name-highlight'>${keywords.join(', ')}</p>
-
-      ${kink ? `
-        <h3>NSFW</h3>
-        <p class='name-highlight'>${kink.name}</p>
-        <p>${kink.description}</p>
-      ` : ''}
-
-      ${sideCharacters.length > 0 ? `
-        <h3>Второстепенные персонажи</h3>
-          <div class="side-chars">
-            ${sideCharacters.map(c => `
-              <div class="char">
-                <img src="${c.image}" alt="${c.name}" class="char-icon">
-                <p>${c.name}</p>
-              </div>
-            `).join('')}
-          </div>
-      ` : ''}
-    `;
-  });
-</script>
+  
+    function getEmoji() {
+      const emojis = ['❤️', '✨', '⚔️', '❄️', '🔥', '⚡️', '☠️', '🍓', '🌙', '💀', '🩸', '🌸', '🕊️', '🧨', '🔮'];
+      return emojis[Math.floor(Math.random() * emojis.length)];
+    }
+  
+    document.getElementById('ficForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const form = new FormData(e.target);
+  
+      const data = {
+        relationshipSize: parseInt(form.get('relationshipSize')) || 1,
+        type: form.get('type') || 'gen',
+        sideCount: parseInt(form.get('sideCount')) || 0,
+        nsfw: form.get('nsfw') === 'on'
+      };
+  
+      let genderFilter = () => true;
+      if (data.type === 'slash') genderFilter = c => c.gender === 'male';
+      if (data.type === 'femslash') genderFilter = c => c.gender === 'female';
+  
+      const filteredChars = characters.filter(genderFilter);
+      const mainRelationship = getRandom(filteredChars, data.relationshipSize);
+  
+      const usedNames = new Set(mainRelationship.map(c => c.name));
+      const remainingChars = characters.filter(c => !usedNames.has(c.name));
+      const sideCharacters = getRandom(remainingChars, data.sideCount);
+  
+      const genre = getRandom(genres)[0];
+      const setting = getRandom(settings)[0];
+      const situation = getRandom(situations)[0];
+      const trope = getRandom(tropes)[0];
+      const kink = data.nsfw ? getRandom(kinks)[0] : null;
+      const keywords = getRandom(ficKeywords, 3);
+  
+      const resultDiv = document.getElementById('result');
+      resultDiv.innerHTML = `
+        <h3>Основные персонажи</h3>
+        <div class="relationship">
+          ${mainRelationship.map(c => `
+            <div class="char">
+              <img src="${c.image}" alt="${c.name}" class="char-icon">
+              <p>${c.name}</p>
+            </div>
+          `).join(`<span>${getEmoji()}</span>`)}
+        </div>
+  
+        <h3>Жанр</h3>
+        <p class='name-highlight'>${genre.name}</p>
+        <p>${genre.description}</p>
+  
+        <h3>Сеттинг</h3>
+        <p class='name-highlight'>${setting}</p>
+  
+        <h3>Ситуация</h3>
+        <p class='name-highlight'>${situation}</p>
+  
+        <h3>Троп</h3>
+        <p class='name-highlight'>${trope.name}</p>
+        <p>${trope.description}</p>
+  
+        <h3>Ключевые слова</h3>
+        <p class='name-highlight'>${keywords.join(', ')}</p>
+  
+        ${kink ? `
+          <h3>NSFW</h3>
+          <p class='name-highlight'>${kink.name}</p>
+          <p>${kink.description}</p>
+        ` : ''}
+  
+        ${sideCharacters.length > 0 ? `
+          <h3>Второстепенные персонажи</h3>
+            <div class="side-chars">
+              ${sideCharacters.map(c => `
+                <div class="char">
+                  <img src="${c.image}" alt="${c.name}" class="char-icon">
+                  <p>${c.name}</p>
+                </div>
+              `).join('')}
+            </div>
+        ` : ''}
+      `;
+    });
+  </script>
 </body>
 </html>
