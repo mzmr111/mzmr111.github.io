@@ -1,5 +1,5 @@
 body {
-  background: #f0f0ff;
+  background: #e9f7fb;
   color: #222;
   padding: 2em;
   max-width: 800px;
@@ -8,9 +8,41 @@ body {
 
 h1 {
   text-align: center;
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
   font-size: 2rem;
-  color: #333;
+  color: #27acd9;
+}
+
+span {
+  font-size: 1.5rem;
+}
+
+ul {
+  list-style: disc inside;
+  margin-top: 1em;
+}
+
+h2, h3 {
+  text-align: center;
+  margin-top: 2em;
+  color: #27acd9;
+  font-size: 1.5rem;
+}
+
+h3 {
+  text-align: left;
+  margin-top: 1.5em;
+  font-size: 1.3rem;
+  border-bottom: solid 2px #27acd9;
+  padding: 10px 0;
+}
+
+section {
+  background: #f9f9ff;
+  border-radius: 1em;
+  padding: 1.5em;
+  margin-bottom: 2em;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 form {
@@ -26,6 +58,7 @@ label {
   margin-bottom: 1em;
   font-weight: bold;
   font-size: 1rem;
+  color: #27acd9;
 }
 
 select, input[type="number"], input[type="checkbox"] {
@@ -53,24 +86,25 @@ input[type="checkbox"] {
 }
 
 button {
-  background: #7a7aff;
+  background: #7adeff;
   color: white;
   border: none;
-  padding: 1em 2em;
+  padding: 0.5em 2em;
   font-size: 1rem;
-  border-radius: 2em;
+  border-radius: 1em;
   cursor: pointer;
-  transition: background 0.3s;
-  margin-top: 1em;
+  background: linear-gradient(135deg, #7adeff, #5cd6d6);
+  transition: all 0.3s ease;
 }
 
 button:hover {
-  background: #5a5ad6;
+  background: linear-gradient(135deg, #5cd6d6, #7adeff);
+  transform: scale(1.05);
 }
 
 #result {
   background: #fff;
-  padding: 2em;
+  padding: 0.2em 2em;
   border-radius: 1em;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
@@ -94,8 +128,15 @@ button:hover {
   width: 80px;
   height: 80px;
   object-fit: cover;
-  border: 3px solid #5a5ad6;
+  border: 3px solid #27acd9;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.char-icon:hover {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 8px 20px rgba(90, 90, 214, 0.3);
 }
 
 .side-chars {
@@ -106,38 +147,9 @@ button:hover {
   margin-top: 1em;
 }
 
-.side-characters .char {
+.side-chars .char {
   text-align: center;
   flex: 0 0 auto; 
-}
-
-span {
-  font-size: 1.5rem;
-}
-
-ul {
-  list-style: disc inside;
-  margin-top: 1em;
-}
-
-h2, h3 {
-  text-align: center;
-  margin-top: 2em;
-  color: #5a5ad6;
-  font-size: 1.5rem;
-}
-
-h3 {
-  margin-top: 1.5em;
-  font-size: 1.3rem;
-}
-
-section {
-  background: #f9f9ff;
-  border-radius: 1em;
-  padding: 1.5em;
-  margin-bottom: 2em;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 #result section + section {
@@ -155,25 +167,6 @@ section {
   transform: translateY(-10px);
 }
 
-button {
-  background: linear-gradient(135deg, #7a7aff, #5a5ad6);
-  transition: all 0.3s ease;
-}
-
-button:hover {
-  background: linear-gradient(135deg, #5a5ad6, #7a7aff);
-  transform: scale(1.05);
-}
-
-.char-icon {
-  border-radius: 50%;
-  transition: 0.3s ease;
-}
-
-.char-icon:hover {
-  transform: scale(1.1) rotate(5deg);
-  box-shadow: 0 8px 20px rgba(90, 90, 214, 0.3);
-}
 .name-highlight {
   font-weight: bold;
 }
