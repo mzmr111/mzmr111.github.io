@@ -1,0 +1,183 @@
+body {
+  background: #f0f0ff;
+  color: #222;
+  padding: 2em;
+  max-width: 800px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5em;
+  font-size: 2rem;
+  color: #333;
+}
+
+form {
+  background: white;
+  padding: 2em;
+  border-radius: 1em;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2em;
+}
+
+label {
+  display: block;
+  margin-bottom: 1em;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+select, input[type="number"], input[type="checkbox"] {
+  margin-top: 0.5em;
+  display: block;
+  width: 100%;
+  padding: 0.7em;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5em;
+  background: #fafafa;
+  transition: 0.3s;
+}
+
+select:focus, input[type="number"]:focus {
+  border-color: #7a7aff;
+  outline: none;
+  background: #fff;
+}
+
+input[type="checkbox"] {
+  width: auto;
+  display: inline-block;
+  margin-right: 0.5em;
+}
+
+button {
+  background: #7a7aff;
+  color: white;
+  border: none;
+  padding: 1em 2em;
+  font-size: 1rem;
+  border-radius: 2em;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 1em;
+}
+
+button:hover {
+  background: #5a5ad6;
+}
+
+#result {
+  background: #fff;
+  padding: 2em;
+  border-radius: 1em;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.relationship {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  margin-bottom: 2em;
+}
+
+.char {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.char-icon {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border: 3px solid #5a5ad6;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.side-chars {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+.side-characters .char {
+  text-align: center;
+  flex: 0 0 auto; 
+}
+
+span {
+  font-size: 1.5rem;
+}
+
+ul {
+  list-style: disc inside;
+  margin-top: 1em;
+}
+
+h2, h3 {
+  text-align: center;
+  margin-top: 2em;
+  color: #5a5ad6;
+  font-size: 1.5rem;
+}
+
+h3 {
+  margin-top: 1.5em;
+  font-size: 1.3rem;
+}
+
+section {
+  background: #f9f9ff;
+  border-radius: 1em;
+  padding: 1.5em;
+  margin-bottom: 2em;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+#result section + section {
+  margin-top: 2em;
+  border-top: 2px dashed #ccc;
+  padding-top: 2em;
+}
+
+.relationship, .side-chars {
+  margin-top: 1em;
+}
+
+.relationship span {
+  font-size: 2rem;
+  transform: translateY(-10px);
+}
+
+button {
+  background: linear-gradient(135deg, #7a7aff, #5a5ad6);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #5a5ad6, #7a7aff);
+  transform: scale(1.05);
+}
+
+.char-icon {
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.char-icon:hover {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 8px 20px rgba(90, 90, 214, 0.3);
+}
+.name-highlight {
+  font-weight: bold;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, label, input, button, select, textarea {
+  font-family: 'Poppins', sans-serif;
+}
