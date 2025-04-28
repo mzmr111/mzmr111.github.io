@@ -121,6 +121,8 @@
       const keywords = getRandom(ficKeywords, 3);
   
       const resultDiv = document.getElementById('result');
+      resultDiv.style.display = 'block';
+      
       resultDiv.innerHTML = `
         <div class="relationship">
           ${mainRelationship.map(c => `
