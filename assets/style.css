@@ -24,7 +24,6 @@ ul {
 
 h2, h3 {
   text-align: center;
-  margin-top: 2em;
   color: #27acd9;
   font-size: 1.5rem;
 }
@@ -58,7 +57,6 @@ form {
 form h2 {
   text-align: center;
   color: #27acd9;
-  margin-bottom: 1.5em;
 }
 
 .form-group {
