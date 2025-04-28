@@ -57,13 +57,13 @@
     let ficKeywords = [];
     
     Promise.all([
-      fetch('assets/data/characters.json').then(r => r.json()),
-      fetch('assets/data/genres.json').then(r => r.json()),
-      fetch('assets/data/settings.json').then(r => r.json()),
-      fetch('assets/data/kinks.json').then(r => r.json()),
-      fetch('assets/data/situations.json').then(r => r.json()),
-      fetch('assets/data/tropes.json').then(r => r.json()),
-      fetch('assets/data/ficKeywords.json').then(r => r.json())
+      fetch('assets/bleach/characters.json').then(r => r.json()),
+      fetch('assets/genres.json').then(r => r.json()),
+      fetch('assets/bleach/settings.json').then(r => r.json()),
+      fetch('assets/kinks.json').then(r => r.json()),
+      fetch('assets/bleach/situations.json').then(r => r.json()),
+      fetch('assets/tropes.json').then(r => r.json()),
+      fetch('assets/ficKeywords.json').then(r => r.json())
     ]).then(([charData, genreData, settingData, kinkData, situationData, tropeData, keywordData]) => {
       characters = charData;
       genres = genreData;
