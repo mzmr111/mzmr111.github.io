@@ -65,6 +65,15 @@
       fetch('assets/tropes.json').then(r => r.json()),
       fetch('assets/keywords.json').then(r => r.json())
     ]).then(([charData, genreData, settingData, kinkData, situationData, tropeData, keywordData]) => {
+
+  console.log('Characters loaded:', charData);
+  console.log('Genres loaded:', genreData);
+  console.log('Settings loaded:', settingData);
+  console.log('Kinks loaded:', kinkData);
+  console.log('Situations loaded:', situationData);
+  console.log('Tropes loaded:', tropeData);
+  console.log('Keywords loaded:', keywordData);
+      
       characters = charData;
       console.log(characters);
       
