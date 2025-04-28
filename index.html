@@ -133,26 +133,31 @@
         </div>  
 
         <p class='keywords'>«  ${keywords.join(' • ')}  »</p>
-  
-        <h3>Жанр</h3>
-        <p class='name-highlight'>${genre.name}</p>
-        <p>${genre.description}</p>
-  
-        <h3>Сеттинг</h3>
-        <p class='name-highlight'>${setting.name}</p>
-  
-        <h3>Ситуация</h3>
-        <p class='name-highlight'>${situation.name}</p>
-  
-        <h3>Троп</h3>
-        <p class='name-highlight'>${trope.name}</p>
-        <p>${trope.description}</p>
-  
-        ${kink ? `
-          <h3>NSFW</h3>
-          <p class='name-highlight'>${kink.name}</p>
-          <p>${kink.description}</p>
-        ` : ''}
+
+        <div class='info-block'>
+          <div class='info-row'>
+            <div class='info-label'>Жанр</div>
+            <div class='info-value'>${genre.name}<br><span class="info-description">${genre.description}</span></div>
+          </div>
+          <div class="info-row">
+            <div class="info-label">Сеттинг</div>
+            <div class='info-value'>${setting.name}</div>
+          </div>
+          <div class="info-row">
+            <div class="info-label">Ситуация</div>
+            <div class='info-value'>${situation.name}</div>
+          </div>
+          <div class="info-row">
+            <div class="info-label">Троп</div>
+            <div class='info-value'>${trope.name}<br><span class="info-description">${trope.description}</span></div>
+          </div>
+          ${kink ? `
+            <div class="info-row">
+              <div class="info-label">Кинк</div>
+              <div class='info-value'>${kink.name}<br><span class="info-description">${kink.description}</span></div>
+            </div>
+          ` : ''}
+        </div>
   
         ${sideCharacters.length > 0 ? `
           <h3>Второстепенные персонажи</h3>
