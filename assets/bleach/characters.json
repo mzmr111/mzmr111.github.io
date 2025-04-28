@@ -47,12 +47,12 @@
       {
         "name": "Гриммджо",
         "gender": "male",
-        "image": "assets/bleach/thumb_50.jpg"
+        "image": "assets/bleach/grimmjow.jpg"
       },
       {
         "name": "Улькиорра Шифер",
         "gender": "male",
-        "image": "assets/bleach/thumb_50.jpg"
+        "image": "assets/bleach/ulquiorra.jpg"
       },
       {
         "name": "Нелл",
@@ -72,6 +72,6 @@
       {
         "name": "Айзен Соске",
         "gender": "male",
-        "image": "assets/bleach/thumb_50.jpg"
+        "image": "assets/bleach/aizen.jpg"
       }
     ]
