@@ -45,7 +45,7 @@
   
   <div id="result"></div>
 
-  <script>
+  <script>  
     let characters = [];
     let genres = [];
     let settings = [];
@@ -72,6 +72,59 @@
     }).catch(error => {
       console.error('Error loading data:', error);
     });
+
+    document.addEventListener('click', function(e) {
+      if (e.target.classList.contains('refresh-btn')) {
+        const type = e.target.dataset.type;
+    
+        if (type === 'char') {
+          const newChar = getRandomChar();
+          const charDiv = e.target.closest('.char');
+          charDiv.querySelector('.char-name').textContent = newChar.name;
+          charDiv.querySelector('.char-icon').src = newChar.image; // assuming you have images
+        } 
+        else if (type === 'trope') {
+          const newTrope = getRandomTrope();
+          const tropeDiv = e.target.closest('.trope');
+          tropeDiv.querySelector('.trope-name').textContent = newTrope.name;
+        } 
+        else if (type === 'genre') {
+          const newGenre = getRandomGenre();
+          const genreDiv = e.target.closest('.genre');
+          genreDiv.querySelector('.genre-name').textContent = newGenre.name;
+        }
+        else if (type === 'au') {
+          const newAU = getRandomAU();
+          const auDiv = e.target.closest('.au');
+          auDiv.querySelector('.au-name').textContent = newAU.name;
+        }
+        else if (type === 'kink') {
+          const newKink = getRandomKink();
+          const kinkDiv = e.target.closest('.kink');
+          kinkDiv.querySelector('.kink-name').textContent = newKink.name;
+        }
+      }
+    });
+
+    function getRandomChar() {
+      return characters[Math.floor(Math.random() * characters.length)];
+    }
+    
+    function getRandomTrope() {
+      return tropes[Math.floor(Math.random() * tropes.length)];
+    }
+    
+    function getRandomGenre() {
+      return genres[Math.floor(Math.random() * genres.length)];
+    }
+    
+    function getRandomAU() {
+      return aus[Math.floor(Math.random() * aus.length)];
+    }
+    
+    function getRandomKink() {
+      return kinks[Math.floor(Math.random() * kinks.length)];
+    }
 
     function getRandom(arr, count = 1) {
       const copy = [...arr];
