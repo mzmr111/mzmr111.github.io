@@ -188,37 +188,37 @@
         <p class='keywords'>«  ${keywords.join(' • ')}  »</p>
 
         <div class='info-block'>
-          <div class='info-row genre'>
-            <div class='info-label'>Жанр</div>
+          <div class='info-row'>
+            <div class='info-label genre'>Жанр</div>
             <div class='info-value'>
               <span class='genre-name'>${genre.name}</span>
               <br>
-              <span class='info-value genre-description'>${genre.description}</span>
+              <span class='info-description genre-description'>${genre.description}</span>
             </div>
           </div>
-          <div class='info-row trope'>
-            <div class='info-label'>Троп</div>
+          <div class='info-row'>
+            <div class='info-label trope'>Троп</div>
             <div class='info-value'>
               <span class='trope-name'>${trope.name}</span>
               <br>
-              <span class='info-value trope-description'>${trope.description}</span>
+              <span class='info-description trope-description'>${trope.description}</span>
             </div>
           </div>
-          <div class='info-row au'>
-            <div class='info-label'>AU</div>
+          <div class='info-row'>
+            <div class='info-label au'>AU</div>
             <div class='info-value'>
               <span class='au-name'>${au.name}</span>
               <br>
-              <span class='info-value au-description'>${au.description}</span>
+              <span class='info-description au-description'>${au.description}</span>
             </div>
           </div>
           ${kink ? `
-            <div class='info-row kink'>
-              <div class='info-label'>Кинк</div>
+            <div class='info-row'>
+              <div class='info-label kink'>Кинк</div>
               <div class='info-value'>
                 <span class='kink-name'>${kink.name}</span>
                 <br>
-                <span class='info-value kink-description'>${kink.description}</span>
+                <span class='info-description kink-description'>${kink.description}</span>
               </div>
             </div>
           ` : ''}
