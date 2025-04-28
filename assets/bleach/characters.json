@@ -96,12 +96,12 @@
       },
       {
         "name": "Тиа Халлибел",
-        "gender": "male",
+        "gender": "female",
         "image": "assets/bleach/img/tia.jpg"
       },
       {
         "name": "Унохана",
-        "gender": "male",
+        "gender": "female",
         "image": "assets/bleach/img/unohana.jpg"
       },
       {
@@ -111,7 +111,7 @@
       },
       {
         "name": "Чируччи",
-        "gender": "male",
+        "gender": "female",
         "image": "assets/bleach/img/cirucci.jpg"
       },
       {
