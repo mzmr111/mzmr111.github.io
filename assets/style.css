@@ -271,6 +271,12 @@ span.info-description {
     font-weight: normal;
 }
 
+span.fifteen {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #27acd9;
+}
+
 body, h1, h2, h3, h4, h5, h6, p, label, input, button, select, textarea {
   font-family: 'Poppins', sans-serif;
 }
