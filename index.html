@@ -7,44 +7,40 @@
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <h1>Генератор идей для фиков</h1>
-
   <form id="ficForm">
-    <label>
-      Основные персонажи
-      <select name="relationshipSize">
+    <h2>Создай свой фанфик ✨</h2>
+  
+    <div class="form-group">
+      <label for="relationshipSize">Основные персонажи</label>
+      <select name="relationshipSize" id="relationshipSize">
         <option value="1">1 (соло)</option>
         <option value="2" selected>2 (классика)</option>
         <option value="3">3 (настроение для тройничка)</option>
       </select>
-    </label>
-    <br>
-
-    <label>
-      Тип:
-      <select name="type">
+    </div>
+  
+    <div class="form-group">
+      <label for="type">Тип</label>
+      <select name="type" id="type">
         <option value="slash">Слеш</option>
         <option value="femslash">Фемслеш</option>
         <option value="gen">Джен</option>
       </select>
-    </label>
-    <br>
-
-    <label>
-      Второстепенные персонажи (0-5)
-      <input type="number" name="sideCount" min="0" max="5" value="2">
-    </label>
-    <br>
-
-    <label>
-      NSFW
-      <input type="checkbox" name="nsfw">
-    </label>
-    <br>
-
-    <button type="submit">Го</button>
+    </div>
+  
+    <div class="form-group">
+      <label for="sideCount">Второстепенные персонажи (0-5)</label>
+      <input type="number" name="sideCount" id="sideCount" min="0" max="5" value="2">
+    </div>
+  
+    <div class="form-group checkbox-group">
+      <input type="checkbox" name="nsfw" id="nsfw">
+      <label for="nsfw">NSFW</label>
+    </div>
+  
+    <button type="submit">Го!</button>
   </form>
-
+  
   <div id="result"></div>
 
   <script>
