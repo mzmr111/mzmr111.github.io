@@ -176,6 +176,10 @@ button:hover {
 	background: #f4fbfd;
 	padding: 1rem 1.5rem;
 	text-align: center;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 1.2em;
+	color: #27acd9;
 }
 .keywords:before, .keywords:after { 
 	content:'';
