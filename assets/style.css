@@ -48,55 +48,84 @@ section {
 }
 
 form {
-  background: white;
+  background: #ffffff;
   padding: 2em;
   border-radius: 1em;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   margin-bottom: 2em;
 }
 
-label {
-  display: block;
-  margin-bottom: 1em;
-  font-weight: bold;
-  font-size: 1rem;
+form h2 {
+  text-align: center;
   color: #27acd9;
+  margin-bottom: 1.5em;
 }
 
-select, input[type="number"], input[type="checkbox"] {
-  margin-top: 0.5em;
+.form-group {
+  margin-bottom: 1.5em;
+}
+
+.form-group label {
   display: block;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  color: #27acd9;
+  font-size: 1rem;
+}
+
+.form-group select,
+.form-group input[type="number"],
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
   width: 100%;
-  padding: 0.7em;
+  padding: 0.8em 1em;
   font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 0.5em;
   background: #fafafa;
-  transition: 0.3s;
+  box-sizing: border-box;
+  appearance: none; /* kill the cursed arrows */
 }
 
-select:focus, input[type="number"]:focus {
+.form-group select:focus,
+.form-group input[type="number"]:focus,
+.form-group input[type="text"]:focus,
+.form-group textarea:focus {
   border-color: #7a7aff;
   outline: none;
-  background: #fff;
+  background: #ffffff;
 }
 
-input[type="checkbox"] {
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.checkbox-group input[type="checkbox"] {
   width: auto;
-  display: inline-block;
-  margin-right: 0.5em;
+  margin: 0;
+}
+
+.checkbox-group label {
+  margin: 0;
+  font-weight: normal;
+  color: #333;
 }
 
 button {
-  background: #7adeff;
+  display: block;
+  width: 100%;
+  background: linear-gradient(135deg, #7adeff, #5cd6d6);
   color: white;
   border: none;
-  padding: 0.5em 2em;
-  font-size: 1rem;
+  padding: 0.8em;
+  font-size: 1.1rem;
   border-radius: 1em;
   cursor: pointer;
-  background: linear-gradient(135deg, #7adeff, #5cd6d6);
   transition: all 0.3s ease;
+  margin-top: 1em;
 }
 
 button:hover {
@@ -105,8 +134,8 @@ button:hover {
 }
 
 #result {
-  background: #fff;
-  padding: 0.5em 2em;
+  background: #ffffff;
+  padding: 2em;
   border-radius: 1em;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
