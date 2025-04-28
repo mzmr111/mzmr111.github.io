@@ -2,76 +2,151 @@
       {
         "name": "Ичиго Куросаки",
         "gender": "male",
-        "image": "assets/bleach/thumb_01.jpg"
+        "image": "assets/bleach/img/ichigo.jpg"
       },
       {
         "name": "Рукия Кучики",
         "gender": "female",
-        "image": "assets/bleach/thumb_20.jpg"
+        "image": "assets/bleach/img/rukia.jpg"
       },
       {
         "name": "Ренджи Абараи",
         "gender": "male",
-        "image": "assets/bleach/thumb_12.jpg"
+        "image": "assets/bleach/img/renji.jpg"
       },
       {
         "name": "Орихиме Иноуэ",
         "gender": "female",
-        "image": "assets/bleach/thumb_03.jpg"
+        "image": "assets/bleach/img/orihime.jpg"
       },
       {
         "name": "Куроцучи Маюри",
         "gender": "male",
-        "image": "assets/bleach/thumb_18.jpg"
+        "image": "assets/bleach/img/mayuri.jpg"
       },
       {
         "name": "Йоруичи",
         "gender": "female",
-        "image": "assets/bleach/thumb_76.jpg"
+        "image": "assets/bleach/img/yoruichi.jpg"
       },
       {
         "name": "Урахара Киске",
         "gender": "male",
-        "image": "assets/bleach/thumb_50.jpg"
+        "image": "assets/bleach/img/urahara.jpg"
       },
       {
         "name": "Бьякуя Кучики",
         "gender": "male",
-        "image": "assets/bleach/thumb_11.jpg"
+        "image": "assets/bleach/img/byakuya.jpg"
       },
       {
         "name": "Сой Фон",
         "gender": "female",
-        "image": "assets/bleach/thumb_07.jpg"
+        "image": "assets/bleach/img/suifeng.jpg"
       },
       {
         "name": "Гриммджо",
         "gender": "male",
-        "image": "assets/bleach/grimmjow.jpg"
+        "image": "assets/bleach/img/grimmjow.jpg"
       },
       {
         "name": "Улькиорра Шифер",
         "gender": "male",
-        "image": "assets/bleach/ulquiorra.jpg"
+        "image": "assets/bleach/img/ulquiorra.jpg"
       },
       {
         "name": "Нелл",
         "gender": "female",
-        "image": "assets/bleach/thumb_50.jpg"
+        "image": "assets/bleach/img/nell.jpg"
       },
       {
         "name": "Кенпачи Зараки",
         "gender": "male",
-        "image": "assets/bleach/thumb_17.jpg"
+        "image": "assets/bleach/img/zaraki.jpg"
       },
       {
         "name": "Рангику Мацумото",
         "gender": "female",
-        "image": "assets/bleach/thumb_39.jpg"
+        "image": "assets/bleach/img/rangiku.jpg"
       },
       {
         "name": "Айзен Соске",
         "gender": "male",
-        "image": "assets/bleach/aizen.jpg"
+        "image": "assets/bleach/img/aizen.jpg"
+      },
+      {
+        "name": "Хирако",
+        "gender": "male",
+        "image": "assets/bleach/img/hirako.jpg"
+      },
+      {
+        "name": "Иккаку",
+        "gender": "male",
+        "image": "assets/bleach/img/ikkaku.jpg"
+      },
+      {
+        "name": "Юмичика",
+        "gender": "male",
+        "image": "assets/bleach/img/yumichika.jpg"
+      },
+      {
+        "name": "Исида Урью",
+        "gender": "male",
+        "image": "assets/bleach/img/ishida.jpg"
+      },
+      {
+        "name": "Тиа Халлибел",
+        "gender": "male",
+        "image": "assets/bleach/img/tia.jpg"
+      },
+      {
+        "name": "Унохана",
+        "gender": "male",
+        "image": "assets/bleach/img/unohana.jpg"
+      },
+      {
+        "name": "Луппи",
+        "gender": "male",
+        "image": "assets/bleach/img/luppi.jpg"
+      },
+      {
+        "name": "Чируччи",
+        "gender": "male",
+        "image": "assets/bleach/img/cirucci.jpg"
+      },
+      {
+        "name": "Нноитра",
+        "gender": "male",
+        "image": "assets/bleach/img/nnoitra.jpg"
+      },
+      {
+        "name": "Заэль",
+        "gender": "male",
+        "image": "assets/bleach/img/szayel.jpg"
+      },
+      {
+        "name": "Тесла",
+        "gender": "male",
+        "image": "assets/bleach/img/tesla.jpg"
+      },
+      {
+        "name": "Яхве",
+        "gender": "male",
+        "image": "assets/bleach/img/yhwach.jpg"
+      },
+      {
+        "name": "Юграм Хашвальт",
+        "gender": "male",
+        "image": "assets/bleach/img/jugram.jpg"
+      },
+      {
+        "name": "Базз Би",
+        "gender": "male",
+        "image": "assets/bleach/img/bazz.jpg"
+      },
+      {
+        "name": "Жижи",
+        "gender": "male",
+        "image": "assets/bleach/img/giselle.jpg"
       }
     ]
