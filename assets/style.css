@@ -172,8 +172,29 @@ button:hover {
 }
 
 .keywords {
-  text-align: center;
-  font-weight: bold;
+	position: relative;
+	background: #f4fbfd;
+	padding: 1rem 1.5rem;
+	text-align: center;
+}
+.keywords:before, .keywords:after { 
+	content:'';
+	width: 20px;
+	height: 40px;
+	position: absolute;
+	display: inline-block;
+}
+.keywords:before {
+	border-left: solid 3px #27acd9;
+	border-top: solid 3px #27acd9;
+	top:0;
+	left: 0;
+}
+.keywords:after {
+	border-right: solid 3px #27acd9;
+	border-bottom: solid 3px #27acd9;
+	bottom:0;
+	right: 0;
 }
 
 body, h1, h2, h3, h4, h5, h6, p, label, input, button, select, textarea {
