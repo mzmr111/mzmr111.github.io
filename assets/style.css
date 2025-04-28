@@ -209,6 +209,37 @@ button:hover {
 	right: 0;
 }
 
+.info-block {
+    background: #f9f9f9;
+    padding: 1.5em;
+    border-radius: 8px;
+    margin-top: 2em;
+    border: 0.1em dashed #d4eef7;
+}
+
+.info-row {
+    display: flex;
+    margin: 5px 0;
+}
+
+.info-label {
+    width: 6em;
+    font-weight: bold;
+    color: #27acd9;
+    flex-shrink: 0;
+}
+
+.info-value {
+    color: #555;
+    font-weight: bold;
+    margin-bottom: 0.8em;
+}
+
+span.info-description {
+    font-size: 0.8em;
+    font-weight: normal;
+}
+
 body, h1, h2, h3, h4, h5, h6, p, label, input, button, select, textarea {
   font-family: 'Poppins', sans-serif;
 }
