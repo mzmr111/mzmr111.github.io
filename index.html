@@ -58,18 +58,14 @@
     Promise.all([
       fetch('assets/bleach/characters.json').then(r => r.json()),
       fetch('assets/genres.json').then(r => r.json()),
-      fetch('assets/bleach/settings.json').then(r => r.json()),
       fetch('assets/kinks.json').then(r => r.json()),
-      fetch('assets/bleach/situations.json').then(r => r.json()),
       fetch('assets/tropes.json').then(r => r.json()),
       fetch('assets/au.json').then(r => r.json()),
       fetch('assets/keywords.json').then(r => r.json())
-    ]).then(([charData, genreData, settingData, kinkData, situationData, tropeData, auData, keywordData]) => {
+    ]).then(([charData, genreData, kinkData, tropeData, auData, keywordData]) => {
       characters = charData;
       genres = genreData;
-      settings = settingData;
       kinks = kinkData;
-      situations = situationData;
       tropes = tropeData;
       aus = auData;
       ficKeywords = keywordData;
