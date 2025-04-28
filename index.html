@@ -63,7 +63,7 @@
       fetch('assets/kinks.json').then(r => r.json()),
       fetch('assets/bleach/situations.json').then(r => r.json()),
       fetch('assets/tropes.json').then(r => r.json()),
-      fetch('assets/ficKeywords.json').then(r => r.json())
+      fetch('assets/keywords.json').then(r => r.json())
     ]).then(([charData, genreData, settingData, kinkData, situationData, tropeData, keywordData]) => {
       characters = charData;
       genres = genreData;
