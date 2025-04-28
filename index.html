@@ -9,6 +9,8 @@
 <body>
   <form id="ficForm">
     <h2>Создай свой фанфик ✨</h2>
+
+    <div class="form-group"><span class="fifteen">15</span> тропов, <span class="fifteen">15</span> жанров, <span class="fifteen">15</span> альтернативных вселенных, <span class="fifteen">15</span> кинков (для тех, кому исполнилось 15 + 3), <span class="fifteen">150</span> ключевых слов и <span class="fifteen">30</span> персонажей: все для того, чтобы расшевелить фантазию!</div>
   
     <div class="form-group">
       <label for="relationshipSize">Основные персонажи</label>
@@ -50,6 +52,7 @@
     let kinks = [];
     let situations = [];
     let tropes = [];
+    let aus = [];
     let ficKeywords = [];
     
     Promise.all([
@@ -59,14 +62,16 @@
       fetch('assets/kinks.json').then(r => r.json()),
       fetch('assets/bleach/situations.json').then(r => r.json()),
       fetch('assets/tropes.json').then(r => r.json()),
+      fetch('assets/au.json').then(r => r.json()),
       fetch('assets/keywords.json').then(r => r.json())
-    ]).then(([charData, genreData, settingData, kinkData, situationData, tropeData, keywordData]) => {
+    ]).then(([charData, genreData, settingData, kinkData, situationData, tropeData, auData, keywordData]) => {
       characters = charData;
       genres = genreData;
       settings = settingData;
       kinks = kinkData;
       situations = situationData;
       tropes = tropeData;
+      aus = auData;
       ficKeywords = keywordData;
     }).catch(error => {
       console.error('Error loading data:', error);
@@ -110,8 +115,7 @@
       const sideCharacters = getRandom(remainingChars, data.sideCount);
   
       const genre = getRandom(genres)[0];
-      const setting = getRandom(settings)[0];
-      const situation = getRandom(situations)[0];
+      const au = getRandom(aus)[0];
       const trope = getRandom(tropes)[0];
       const kink = data.nsfw ? getRandom(kinks)[0] : null;
       const keywords = getRandom(ficKeywords, 3);
@@ -136,16 +140,12 @@
             <div class='info-value'>${genre.name}<br><span class="info-description">${genre.description}</span></div>
           </div>
           <div class="info-row">
-            <div class="info-label">Сеттинг</div>
-            <div class='info-value'>${setting.name}</div>
-          </div>
-          <div class="info-row">
-            <div class="info-label">Ситуация</div>
-            <div class='info-value'>${situation.name}</div>
-          </div>
-          <div class="info-row">
             <div class="info-label">Троп</div>
             <div class='info-value'>${trope.name}<br><span class="info-description">${trope.description}</span></div>
+          </div>
+          <div class="info-row">
+            <div class="info-label">AU</div>
+            <div class='info-value'>${au.name}<br><span class="info-description">${au.description}</span></div>
           </div>
           ${kink ? `
             <div class="info-row">
