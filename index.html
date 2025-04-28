@@ -81,27 +81,31 @@
           const newChar = getRandomChar();
           const charDiv = e.target.closest('.char');
           charDiv.querySelector('.char-name').textContent = newChar.name;
-          charDiv.querySelector('.char-icon').src = newChar.image; // assuming you have images
+          charDiv.querySelector('.char-icon').src = newChar.image;
         } 
         else if (type === 'trope') {
           const newTrope = getRandomTrope();
           const tropeDiv = e.target.closest('.trope');
           tropeDiv.querySelector('.trope-name').textContent = newTrope.name;
+          tropeDiv.querySelector('.trope-description').textContent = newTrope.description;
         } 
         else if (type === 'genre') {
           const newGenre = getRandomGenre();
           const genreDiv = e.target.closest('.genre');
           genreDiv.querySelector('.genre-name').textContent = newGenre.name;
+          genreDiv.querySelector('.genre-description').textContent = newGenre.description;
         }
         else if (type === 'au') {
           const newAU = getRandomAU();
           const auDiv = e.target.closest('.au');
           auDiv.querySelector('.au-name').textContent = newAU.name;
+          auDiv.querySelector('.au-description').textContent = newAU.description;
         }
         else if (type === 'kink') {
           const newKink = getRandomKink();
           const kinkDiv = e.target.closest('.kink');
           kinkDiv.querySelector('.kink-name').textContent = newKink.name;
+          kinkDiv.querySelector('.kink-description').textContent = newKink.description;
         }
       }
     });
@@ -184,22 +188,38 @@
         <p class='keywords'>«  ${keywords.join(' • ')}  »</p>
 
         <div class='info-block'>
-          <div class='info-row'>
+          <div class='info-row genre'>
             <div class='info-label'>Жанр</div>
-            <div class='info-value'>${genre.name}<br><span class="info-description">${genre.description}</span></div>
+            <div class='info-value'>
+              <span class='genre-name'>${genre.name}</span>
+              <br>
+              <span class='info-value genre-description'>${genre.description}</span>
+            </div>
           </div>
-          <div class="info-row trope">
-            <div class="info-label">Троп</div>
-            <div class='info-value trope-name'>${trope.name}<br><span class="info-description">${trope.description}</span></div>
+          <div class='info-row trope'>
+            <div class='info-label'>Троп</div>
+            <div class='info-value'>
+              <span class='trope-name'>${trope.name}</span>
+              <br>
+              <span class='info-value trope-description'>${trope.description}</span>
+            </div>
           </div>
-          <div class="info-row">
-            <div class="info-label">AU</div>
-            <div class='info-value'>${au.name}<br><span class="info-description">${au.description}</span></div>
+          <div class='info-row au'>
+            <div class='info-label'>AU</div>
+            <div class='info-value'>
+              <span class='au-name'>${au.name}</span>
+              <br>
+              <span class='info-value au-description'>${au.description}</span>
+            </div>
           </div>
           ${kink ? `
-            <div class="info-row">
-              <div class="info-label">Кинк</div>
-              <div class='info-value'>${kink.name}<br><span class="info-description">${kink.description}</span></div>
+            <div class='info-row kink'>
+              <div class='info-label'>Кинк</div>
+              <div class='info-value'>
+                <span class='kink-name'>${kink.name}</span>
+                <br>
+                <span class='info-value kink-description'>${kink.description}</span>
+              </div>
             </div>
           ` : ''}
         </div>
