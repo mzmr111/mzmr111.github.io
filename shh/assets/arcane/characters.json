@@ -23,5 +23,55 @@
         "name": "Vi",
         "gender": "female",
         "image": "assets/arcane/img/vi.jpg"
+    },
+    {
+        "name": "Jinx",
+        "gender": "female",
+        "image": "assets/arcane/img/jinx.jpg"
+    },
+    {
+        "name": "Silco",
+        "gender": "male",
+        "image": "assets/arcane/img/silco.jpg"
+    },
+    {
+        "name": "Ekko",
+        "gender": "male",
+        "image": "assets/arcane/img/ekko.jpg"
+    },
+    {
+        "name": "Heimerdinger",
+        "gender": "male",
+        "image": "assets/arcane/img/heimerdinger.jpg"
+    },
+    {
+        "name": "Lest",
+        "gender": "male",
+        "image": "assets/arcane/img/lest.jpg"
+    },
+    {
+        "name": "Scar",
+        "gender": "male",
+        "image": "assets/arcane/img/scar.jpg"
+    },
+    {
+        "name": "Grayson",
+        "gender": "female",
+        "image": "assets/arcane/img/grayson.jpg"
+    },
+    {
+        "name": "Sevika",
+        "gender": "female",
+        "image": "assets/arcane/img/sevika.jpg"
+    },
+    {
+        "name": "Mylo",
+        "gender": "male",
+        "image": "assets/arcane/img/mylo.jpg"
+    },
+    {
+        "name": "Steb",
+        "gender": "male",
+        "image": "assets/arcane/img/steb.jpg"
     }
 ]
