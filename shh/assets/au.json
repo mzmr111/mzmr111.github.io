@@ -1,0 +1,1694 @@
+[
+    {
+        "name": "Школа",
+        "description": "Персонажи переносятся в школьную обстановку, независимо от их канонического возраста. Сюжет крутится вокруг школьной жизни: учёбы, дружбы и драмы."
+    },
+    {
+        "name": "Медицинский / Врач / Больница",
+        "description": "Персонажи работают в больнице: врачи, медсёстры, пациенты. Сюжет строится вокруг медицинской тематики, заботы и драматичных спасений."
+    },
+    {
+        "name": "Кофейня",
+        "description": "Все персонажи работают в кофейне или являются её постоянными посетителями. Сюжет фокусируется на уютной атмосфере, романтике и небольших жизненных историях."
+    },
+    {
+        "name": "Royal",
+        "description": "Персонажи — члены королевских семей, рыцари или придворные. Истории о борьбе за власть, интригах, дворцовых тайнах и запретной любви."
+    },
+    {
+        "name": "Повседневность",
+        "description": "Персонажи живут обычной, невыдающейся жизнью: работа, дом, бытовые хлопоты. Сюжет о простых радостях и трудностях повседневности."
+    },
+    {
+        "name": "Зомби",
+        "description": "Мир охвачен зомби-апокалипсисом. Персонажи борются за выживание среди хаоса, заражённых и разрушенных городов."
+    },
+    {
+        "name": "Киберпанк",
+        "description": "Будущее в стиле киберпанка: мегаполисы, корпорации, киберимпланты. Персонажи живут в мире технологий, хакеров и социальных конфликтов."
+    },
+    {
+        "name": "Мафия",
+        "description": "Персонажи вовлечены в криминальные структуры: мафиози, киллеры, полицейские. Сюжет о предательстве, власти и опасной любви."
+    },
+    {
+        "name": "Салон татуировок",
+        "description": "Персонажи владеют или работают в тату-салоне. Темы самовыражения, поиска себя, доверия и близости через искусство тела."
+    },
+    {
+        "name": "Стриптизёры/Порнозвёзды",
+        "description": "Персонажи работают в индустрии развлечений или взрослого контента. Сюжет исследует личные границы, карьеру, дружбу и романтику в нетипичной среде."
+    },
+    {
+        "name": "Рок группа",
+        "description": "Персонажи — члены рок-группы. Сюжет о борьбе за популярность, турне, драме внутри группы и опасных сторонах жизни музыкантов."
+    },
+    {
+        "name": "Офисные работники",
+        "description": "Персонажи работают в офисах: менеджеры, офис-работники, секретари. Сюжет о корпоративной культуре, офисных интригах, карьерном росте и человеческих отношениях."
+    },
+    {
+        "name": "Цирк",
+        "description": "Персонажи — цирковые артисты, акробаты и клоуны. Сюжет строится вокруг магии и драмы цирковой жизни, отношений между артистами и их борьбы за признание."
+    },
+    {
+        "name": "Спорт",
+        "description": "Персонажи — спортсмены, тренеры, фанаты. Сюжет о соревнованиях, тренировках, дружбе и предательстве в спортивном мире."
+    },
+    {
+        "name": "Сосед по комнате",
+        "description": "Персонажи — соседи по комнате. Сюжет о странных и милых соседских отношениях, бытовых мелочах, а также возможных романтических элементах между ними."
+    },
+    {
+        "name": "Школа",
+        "description": "Описываемые в работе персонажи являются школьниками, независимо от канонического возраста персонажей, а основное действие разворачивается в школьном сеттинге."
+    },
+    {
+        "name": "Без магии",
+        "description": "Работа написана по канону, для которого характерно существование магии или те, кто ее использует, но в самой работе магия отсутствует."
+    },
+    {
+        "name": "Все люди",
+        "description": "Работа написана по канону, для которого характерно существование персонажей, не принадлежащих к человеческой расе, но в самой работе все эти персонажи по умолчанию представлены в виде людей."
+    },
+    {
+        "name": "Без сверхспособностей",
+        "description": "Работа написана по канону, для которого характерно существование сверхспособностей или те, кто их использует, но в самой работе такие способности отсутствуют."
+    },
+    {
+        "name": "Все хорошо",
+        "description": "Работа написана по канону, для которого характерны трагические мотивы, но в самой работе описывается мир, где этих трагедий никогда не происходило, а персонажи живут повседневной, мирной жизнью."
+    },
+    {
+        "name": "Другое знакомство",
+        "description": "Персонажи знакомятся друг с другом не так, как в каноне."
+    },
+    {
+        "name": "Другая эпоха",
+        "description": "Работа написана по канону, действия которого происходят в определенной эпохе, но в самой работе действие перенесено в другую эпоху."
+    },
+    {
+        "name": "Без супергероев",
+        "description": "Работа написана по канону, для которого характерно существование супергероев, но в самой работе супергерои не существуют."
+    },
+    {
+        "name": "Reverse",
+        "description": "Работа строится на сюжетном тропе, в котором задействованные канонические персонажи представлены в противоположных каноническим ролях: положительные персонажи стали отрицательными, отрицательные — положительными и т.д."
+    },
+    {
+        "name": "Родственники",
+        "description": "Персонажи являются родственниками, вопреки отсутствию канонических родственных связей между ними."
+    },
+    {
+        "name": "Другая страна",
+        "description": "Работа написана по канону, действия которого происходят в определенной стране, но в самой работе действие перенесено в другую страну."
+    },
+    {
+        "name": "Другое детство",
+        "description": "В работе описывается детство персонажей, отличное от того, каким оно было показано в каноне."
+    },
+    {
+        "name": "Role swap",
+        "description": "Работа строится на сюжетном тропе, в котором задействованные канонические персонажи \"обмениваются\" заданными в каноне ролями: подчиненный становится начальником, а начальник — подчиненным, опекун становится подопечным, а подопечный — опекуном и т.д."
+    },
+    {
+        "name": "Альтернативные способности",
+        "description": "Работа строится на сюжетном тропе, в котором силы/способности персонажей отличаются от канонических."
+    },
+    {
+        "name": "Age swap",
+        "description": "Работа строится на сюжетном тропе, в котором задействованные канонические персонажи \"обмениваются\" возрастом: самый старший становится самым младшим, самый младший — самым старшим и т.д."
+    },
+    {
+        "name": "Race swap",
+        "description": "Работа строится на сюжетном тропе, в котором персонажи меняют заданную им в каноне расу на другую."
+    },
+    {
+        "name": "Без войны",
+        "description": "Работа написана по канону, для которого характерно наличие значимого военного конфликта, но в самой работе эта война отсутствует."
+    },
+    {
+        "name": "Все друзья",
+        "description": "Персонажи состоят в дружеских отношениях, несмотря на вражеские или нейтральные отношения в каноне."
+    },
+    {
+        "name": "Не родственники",
+        "description": "Персонажи не являются родственниками, вопреки наличию канонических родственных связей между ними."
+    },
+    {
+        "name": "Без мистики",
+        "description": "Работа написана по канону, в котором характерно наличие мистической составляющей, но в в самой работе мистика отсутствует."
+    },
+    {
+        "name": "Без апокалипсиса",
+        "description": "Работа написана по канону, для которого характерен постапокалиптический мир либо разворачивающийся апокалипсис, но в самой работе описана обычная вселенная без катастрофы."
+    },
+    {
+        "name": "Все гражданские",
+        "description": "Работа написана по фандому, персонажи которого занимаются не-гражданской, часто преступной деятельностью, однако в самой работе персонажи являются гражданскими."
+    },
+    {
+        "name": "Другое семейное положение",
+        "description": "Персонажи в работе описываются в отличном от канонического семейном положении: канонично женатые персонажи разведены, холостые — женаты, и т.д."
+    },
+    {
+        "name": "21st Century",
+        "description": ""
+    },
+    {
+        "name": "Academia",
+        "description": ""
+    },
+    {
+        "name": "Professors",
+        "description": ""
+    },
+    {
+        "name": "Afterlife",
+        "description": ""
+    },
+    {
+        "name": "Limbo",
+        "description": ""
+    },
+    {
+        "name": "Age Changes",
+        "description": ""
+    },
+    {
+        "name": "America",
+        "description": ""
+    },
+    {
+        "name": "Amusement Park",
+        "description": ""
+    },
+    {
+        "name": "Angels",
+        "description": ""
+    },
+    {
+        "name": "Angels & Demons",
+        "description": ""
+    },
+    {
+        "name": "Guardian Angels",
+        "description": ""
+    },
+    {
+        "name": "Apocalypse",
+        "description": ""
+    },
+    {
+        "name": "Aquariumstuck",
+        "description": ""
+    },
+    {
+        "name": "JoJo Villains",
+        "description": ""
+    },
+    {
+        "name": "Arranged Marriage",
+        "description": ""
+    },
+    {
+        "name": "Attack on Space (Shingeki no Kyojin)",
+        "description": ""
+    },
+    {
+        "name": "Australia",
+        "description": ""
+    },
+    {
+        "name": "BDSM",
+        "description": ""
+    },
+    {
+        "name": "Beach",
+        "description": ""
+    },
+    {
+        "name": "Bikers",
+        "description": ""
+    },
+    {
+        "name": "Bodyguard",
+        "description": ""
+    },
+    {
+        "name": "Burlesque Club",
+        "description": ""
+    },
+    {
+        "name": "Cabaret",
+        "description": ""
+    },
+    {
+        "name": "Canon",
+        "description": ""
+    },
+    {
+        "name": "Canon Divergence",
+        "description": ""
+    },
+    {
+        "name": "Gojo Satoru Wins",
+        "description": ""
+    },
+    {
+        "name": "Never Met",
+        "description": ""
+    },
+    {
+        "name": "Architects",
+        "description": ""
+    },
+    {
+        "name": "Artists",
+        "description": ""
+    },
+    {
+        "name": "Art School",
+        "description": ""
+    },
+    {
+        "name": "Bed & Breakfast",
+        "description": ""
+    },
+    {
+        "name": "Corporate",
+        "description": ""
+    },
+    {
+        "name": "Detectives",
+        "description": ""
+    },
+    {
+        "name": "Fashion & Models",
+        "description": ""
+    },
+    {
+        "name": "Firefighters",
+        "description": ""
+    },
+    {
+        "name": "Food Service",
+        "description": ""
+    },
+    {
+        "name": "Bakery",
+        "description": ""
+    },
+    {
+        "name": "Bar/Pub",
+        "description": ""
+    },
+    {
+        "name": "Chefs",
+        "description": ""
+    },
+    {
+        "name": "Coffee Shops & Cafés",
+        "description": ""
+    },
+    {
+        "name": "Pizza Place",
+        "description": ""
+    },
+    {
+        "name": "Restaurant",
+        "description": ""
+    },
+    {
+        "name": "Diners",
+        "description": ""
+    },
+    {
+        "name": "Information Technology",
+        "description": ""
+    },
+    {
+        "name": "Journalism",
+        "description": ""
+    },
+    {
+        "name": "Law Enforcement",
+        "description": ""
+    },
+    {
+        "name": "Federal Agents",
+        "description": ""
+    },
+    {
+        "name": "Police",
+        "description": ""
+    },
+    {
+        "name": "Police & Yakuza",
+        "description": ""
+    },
+    {
+        "name": "Lawyers",
+        "description": ""
+    },
+    {
+        "name": "Lifeguards",
+        "description": ""
+    },
+    {
+        "name": "Mechanics",
+        "description": ""
+    },
+    {
+        "name": "Medical",
+        "description": ""
+    },
+    {
+        "name": "Hospital",
+        "description": ""
+    },
+    {
+        "name": "Nanny",
+        "description": ""
+    },
+    {
+        "name": "Office",
+        "description": ""
+    },
+    {
+        "name": "Stock Market",
+        "description": ""
+    },
+    {
+        "name": "Retail",
+        "description": ""
+    },
+    {
+        "name": "Bookstore",
+        "description": ""
+    },
+    {
+        "name": "Candy Shop",
+        "description": ""
+    },
+    {
+        "name": "Convenience Store",
+        "description": ""
+    },
+    {
+        "name": "Flower Shop",
+        "description": ""
+    },
+    {
+        "name": "Flower Shop & Tattoo Parlor",
+        "description": ""
+    },
+    {
+        "name": "Grocery Store",
+        "description": ""
+    },
+    {
+        "name": "Music Store",
+        "description": ""
+    },
+    {
+        "name": "Pet Store",
+        "description": ""
+    },
+    {
+        "name": "Sex Shop",
+        "description": ""
+    },
+    {
+        "name": "Scientists",
+        "description": ""
+    },
+    {
+        "name": "Laboratory",
+        "description": ""
+    },
+    {
+        "name": "Teachers",
+        "description": ""
+    },
+    {
+        "name": "Student/Teacher",
+        "description": ""
+    },
+    {
+        "name": "Wedding Planner",
+        "description": ""
+    },
+    {
+        "name": "Writing & Publishing",
+        "description": ""
+    },
+    {
+        "name": "Celebrity",
+        "description": ""
+    },
+    {
+        "name": "Character Swap",
+        "description": ""
+    },
+    {
+        "name": "Childhood Friends",
+        "description": ""
+    },
+    {
+        "name": "Children",
+        "description": ""
+    },
+    {
+        "name": "Babies",
+        "description": ""
+    },
+    {
+        "name": "Babysitters",
+        "description": ""
+    },
+    {
+        "name": "Daycare",
+        "description": ""
+    },
+    {
+        "name": "Foster Family",
+        "description": ""
+    },
+    {
+        "name": "Kindergarten & Pre-school",
+        "description": ""
+    },
+    {
+        "name": "Orphanage",
+        "description": ""
+    },
+    {
+        "name": "Circus",
+        "description": ""
+    },
+    {
+        "name": "Cirque du Soleil",
+        "description": ""
+    },
+    {
+        "name": "Crack",
+        "description": ""
+    },
+    {
+        "name": "Criminals",
+        "description": ""
+    },
+    {
+        "name": "Assassins & Hitmen",
+        "description": ""
+    },
+    {
+        "name": "Gang World",
+        "description": ""
+    },
+    {
+        "name": "Gangsters",
+        "description": ""
+    },
+    {
+        "name": "Prison",
+        "description": ""
+    },
+    {
+        "name": "Serial Killers",
+        "description": ""
+    },
+    {
+        "name": "Thieves",
+        "description": ""
+    },
+    {
+        "name": "One Piece",
+        "description": ""
+    },
+    {
+        "name": "Yakuza",
+        "description": ""
+    },
+    {
+        "name": "Cruise Ship",
+        "description": ""
+    },
+    {
+        "name": "Cults",
+        "description": ""
+    },
+    {
+        "name": "Dance",
+        "description": ""
+    },
+    {
+        "name": "Ballet",
+        "description": ""
+    },
+    {
+        "name": "Dark",
+        "description": ""
+    },
+    {
+        "name": "Demons",
+        "description": ""
+    },
+    {
+        "name": "Domestic",
+        "description": ""
+    },
+    {
+        "name": "Dorohedoro Fusion",
+        "description": ""
+    },
+    {
+        "name": "Dystopia",
+        "description": ""
+    },
+    {
+        "name": "Evil",
+        "description": ""
+    },
+    {
+        "name": "Fairy Tale",
+        "description": ""
+    },
+    {
+        "name": "Rapunzel Fusion",
+        "description": ""
+    },
+    {
+        "name": "Swan Lake Fusion",
+        "description": ""
+    },
+    {
+        "name": "Family",
+        "description": ""
+    },
+    {
+        "name": "Related",
+        "description": ""
+    },
+    {
+        "name": "Siblings",
+        "description": ""
+    },
+    {
+        "name": "Brothers",
+        "description": ""
+    },
+    {
+        "name": "Twins",
+        "description": ""
+    },
+    {
+        "name": "Fans & Fandom",
+        "description": ""
+    },
+    {
+        "name": "Fantasy",
+        "description": ""
+    },
+    {
+        "name": "Dragons",
+        "description": ""
+    },
+    {
+        "name": "Pernese Dragons",
+        "description": ""
+    },
+    {
+        "name": "Elf",
+        "description": ""
+    },
+    {
+        "name": "Fae",
+        "description": ""
+    },
+    {
+        "name": "Merpeople",
+        "description": ""
+    },
+    {
+        "name": "Urban Fantasy",
+        "description": ""
+    },
+    {
+        "name": "Farm/Ranch",
+        "description": ""
+    },
+    {
+        "name": "Flight Attendants",
+        "description": ""
+    },
+    {
+        "name": "Formula One",
+        "description": ""
+    },
+    {
+        "name": "Future",
+        "description": ""
+    },
+    {
+        "name": "Geisha",
+        "description": ""
+    },
+    {
+        "name": "Gender Changes",
+        "description": ""
+    },
+    {
+        "name": "Generation Loss Setting",
+        "description": ""
+    },
+    {
+        "name": "Genre Twist",
+        "description": ""
+    },
+    {
+        "name": "Gladiators",
+        "description": ""
+    },
+    {
+        "name": "Hackers",
+        "description": ""
+    },
+    {
+        "name": "Happy",
+        "description": ""
+    },
+    {
+        "name": "Harem",
+        "description": ""
+    },
+    {
+        "name": "Heaven",
+        "description": ""
+    },
+    {
+        "name": "Hell",
+        "description": ""
+    },
+    {
+        "name": "Hippies",
+        "description": ""
+    },
+    {
+        "name": "Hipsters",
+        "description": ""
+    },
+    {
+        "name": "Historical",
+        "description": ""
+    },
+    {
+        "name": "1910s",
+        "description": ""
+    },
+    {
+        "name": "1920s",
+        "description": ""
+    },
+    {
+        "name": "1930s",
+        "description": ""
+    },
+    {
+        "name": "1940s",
+        "description": ""
+    },
+    {
+        "name": "1950s",
+        "description": ""
+    },
+    {
+        "name": "Greasers",
+        "description": ""
+    },
+    {
+        "name": "1960s",
+        "description": ""
+    },
+    {
+        "name": "1970s",
+        "description": ""
+    },
+    {
+        "name": "1980s",
+        "description": ""
+    },
+    {
+        "name": "1990s",
+        "description": ""
+    },
+    {
+        "name": "19th Century",
+        "description": ""
+    },
+    {
+        "name": "2000s",
+        "description": ""
+    },
+    {
+        "name": "Nana",
+        "description": ""
+    },
+    {
+        "name": "Utopia",
+        "description": ""
+    },
+    {
+        "name": "Teenagers",
+        "description": ""
+    },
+    {
+        "name": "Tabletop Gaming",
+        "description": ""
+    },
+    {
+        "name": "Genie/Djinn",
+        "description": ""
+    },
+    {
+        "name": "Ghosts",
+        "description": ""
+    },
+    {
+        "name": "Shapeshifters",
+        "description": ""
+    },
+    {
+        "name": "Selkies",
+        "description": ""
+    },
+    {
+        "name": "Werecreatures",
+        "description": ""
+    },
+    {
+        "name": "Werewolf",
+        "description": ""
+    },
+    {
+        "name": "Online Dating",
+        "description": ""
+    },
+    {
+        "name": "Ordinary People",
+        "description": ""
+    },
+    {
+        "name": "Original",
+        "description": ""
+    },
+    {
+        "name": "Parents",
+        "description": ""
+    },
+    {
+        "name": "Photographer",
+        "description": ""
+    },
+    {
+        "name": "Pirate",
+        "description": ""
+    },
+    {
+        "name": "Politics",
+        "description": ""
+    },
+    {
+        "name": "Poppy Playtime Fusion",
+        "description": ""
+    },
+    {
+        "name": "Porn",
+        "description": ""
+    },
+    {
+        "name": "Post-Apocalypse",
+        "description": ""
+    },
+    {
+        "name": "Post-War",
+        "description": ""
+    },
+    {
+        "name": "Prehistoric",
+        "description": ""
+    },
+    {
+        "name": "Princess Protection Program",
+        "description": ""
+    },
+    {
+        "name": "Prostitution",
+        "description": ""
+    },
+    {
+        "name": "Escorts",
+        "description": ""
+    },
+    {
+        "name": "Psychics/Psionics",
+        "description": ""
+    },
+    {
+        "name": "Psychopaths",
+        "description": ""
+    },
+    {
+        "name": "Punk",
+        "description": ""
+    },
+    {
+        "name": "Purgatory",
+        "description": ""
+    },
+    {
+        "name": "My Hero Academia",
+        "description": ""
+    },
+    {
+        "name": "Race Changes",
+        "description": ""
+    },
+    {
+        "name": "Radio",
+        "description": ""
+    },
+    {
+        "name": "Real World",
+        "description": ""
+    },
+    {
+        "name": "Reincarnation",
+        "description": ""
+    },
+    {
+        "name": "Past Lives",
+        "description": ""
+    },
+    {
+        "name": "Religious",
+        "description": ""
+    },
+    {
+        "name": "Biblical Setting",
+        "description": ""
+    },
+    {
+        "name": "Jewish",
+        "description": ""
+    },
+    {
+        "name": "Priests",
+        "description": ""
+    },
+    {
+        "name": "Religion Changes",
+        "description": ""
+    },
+    {
+        "name": "Rimworld Setting",
+        "description": ""
+    },
+    {
+        "name": "Road Trip",
+        "description": ""
+    },
+    {
+        "name": "Rocky Horror Picture Show",
+        "description": ""
+    },
+    {
+        "name": "Role Reversal",
+        "description": ""
+    },
+    {
+        "name": "Roma and Travelers",
+        "description": ""
+    },
+    {
+        "name": "Romance Novel",
+        "description": ""
+    },
+    {
+        "name": "Romantic Comedy",
+        "description": ""
+    },
+    {
+        "name": "Roommates/Housemates",
+        "description": ""
+    },
+    {
+        "name": "Royalty",
+        "description": ""
+    },
+    {
+        "name": "Derse/Prospit Royalty",
+        "description": ""
+    },
+    {
+        "name": "League of Legends",
+        "description": ""
+    },
+    {
+        "name": "Saiyuki Miami-verse",
+        "description": ""
+    },
+    {
+        "name": "Domestic",
+        "description": ""
+    },
+    {
+        "name": "Dorohedoro Fusion",
+        "description": ""
+    },
+    {
+        "name": "Dystopia",
+        "description": ""
+    },
+    {
+        "name": "Evil",
+        "description": ""
+    },
+    {
+        "name": "Fairy Tale",
+        "description": ""
+    },
+    {
+        "name": "Rapunzel Fusion",
+        "description": ""
+    },
+    {
+        "name": "Swan Lake Fusion",
+        "description": ""
+    },
+    {
+        "name": "Family",
+        "description": ""
+    },
+    {
+        "name": "Related",
+        "description": ""
+    },
+    {
+        "name": "Siblings",
+        "description": ""
+    },
+    {
+        "name": "Brothers",
+        "description": ""
+    },
+    {
+        "name": "Twins",
+        "description": ""
+    },
+    {
+        "name": "Fans & Fandom",
+        "description": ""
+    },
+    {
+        "name": "Fantasy",
+        "description": ""
+    },
+    {
+        "name": "Dragons",
+        "description": ""
+    },
+    {
+        "name": "Pernese Dragons",
+        "description": ""
+    },
+    {
+        "name": "Elf",
+        "description": ""
+    },
+    {
+        "name": "Fae",
+        "description": ""
+    },
+    {
+        "name": "Merpeople",
+        "description": ""
+    },
+    {
+        "name": "Urban Fantasy",
+        "description": ""
+    },
+    {
+        "name": "Farm/Ranch",
+        "description": ""
+    },
+    {
+        "name": "Flight Attendants",
+        "description": ""
+    },
+    {
+        "name": "Formula One",
+        "description": ""
+    },
+    {
+        "name": "Future",
+        "description": ""
+    },
+    {
+        "name": "Geisha",
+        "description": ""
+    },
+    {
+        "name": "Gender Changes",
+        "description": ""
+    },
+    {
+        "name": "Generation Loss Setting",
+        "description": ""
+    },
+    {
+        "name": "Genre Twist",
+        "description": ""
+    },
+    {
+        "name": "Gladiators",
+        "description": ""
+    },
+    {
+        "name": "Hackers",
+        "description": ""
+    },
+    {
+        "name": "Happy",
+        "description": ""
+    },
+    {
+        "name": "Harem",
+        "description": ""
+    },
+    {
+        "name": "Heaven",
+        "description": ""
+    },
+    {
+        "name": "Hell",
+        "description": ""
+    },
+    {
+        "name": "Hippies",
+        "description": ""
+    },
+    {
+        "name": "Hipsters",
+        "description": ""
+    },
+    {
+        "name": "Historical",
+        "description": ""
+    },
+    {
+        "name": "1910s",
+        "description": ""
+    },
+    {
+        "name": "1920s",
+        "description": ""
+    },
+    {
+        "name": "1930s",
+        "description": ""
+    },
+    {
+        "name": "1940s",
+        "description": ""
+    },
+    {
+        "name": "1950s",
+        "description": ""
+    },
+    {
+        "name": "Greasers",
+        "description": ""
+    },
+    {
+        "name": "1960s",
+        "description": ""
+    },
+    {
+        "name": "1970s",
+        "description": ""
+    },
+    {
+        "name": "1980s",
+        "description": ""
+    },
+    {
+        "name": "1990s",
+        "description": ""
+    },
+    {
+        "name": "19th Century",
+        "description": ""
+    },
+    {
+        "name": "2000s",
+        "description": ""
+    },
+    {
+        "name": "Nana",
+        "description": ""
+    },
+    {
+        "name": "Utopia",
+        "description": ""
+    },
+    {
+        "name": "Teenagers",
+        "description": ""
+    },
+    {
+        "name": "Tabletop Gaming",
+        "description": ""
+    },
+    {
+        "name": "Genie/Djinn",
+        "description": ""
+    },
+    {
+        "name": "Ghosts",
+        "description": ""
+    },
+    {
+        "name": "Shapeshifters",
+        "description": ""
+    },
+    {
+        "name": "Selkies",
+        "description": ""
+    },
+    {
+        "name": "Werecreatures",
+        "description": ""
+    },
+    {
+        "name": "Werewolf",
+        "description": ""
+    },
+    {
+        "name": "Online Dating",
+        "description": ""
+    },
+    {
+        "name": "Ordinary People",
+        "description": ""
+    },
+    {
+        "name": "Original",
+        "description": ""
+    },
+    {
+        "name": "Parents",
+        "description": ""
+    },
+    {
+        "name": "Photographer",
+        "description": ""
+    },
+    {
+        "name": "Pirate",
+        "description": ""
+    },
+    {
+        "name": "Politics",
+        "description": ""
+    },
+    {
+        "name": "Poppy Playtime Fusion",
+        "description": ""
+    },
+    {
+        "name": "Porn",
+        "description": ""
+    },
+    {
+        "name": "Post-Apocalypse",
+        "description": ""
+    },
+    {
+        "name": "Post-War",
+        "description": ""
+    },
+    {
+        "name": "Prehistoric",
+        "description": ""
+    },
+    {
+        "name": "Princess Protection Program",
+        "description": ""
+    },
+    {
+        "name": "Prostitution",
+        "description": ""
+    },
+    {
+        "name": "Escorts",
+        "description": ""
+    },
+    {
+        "name": "Psychics/Psionics",
+        "description": ""
+    },
+    {
+        "name": "Psychopaths",
+        "description": ""
+    },
+    {
+        "name": "Punk",
+        "description": ""
+    },
+    {
+        "name": "Purgatory",
+        "description": ""
+    },
+    {
+        "name": "My Hero Academia",
+        "description": ""
+    },
+    {
+        "name": "Race Changes",
+        "description": ""
+    },
+    {
+        "name": "Radio",
+        "description": ""
+    },
+    {
+        "name": "Real World",
+        "description": ""
+    },
+    {
+        "name": "Reincarnation",
+        "description": ""
+    },
+    {
+        "name": "Past Lives",
+        "description": ""
+    },
+    {
+        "name": "Religious",
+        "description": ""
+    },
+    {
+        "name": "Biblical Setting",
+        "description": ""
+    },
+    {
+        "name": "Jewish",
+        "description": ""
+    },
+    {
+        "name": "Priests",
+        "description": ""
+    },
+    {
+        "name": "Religion Changes",
+        "description": ""
+    },
+    {
+        "name": "Rimworld Setting",
+        "description": ""
+    },
+    {
+        "name": "Road Trip",
+        "description": ""
+    },
+    {
+        "name": "Rocky Horror Picture Show",
+        "description": ""
+    },
+    {
+        "name": "Role Reversal",
+        "description": ""
+    },
+    {
+        "name": "Roma and Travelers",
+        "description": ""
+    },
+    {
+        "name": "Romance Novel",
+        "description": ""
+    },
+    {
+        "name": "Romantic Comedy",
+        "description": ""
+    },
+    {
+        "name": "Roommates/Housemates",
+        "description": ""
+    },
+    {
+        "name": "Royalty",
+        "description": ""
+    },
+    {
+        "name": "Derse/Prospit Royalty",
+        "description": ""
+    },
+    {
+        "name": "League of Legends",
+        "description": ""
+    },
+    {
+        "name": "Actor AU",
+        "description": "Characters are actors, often working on the same project and falling in love behind the scenes."
+    },
+    {
+        "name": "Apocalypse AU",
+        "description": "Set in a post-civilization world—zombies, viruses, nuclear fallout—where survival alters relationships."
+    },
+    {
+        "name": "Bakery AU",
+        "description": "Characters work or meet in a bakery, common in fluff-heavy AUs."
+    },
+    {
+        "name": "Band AU",
+        "description": "Characters are in a musical band together—romance and backstage drama ensue."
+    },
+    {
+        "name": "BDSM AU",
+        "description": "Worldbuilding assumes BDSM dynamics are central to society—explores dom/sub roles deeply."
+    },
+    {
+        "name": "Biblical AU",
+        "description": "Characters are recast in biblical settings, often symbolic or dramatic in tone."
+    },
+    {
+        "name": "Circus AU",
+        "description": "Characters live or perform in a circus, with magical realism, secrets, or tight-knit troupe dynamics."
+    },
+    {
+        "name": "Coffee Shop AU",
+        "description": "Characters meet or work in a coffee shop—popular for modern fluff and slow burns."
+    },
+    {
+        "name": "College AU",
+        "description": "Reimagines characters as students—deals with young love, exams, and dorm room sex."
+    },
+    {
+        "name": "Fantasy AU",
+        "description": "Characters placed in a high fantasy world with magic, swords, and possibly destiny-fueled sex."
+    },
+    {
+        "name": "Pornstar AU",
+        "description": "An alternate universe where characters are involved in the porn industry as actors, directors, or producers."
+    },
+    {
+        "name": "Sugar Daddy AU",
+        "description": "A universe where one character financially supports another in exchange for companionship or sex."
+    },
+    {
+        "name": "Cyberpunk",
+        "description": "A futuristic, tech-dominated world with cybernetic enhancements, megacities, and grit—sex often involves tech/body modifications."
+    },
+    {
+        "name": "Daemon AU",
+        "description": "Inspired by *His Dark Materials*—characters have animal soul-companions that reveal emotional states."
+    },
+    {
+        "name": "Dance AU",
+        "description": "Characters are dancers—professionally or as a hobby—allowing for physical intimacy, performance, and chemistry."
+    },
+    {
+        "name": "De-Aging",
+        "description": "Characters are magically or scientifically reverted to a younger version of themselves—used for humor, angst, or second chances."
+    },
+    {
+        "name": "Death Battle",
+        "description": "Characters face off in deadly combat, often gladiator-style or magical battles—can overlap with enemies-to-lovers or kink."
+    },
+    {
+        "name": "Deathfic",
+        "description": "Fic centered around a character's death and its emotional impact—often cathartic or tragic."
+    },
+    {
+        "name": "Demigod AU",
+        "description": "Characters are half-mortal, half-divine—grappling with power, fate, and divine sex appeal."
+    },
+    {
+        "name": "Demons",
+        "description": "Characters are demons or deal with them—common in kink, corruption arcs, or dark fantasy."
+    },
+    {
+        "name": "Dinosaurs",
+        "description": "Characters encounter or transform into dinosaurs—used in crackfic, time travel, or sci-fi AUs."
+    },
+    {
+        "name": "Dragon AU",
+        "description": "Characters are dragons, bonded to dragons, or live in a dragon-centric world—often majestic, territorial, and intense."
+    },
+    {
+        "name": "Dystopian AU",
+        "description": "A grim, oppressive world setting—usually involving rebellion, survival, and desperate intimacy."
+    },
+    {
+        "name": "Earth AU",
+        "description": "Canon characters placed in a normal Earth setting, often modernized and mundane compared to their origins."
+    },
+    {
+        "name": "Elf AU",
+        "description": "Characters are elves or live among them—fantasy setting with long lives, magic, and grace."
+    },
+    {
+        "name": "Emperor AU",
+        "description": "One character is royalty, especially an emperor/empress—focus on politics, power, and arranged relationships."
+    },
+    {
+        "name": "Flower Shop and Tattoo Parlor AU",
+        "description": "Characters run or meet through a flower shop and tattoo parlor—classic opposites attract fluff setup."
+    },
+    {
+        "name": "Flower Shop AU",
+        "description": "Characters work or fall in love at a flower shop—light, charming, and fluffy."
+    },
+    {
+        "name": "Game of Thrones AU",
+        "description": "Characters exist in Westeros-style world—court intrigue, betrayal, war, and smut-heavy drama."
+    },
+    {
+        "name": "Gamer Fic",
+        "description": "Characters play or live inside a video game—can include streaming, virtual sex, or escapism."
+    },
+    {
+        "name": "Gardens Fic",
+        "description": "Centered on gardening—often a metaphor for healing, growth, or intimacy."
+    },
+    {
+        "name": "Harry Potter AU",
+        "description": "Characters live in the Harry Potter universe—can include Hogwarts setting, magic, and house dynamics."
+    },
+    {
+        "name": "High School AU",
+        "description": "Characters attend high school—common for fluff, angst, and teenage tension."
+    },
+    {
+        "name": "Hip-hop",
+        "description": "Characters are part of the hip-hop world—rapping, dancing, and street dynamics."
+    },
+    {
+        "name": "Hipsters",
+        "description": "Characters are reimagined as trend-conscious, ironic, coffee-loving urbanites—often used for parody or aesthetic."
+    },
+    {
+        "name": "Historical AU",
+        "description": "Set in a past era—Victorian, medieval, ancient—often involves corsets, swordplay, or repressed desires."
+    },
+    {
+        "name": "Hogwarts",
+        "description": "Characters go to or work at Hogwarts School—magic, teen drama, and house rivalry abound."
+    },
+    {
+        "name": "Holidayfic",
+        "description": "Set during a specific holiday—Christmas, Halloween, Valentine's—usually fluffy or themed smut."
+    },
+    {
+        "name": "Hollywood AU",
+        "description": "Characters are actors, directors, or celebrities navigating fame and behind-the-scenes relationships."
+    },
+    {
+        "name": "Hookerfic",
+        "description": "One or more characters are sex workers—can explore power, vulnerability, or transactional-to-romantic dynamics."
+    },
+    {
+        "name": "Inquisitor AU",
+        "description": "Characters are inquisitors or part of a religious-judicial body—common in dark fantasy, often kink-heavy."
+    },
+    {
+        "name": "Isekai",
+        "description": "Characters are transported to another world, often gaining powers and facing new rules or enemies."
+    },
+    {
+        "name": "Modern AU",
+        "description": "An Alternate Universe (AU) where characters are placed in modern settings, typically with no supernatural elements."
+    },
+    {
+        "name": "Military AU",
+        "description": "An Alternate Universe (AU) where characters are placed in military settings, often exploring themes of hierarchy, discipline, and power dynamics."
+    },
+    {
+        "name": "Mythology AU",
+        "description": "An Alternate Universe (AU) where characters are reimagined as figures from mythology or legends."
+    },
+    {
+        "name": "Noir Detective AU",
+        "description": "An Alternate Universe (AU) that emulates noir detective stories, often with gritty, dark themes and morally ambiguous characters."
+    },
+    {
+        "name": "Medieval AU",
+        "description": "An Alternate Universe (AU) where characters are placed in medieval settings, with themes of knights, castles, and feudal systems."
+    },
+    {
+        "name": "Mundane AU",
+        "description": "An Alternate Universe (AU) where characters exist in a non-supernatural, ordinary setting, often focusing on everyday life."
+    },
+    {
+        "name": "Magic AU",
+        "description": "An Alternate Universe (AU) where magic exists, altering the setting and dynamics of the characters."
+    },
+    {
+        "name": "Military AU",
+        "description": "An Alternate Universe (AU) set in a military context, where characters experience military life and its inherent power dynamics."
+    },
+    {
+        "name": "Modern Royal Family AU",
+        "description": "An Alternate Universe (AU) where characters are part of a modern royal family, dealing with the pressures and privileges of monarchy."
+    },
+    {
+        "name": "Onmyouji",
+        "description": "A trope involving characters who are practitioners of Onmyoudou, an ancient Japanese mystical tradition involving spirits and magic."
+    },
+    {
+        "name": "Punk AU",
+        "description": "An Alternate Universe (AU) where characters exist in a punk-themed world, often involving rebellious attitudes and alternative subcultures."
+    },
+    {
+        "name": "Pirate",
+        "description": "A trope where characters are pirates, often exploring themes of adventure, lawlessness, and swashbuckling romance."
+    },
+    {
+        "name": "Office AU",
+        "description": "An Alternate Universe (AU) where characters work in an office setting, often leading to romantic or sexual tensions in a professional environment."
+    },
+    {
+        "name": "Pacific Rim AU",
+        "description": "An Alternate Universe (AU) based on the 'Pacific Rim' franchise, where characters pilot giant mechs to fight kaiju, often exploring teamwork and loyalty."
+    },
+    {
+        "name": "Pizza Parlor AU",
+        "description": "An Alternate Universe (AU) where characters work or interact in a pizza parlor, typically involving casual, humorous, or romantic dynamics."
+    },
+    {
+        "name": "Priest AU",
+        "description": "An Alternate Universe (AU) where characters are priests, often exploring themes of faith, temptation, and forbidden love."
+    },
+    {
+        "name": "Prison AU",
+        "description": "An Alternate Universe (AU) where characters are placed in a prison setting, often exploring power dynamics, survival, and relationships under extreme circumstances."
+    },
+    {
+        "name": "Boku no Hero Academia AU",
+        "description": "An Alternate Universe (AU) based on the 'Boku no Hero Academia' (My Hero Academia) universe, where characters are re-imagined with superpowers or in different contexts."
+    },
+    {
+        "name": "Religion",
+        "description": "A trope where religious beliefs, practices, or conflicts play a significant role in the plot or character development."
+    },
+    {
+        "name": "Reality TV AU",
+        "description": "An Alternate Universe (AU) where characters are placed in the setting of a reality television show, often leading to drama and competition."
+    },
+    {
+        "name": "Rebellious Royal",
+        "description": "An Alternate Universe (AU) where a royal character rejects or defies their royal duties, often exploring themes of rebellion and personal freedom."
+    },
+    {
+        "name": "Regency AU",
+        "description": "An Alternate Universe (AU) where characters are placed in the Regency period, often with themes of high society, romance, and manners."
+    },
+    {
+        "name": "Retail AU",
+        "description": "An Alternate Universe (AU) where characters work in a retail environment, often leading to humorous, quirky, or romantic situations."
+    },
+    {
+        "name": "Reverse Age AU",
+        "description": "An Alternate Universe (AU) where characters’ ages are reversed, such as an older character becoming younger or vice versa."
+    },
+    {
+        "name": "Rock Star AU",
+        "description": "An Alternate Universe (AU) where characters are re-imagined as rock stars or musicians, exploring fame, romance, and the rock-and-roll lifestyle."
+    },
+    {
+        "name": "Roommates AU",
+        "description": "An Alternate Universe (AU) where characters are roommates, often leading to romantic tension, misunderstandings, and personal growth."
+    },
+    {
+        "name": "Royalty AU",
+        "description": "An Alternate Universe (AU) where characters are royalty, often focusing on power dynamics, politics, and romantic drama."
+    },
+    {
+        "name": "Runaway AU",
+        "description": "An Alternate Universe (AU) where characters run away from home, often for adventure, self-discovery, or to escape certain pressures."
+    },
+    {
+        "name": "Sailor Moon AU",
+        "description": "An Alternate Universe (AU) based on the 'Sailor Moon' universe, where characters take on roles inspired by the series."
+    },
+    {
+        "name": "Same Age AU",
+        "description": "An Alternate Universe (AU) where characters are all the same age, altering the dynamics of their relationships and experiences."
+    },
+    {
+        "name": "Actor AU",
+        "description": "An Alternate Universe (AU) where characters are actors, often exploring fame, the entertainment industry, and romantic entanglements."
+    },
+    {
+        "name": "Serial Killer AU",
+        "description": "An Alternate Universe (AU) where characters are either serial killers or involved in a crime-based narrative, often focusing on suspense and dark themes."
+    },
+    {
+        "name": "Shapeshifter",
+        "description": "An AU where characters have the ability to transform into different creatures or forms, often leading to exploration of identity, freedom, or power."
+    },
+    {
+        "name": "Shinsengumi",
+        "description": "An AU where characters are re-imagined as members of the Shinsengumi, a group of samurai in 19th-century Japan, often focusing on honor, duty, and historical conflicts."
+    },
+    {
+        "name": "Slavefic",
+        "description": "An AU where characters are enslaved or treated as property, often delving into power dynamics, resistance, and liberation."
+    },
+    {
+        "name": "Social Media AU",
+        "description": "An AU where characters interact primarily through social media, often focusing on modern communication, internet culture, and virtual relationships."
+    },
+    {
+        "name": "Space AU",
+        "description": "An AU set in space, often featuring futuristic technology, space exploration, and intergalactic adventure."
+    },
+    {
+        "name": "Spies",
+        "description": "An AU where characters are spies or involved in espionage, often involving covert operations, secret missions, and high-stakes action."
+    },
+    {
+        "name": "Steampunk",
+        "description": "An AU set in an alternate history where steam power drives technology, often blending Victorian aesthetics with advanced machinery and adventure."
+    },
+    {
+        "name": "Sugar Daddy AU",
+        "description": "An AU where one character is financially dominant or supports another character, often leading to themes of power, wealth, and dependency."
+    },
+    {
+        "name": "Tattoo Parlor AU",
+        "description": "An AU where characters work or interact in a tattoo parlor, often exploring artistic expression, body modification, and intimate relationships."
+    }
+]

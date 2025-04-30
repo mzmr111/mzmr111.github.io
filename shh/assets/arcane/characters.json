@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Victor",
+        "gender": "male",
+        "image": "assets/arcane/img/viktor.jpg"
+    },
+    {
+        "name": "Jayce",
+        "gender": "male",
+        "image": "assets/arcane/img/jayce.jpg"
+    },
+    {
+        "name": "Mel",
+        "gender": "female",
+        "image": "assets/arcane/img/mel.jpg"
+    },
+    {
+        "name": "Kate",
+        "gender": "female",
+        "image": "assets/arcane/img/kate.jpg"
+    },
+    {
+        "name": "Vi",
+        "gender": "female",
+        "image": "assets/arcane/img/vi.jpg"
+    }
+]

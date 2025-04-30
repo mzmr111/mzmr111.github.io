@@ -55,21 +55,35 @@
     let aus = [];
     let ficKeywords = [];
     
+
+    const fetchWithLog = (url) => 
+      fetch(url)
+        .then(r => {
+          if (!r.ok) throw new Error(`Failed to load ${url}: ${r.status}`);
+          return r.json();
+        })
+        .catch(err => {
+          console.error(`Error loading ${url}:`, err);
+          throw err; // re-throw so Promise.all can still catch it
+        });
+
     Promise.all([
-      fetch('assets/bleach/characters.json').then(r => r.json()),
-      fetch('assets/genres.json').then(r => r.json()),
-      fetch('assets/kinks.json').then(r => r.json()),
-      fetch('assets/tropes.json').then(r => r.json()),
-      fetch('assets/au.json').then(r => r.json()),
-      fetch('assets/keywords.json').then(r => r.json())
-    ]).then(([charData, genreData, kinkData, tropeData, auData, keywordData]) => {
+      fetchWithLog(`assets/bleach/characters.json`),
+      fetchWithLog('assets/genres.json'),
+      fetchWithLog('assets/kinks.json'),
+      fetchWithLog('assets/tropes.json'),
+      fetchWithLog('assets/au.json'),
+      fetchWithLog('assets/keywords.json')
+    ])
+    .then(([charData, genreData, kinkData, tropeData, auData, keywordData]) => {
       characters = charData;
       genres = genreData;
       kinks = kinkData;
       tropes = tropeData;
       aus = auData;
       ficKeywords = keywordData;
-    }).catch(error => {
+    })
+    .catch(error => {
       console.error('Error loading data:', error);
     });
 

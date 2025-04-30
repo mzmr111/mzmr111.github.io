@@ -1,0 +1,210 @@
+[
+    {
+        "name": "Выживание",
+        "description": "Работа сосредоточена на борьбе персонажа или группы персонажей с неблагоприятными обстоятельствами или другими персонажами в попытках выжить."
+    },
+    {
+        "name": "Character study",
+        "description": "Работа исследует отдельно взятого персонажа с существенным упором на глубинное изучение скорее внутренних, чем внешних конфликтов."
+    },
+    {
+        "name": "Сказка",
+        "description": "Эпическое, преимущественно прозаическое произведение волшебного, героического или бытового характера. Сказку характеризует отсутствие претензий на историчность повествования, нескрываемая вымышленность сюжета."
+    },
+    {
+        "name": "Крэк",
+        "description": "Работа строится на несуразном, курьезном допущении, персонажах, попадающих в чрезвычайно абсурдные ситуации, или в целом содержит невероятные, неверибельные или попросту смехотворные элементы. Такие работы характеризуются юмористическим тоном и заведомо несерьезным подходом к происходящему."
+    },
+    {
+        "name": "Ужасы",
+        "description": "Работа написана в жанре ужасов и создаёт психологическое напряжение за счёт страхов и эмоциональной нестабильности персонажей. Обычно играет на чувстве неизвестности, создающемся за счёт опасностей, встречающихся на пути персонажа."
+    },
+    {
+        "name": "Сюрреализм / Фантасмагория",
+        "description": "Работа сосредоточена на создании мира, полного причудливых и фантастичных, умышленно нелогичных образов, призванных отразить психологическое состояние персонажа или персонажей."
+    },
+    {
+        "name": "Мелодрама",
+        "description": "Работа сосредоточена на духовном и чувственном мире героев в ярких эмоциональных обстоятельствах. Основное внимание в таких работах уделяется эмоциям и чувствам, переживаниям различных семейных тем: знакомство, отношения, любовь, женитьба, перипетии семейной жизни. В работе могут встречаться трагичные сцены, но завершается она, как правило, счастливым концом."
+    },
+    {
+        "name": "Семейная сага",
+        "description": "Работа сосредоточена на описании жизни нескольких поколений одного семейства."
+    },
+    {
+        "name": "Элементы юмора / Элементы стёба",
+        "description": "В работе присутствуют элементы юмора, однако текст не сосредоточен на них. Чаще всего используется для разрядки напряженных ситуаций."
+    },
+    {
+        "name": "Кроссовер",
+        "description": "Жанр, в котором персонажи из одной вселенной или произведения переносятся в другой тайтл, встречают новых персонажей и адаптируются к новым условиям."
+    },
+    {
+        "name": "Songfic",
+        "description": "Сюжет и развитие событий в работе вдохновлены или построены вокруг определенной песни. Текст и эмоции героев развиваются через музыку, создавая глубокую связь между песней и событиями истории."
+    },
+    {
+        "name": "Трагикомедия",
+        "description": "Драматическая работа, сочетающая в себе черты трагедии и комедии."
+    },
+    {
+        "name": "Ситком",
+        "description": "Работа юмористического характера, сосредоточенная на эпизодах из жизни группы персонажей, связанных дружескими и/или романтическими отношениями."
+    },
+    {
+        "name": "Нуар",
+        "description": "Работа характеризуется общей мрачной атмосферой в стилистике середины 40-х Америки, криминальной или детективной составляющей и серой моралью."
+    },
+    {
+        "name": "Притча",
+        "description": "Короткий назидательный рассказ в иносказательной форме, заключающий в себе нравственное поучение (мораль)."
+    },
+    {
+        "name": "Erotica",
+        "description": "Narratives focused heavily on sexual content and exploration without necessarily involving romance."
+    },
+    {
+        "name": "Fan Service",
+        "description": "Scenes or dialogue added solely to titillate the audience, often breaking realism to indulge fantasies."
+    },
+    {
+        "name": "PWP",
+        "description": "Short for 'Plot? What Plot?', a trope where the focus is on explicit sexual encounters rather than a detailed plot."
+    },
+    {
+        "name": "Skit",
+        "description": "A genre focused on short, humorous, or dramatic scenes, often featuring witty dialogue or absurd situations."
+    },
+    {
+        "name": "Slice of Life",
+        "description": "A genre that depicts the everyday lives of characters, often focusing on mundane but emotionally significant moments."
+    },
+    {
+        "name": "Tragedy",
+        "description": "A genre that centers on sorrow, loss, and despair, often leading to a poignant or heartbreaking conclusion."
+    },
+    {
+        "name": "Action/Adventure",
+        "description": "Stories focused on exciting physical action or high-stakes adventure, often with battles or missions."
+    },
+    {
+        "name": "Angst",
+        "description": "Emotionally intense stories often featuring pain, heartbreak, or trauma."
+    },
+    {
+        "name": "Coming of Age (genre)",
+        "description": "Stories that follow a character's emotional or psychological growth from youth to maturity."
+    },
+    {
+        "name": "Dark Romance (genre)",
+        "description": "Romantic stories with morally gray characters, power imbalances, or taboo dynamics."
+    },
+    {
+        "name": "Drama (genre)",
+        "description": "Emotionally intense narratives with interpersonal conflict and character development."
+    },
+    {
+        "name": "Erotica",
+        "description": "Narratives focused primarily on explicit sexual content, often with minimal plot."
+    },
+    {
+        "name": "Fluff",
+        "description": "Lighthearted, feel-good content with low conflict and lots of affection."
+    },
+    {
+        "name": "Mystery (genre)",
+        "description": "Stories revolving around a mystery to be solved—can include romance or smut."
+    },
+    {
+        "name": "Romance",
+        "description": "Central focus on a romantic relationship, from meet-cute to full-blown love story."
+    },
+    {
+        "name": "Slice of Life (genre)",
+        "description": "Realistic depictions of everyday experiences and relationships, often domestic and character-driven."
+    },
+    {
+        "name": "Action/Adventure",
+        "description": "Stories focused on exciting physical action or high-stakes adventure, often with battles or missions."
+    },
+    {
+        "name": "Angst",
+        "description": "Emotionally intense stories often featuring pain, heartbreak, or trauma."
+    },
+    {
+        "name": "Anywhere But Here (genre)",
+        "description": "A desire to escape reality—characters yearn to be elsewhere, physically or emotionally."
+    },
+    {
+        "name": "Coming of Age (genre)",
+        "description": "Stories that follow a character's emotional or psychological growth from youth to maturity."
+    },
+    {
+        "name": "Dark Romance (genre)",
+        "description": "Romantic stories with morally gray characters, power imbalances, or taboo dynamics."
+    },
+    {
+        "name": "Drama (genre)",
+        "description": "Emotionally intense narratives with interpersonal conflict and character development."
+    },
+    {
+        "name": "Erotica",
+        "description": "Narratives focused primarily on explicit sexual content, often with minimal plot."
+    },
+    {
+        "name": "Fluff",
+        "description": "Lighthearted, feel-good content with low conflict and lots of affection."
+    },
+    {
+        "name": "Mystery (genre)",
+        "description": "Stories revolving around a mystery to be solved—can include romance or smut."
+    },
+    {
+        "name": "Romance",
+        "description": "Central focus on a romantic relationship, from meet-cute to full-blown love story."
+    },
+    {
+        "name": "Slice of Life (genre)",
+        "description": "Realistic depictions of everyday experiences and relationships, often domestic and character-driven."
+    },
+    {
+        "name": "Darkfic",
+        "description": "Stories that delve into dark themes—violence, non-con, trauma—often lacking a happy ending."
+    },
+    {
+        "name": "Drama (genre)",
+        "description": "Emotionally intense narratives with interpersonal conflict and character development."
+    },
+    {
+        "name": "Fusion (genre)",
+        "description": "Merges characters into a different canon's setting or world while keeping their original personalities."
+    },
+    {
+        "name": "Imagine (genre)",
+        "description": "Fics written in second person or as reader-insert scenarios, often immersive and personalized."
+    },
+    {
+        "name": "Magical Realism",
+        "description": "A genre where magical elements are a natural part of the world and are treated as ordinary."
+    },
+    {
+        "name": "Mystery",
+        "description": "A genre focused on solving a puzzle, often involving a detective or investigator uncovering secrets."
+    },
+    {
+        "name": "POV",
+        "description": "A genre where the story is told from a specific character's point of view, often used to create intimacy or subjectivity."
+    },
+    {
+        "name": "Romance",
+        "description": "A genre focused on the development of romantic relationships between characters."
+    },
+    {
+        "name": "Romantic Comedy",
+        "description": "A genre that blends romance with humor, often focusing on quirky characters and amusing situations."
+    },
+    {
+        "name": "Angst",
+        "description": "Emotionally intense stories often featuring pain, heartbreak, or trauma."
+    }
+]
