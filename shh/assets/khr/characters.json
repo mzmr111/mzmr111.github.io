@@ -1,0 +1,132 @@
+[
+    {
+        "name": "Tsuna Sawada",
+        "gender": "male",
+        "image": "assets/khr/img/tsuna.jpg"
+    },
+    {
+        "name": "Reborn",
+        "gender": "male",
+        "image": "assets/khr/img/reborn.jpg"
+    },
+    {
+        "name": "Gokudera Hayato",
+        "gender": "male",
+        "image": "assets/khr/img/gokudera.jpg"
+    },
+    {
+        "name": "Yamamoto Takeshi",
+        "gender": "male",
+        "image": "assets/khr/img/yamamoto.jpg"
+    },
+    {
+        "name": "Ryohei Sasagawa",
+        "gender": "male",
+        "image": "assets/khr/img/ryohei.jpg"
+    },
+    {
+        "name": "Kyoko Sasagawa",
+        "gender": "female",
+        "image": "assets/khr/img/kyoko.jpg"
+    },
+    {
+        "name": "Haru Miura",
+        "gender": "female",
+        "image": "assets/khr/img/haru.jpg"
+    },
+    {
+        "name": "Lambo",
+        "gender": "male",
+        "image": "assets/khr/img/lambo.jpg"
+    },
+    {
+        "name": "Bianchi",
+        "gender": "female",
+        "image": "assets/khr/img/bianchi.jpg"
+    },
+    {
+        "name": "Fran",
+        "gender": "male",
+        "image": "assets/khr/img/fran.jpg"
+    },
+    {
+        "name": "Viper",
+        "gender": "male",
+        "image": "assets/khr/img/viper.jpg"
+    },
+    {
+        "name": "Chrome Dokuro",
+        "gender": "female",
+        "image": "assets/khr/img/chrome.jpg"
+    },
+    {
+        "name": "Mukuro Rokudo",
+        "gender": "male",
+        "image": "assets/khr/img/mukuro.jpg"
+    },
+    {
+        "name": "Irie Shouichi",
+        "gender": "male",
+        "image": "assets/khr/img/irie.jpg"
+    },
+    {
+        "name": "Byakuran",
+        "gender": "male",
+        "image": "assets/khr/img/byakuran.jpg"
+    },
+    {
+        "name": "Squalo",
+        "gender": "male",
+        "image": "assets/khr/img/squalo.jpg"
+    },
+    {
+        "name": "Belphegor",
+        "gender": "male",
+        "image": "assets/khr/img/belphegor.jpg"
+    },
+    {
+        "name": "Mammon",
+        "gender": "male",
+        "image": "assets/khr/img/mammon.jpg"
+    },
+    {
+        "name": "Hibari Kyoya",
+        "gender": "male",
+        "image": "assets/khr/img/hibari.jpg"
+    },
+    {
+        "name": "Lussuria",
+        "gender": "male",
+        "image": "assets/khr/img/lussuria.jpg"
+    },
+    {
+        "name": "Basil",
+        "gender": "male",
+        "image": "assets/khr/img/basil.jpg"
+    },
+    {
+        "name": "Vongola Primo (Giotto)",
+        "gender": "male",
+        "image": "assets/khr/img/primo.jpg"
+    },
+    {
+        "name": "Genkishi",
+        "gender": "male",
+        "image": "assets/khr/img/genkishi.jpg"
+    },
+    {
+        "name": "Spanner",
+        "gender": "male",
+        "image": "assets/khr/img/spanner.jpg"
+    },
+    {
+        "name": "Francesca",
+        "gender": "female",
+        "image": "assets/khr/img/francesca.jpg"
+    },
+    {
+        "name": "Aria",
+        "gender": "female",
+        "image": "assets/khr/img/aria.jpg"
+    }
+]
