@@ -100,11 +100,6 @@
         "image": "assets/khr/img/lussuria.jpg"
     },
     {
-        "name": "Basil",
-        "gender": "male",
-        "image": "assets/khr/img/basil.jpg"
-    },
-    {
         "name": "Vongola Primo (Giotto)",
         "gender": "male",
         "image": "assets/khr/img/primo.jpg"
@@ -118,11 +113,6 @@
         "name": "Spanner",
         "gender": "male",
         "image": "assets/khr/img/spanner.jpg"
-    },
-    {
-        "name": "Francesca",
-        "gender": "female",
-        "image": "assets/khr/img/francesca.jpg"
     },
     {
         "name": "Aria",
