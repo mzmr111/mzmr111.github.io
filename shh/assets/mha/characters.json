@@ -1,0 +1,277 @@
+[
+    {
+        "name": "Izuku Midoriya",
+        "gender": "male",
+        "image": "assets/mha/img/midoriya.jpg"
+    },
+    {
+        "name": "Katsuki Bakugo",
+        "gender": "male",
+        "image": "assets/mha/img/bakugo.jpg"
+    },
+    {
+        "name": "Shoto Todoroki",
+        "gender": "male",
+        "image": "assets/mha/img/todoroki.jpg"
+    },
+    {
+        "name": "Ochaco Uraraka",
+        "gender": "female",
+        "image": "assets/mha/img/uraraka.jpg"
+    },
+    {
+        "name": "Tenya Iida",
+        "gender": "male",
+        "image": "assets/mha/img/iida.jpg"
+    },
+    {
+        "name": "Tsuyu Asui",
+        "gender": "female",
+        "image": "assets/mha/img/asui.jpg"
+    },
+    {
+        "name": "Momo Yaoyorozu",
+        "gender": "female",
+        "image": "assets/mha/img/yaoyorozu.jpg"
+    },
+    {
+        "name": "Eijiro Kirishima",
+        "gender": "male",
+        "image": "assets/mha/img/kirishima.jpg"
+    },
+    {
+        "name": "Denki Kaminari",
+        "gender": "male",
+        "image": "assets/mha/img/kaminari.jpg"
+    },
+    {
+        "name": "Mina Ashido",
+        "gender": "female",
+        "image": "assets/mha/img/ashido.jpg"
+    },
+    {
+        "name": "Fumikage Tokoyami",
+        "gender": "male",
+        "image": "assets/mha/img/tokoyami.jpg"
+    },
+    {
+        "name": "Kyoka Jiro",
+        "gender": "female",
+        "image": "assets/mha/img/jiro.jpg"
+    },
+    {
+        "name": "Mezo Shoji",
+        "gender": "male",
+        "image": "assets/mha/img/shoji.jpg"
+    },
+    {
+        "name": "Hanta Sero",
+        "gender": "male",
+        "image": "assets/mha/img/sero.jpg"
+    },
+    {
+        "name": "Mashirao Ojiro",
+        "gender": "male",
+        "image": "assets/mha/img/ojiro.jpg"
+    },
+    {
+        "name": "Yuga Aoyama",
+        "gender": "male",
+        "image": "assets/mha/img/aoyama.jpg"
+    },
+    {
+        "name": "Toru Hagakure",
+        "gender": "female",
+        "image": "assets/mha/img/hagakure.jpg"
+    },
+    {
+        "name": "Minoru Mineta",
+        "gender": "male",
+        "image": "assets/mha/img/mineta.jpg"
+    },
+    {
+        "name": "All Might",
+        "gender": "male",
+        "image": "assets/mha/img/allmight.jpg"
+    },
+    {
+        "name": "Aizawa Shouta",
+        "gender": "male",
+        "image": "assets/mha/img/aizawa.jpg"
+    },
+    {
+        "name": "Endeavor",
+        "gender": "male",
+        "image": "assets/mha/img/endeavor.jpg"
+    },
+    {
+        "name": "Hawks",
+        "gender": "male",
+        "image": "assets/mha/img/hawks.jpg"
+    },
+    {
+        "name": "Mirko",
+        "gender": "female",
+        "image": "assets/mha/img/mirko.jpg"
+    },
+    {
+        "name": "Mt. Lady",
+        "gender": "female",
+        "image": "assets/mha/img/mtlady.jpg"
+    },
+    {
+        "name": "Present Mic",
+        "gender": "male",
+        "image": "assets/mha/img/presentmic.jpg"
+    },
+    {
+        "name": "Tomura Shigaraki",
+        "gender": "male",
+        "image": "assets/mha/img/shigaraki.jpg"
+    },
+    {
+        "name": "Dabi",
+        "gender": "male",
+        "image": "assets/mha/img/dabi.jpg"
+    },
+    {
+        "name": "Toga Himiko",
+        "gender": "female",
+        "image": "assets/mha/img/toga.jpg"
+    },
+    {
+        "name": "Twice",
+        "gender": "male",
+        "image": "assets/mha/img/twice.jpg"
+    },
+    {
+        "name": "Spinner",
+        "gender": "male",
+        "image": "assets/mha/img/spinner.jpg"
+    },
+    {
+        "name": "Mr. Compress",
+        "gender": "male",
+        "image": "assets/mha/img/compress.jpg"
+    },
+    {
+        "name": "Gigantomachia",
+        "gender": "male",
+        "image": "assets/mha/img/gigantomachia.jpg"
+    },
+    {
+        "name": "Nejire Hado",
+        "gender": "female",
+        "image": "assets/mha/img/nejire.jpg"
+    },
+    {
+        "name": "Tamaki Amajiki",
+        "gender": "male",
+        "image": "assets/mha/img/tamaki.jpg"
+    },
+    {
+        "name": "Mirio Togata",
+        "gender": "male",
+        "image": "assets/mha/img/mirio.jpg"
+    },
+    {
+        "name": "Overhaul (Kai Chisaki)",
+        "gender": "male",
+        "image": "assets/mha/img/overhaul.jpg"
+    },
+    {
+        "name": "Hitoshi Shinsou",
+        "gender": "male",
+        "image": "assets/mha/img/shinsou.jpg"
+    },
+    {
+        "name": "Itsuka Kendo",
+        "gender": "female",
+        "image": "assets/mha/img/kendo.jpg"
+    },
+    {
+        "name": "Neito Monoma",
+        "gender": "male",
+        "image": "assets/mha/img/monoma.jpg"
+    },
+    {
+        "name": "Tetsutetsu Tetsutetsu",
+        "gender": "male",
+        "image": "assets/mha/img/tetsutetsu.jpg"
+    },
+    {
+        "name": "Ibara Shiozaki",
+        "gender": "female",
+        "image": "assets/mha/img/shiozaki.jpg"
+    },
+    {
+        "name": "Juzo Honenuki",
+        "gender": "male",
+        "image": "assets/mha/img/honenuki.jpg"
+    },
+    {
+        "name": "Kosei Tsuburaba",
+        "gender": "male",
+        "image": "assets/mha/img/tsuburaba.jpg"
+    },
+    {
+        "name": "Yui Kodai",
+        "gender": "female",
+        "image": "assets/mha/img/kodai.jpg"
+    },
+    {
+        "name": "Kinoko Komori",
+        "gender": "female",
+        "image": "assets/mha/img/komori.jpg"
+    },
+    {
+        "name": "Manga Fukidashi",
+        "gender": "male",
+        "image": "assets/mha/img/fukidashi.jpg"
+    },
+    {
+        "name": "Nirengeki Shoda",
+        "gender": "male",
+        "image": "assets/mha/img/shoda.jpg"
+    },
+    {
+        "name": "Togaru Kamakiri",
+        "gender": "male",
+        "image": "assets/mha/img/kamakiri.jpg"
+    },
+    {
+        "name": "Reiko Yanagi",
+        "gender": "female",
+        "image": "assets/mha/img/yanagi.jpg"
+    },
+    {
+        "name": "Pony Tsunotori",
+        "gender": "female",
+        "image": "assets/mha/img/tsunotori.jpg"
+    },
+    {
+        "name": "Kojiro Bondo",
+        "gender": "male",
+        "image": "assets/mha/img/bondo.jpg"
+    },
+    {
+        "name": "Shihai Kuroiro",
+        "gender": "male",
+        "image": "assets/mha/img/kuroiro.jpg"
+    },
+    {
+        "name": "Hiryu Rin",
+        "gender": "male",
+        "image": "assets/mha/img/rin.jpg"
+    },
+    {
+        "name": "Jurota Shishida",
+        "gender": "male",
+        "image": "assets/mha/img/shishida.jpg"
+    },
+    {
+        "name": "Setsuna Tokage",
+        "gender": "female",
+        "image": "assets/mha/img/tokage.jpg"
+    }
+]
