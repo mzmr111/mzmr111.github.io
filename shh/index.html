@@ -287,10 +287,7 @@
             <div class="side-chars">
               ${sideCharacters.map(c => `
                 <div class="char">
-                  <div class="char">
-                    <img src="${c.image}" alt="${c.name}" class="char-icon" onerror="this.onerror=null;this.src='assets/noicon.jpg';">
-                    <p>${c.name}</p>
-                  </div>
+                  <img src="${c.image}" alt="${c.name}" class="char-icon" onerror="this.onerror=null;this.src='assets/noicon.jpg';">
                   <p>${c.name}</p>
                 </div>
               `).join('')}
