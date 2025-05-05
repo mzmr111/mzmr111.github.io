@@ -126,6 +126,11 @@ button.submit-btn:hover {
 }
 
 .char-icon {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: 0.3s ease;
   border: 3px solid #ff4fa2;
   box-shadow: 0 8px 20px rgba(255, 105, 180, 0.3);
 }
