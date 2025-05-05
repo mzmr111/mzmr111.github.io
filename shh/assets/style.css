@@ -49,7 +49,7 @@ form {
   background: #1e1e1e;
   padding: 2em;
   border-radius: 1em;
-  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 20px rgba(255, 105, 180, 0.1);
   margin-bottom: 2em;
 }
 
@@ -126,7 +126,7 @@ button.submit-btn:hover {
   background: #1e1e1e;
   padding: 2em;
   border-radius: 1em;
-  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 20px rgba(255, 105, 180, 0.1);
 }
 
 .relationship {
@@ -236,7 +236,6 @@ button.submit-btn:hover {
 .info-row {
   display: flex;
   margin: 5px 0;
-  border: 0.1em dashed #ff87d0;	
 }
 
 .info-label {
@@ -266,6 +265,7 @@ span.info-description {
   width: auto;
   border: none;
   font-size: 1rem;
+  background: #222;
 }
 
 .refresh-btn:hover {
