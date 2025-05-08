@@ -1,0 +1,167 @@
+[
+    {
+        "name": "Haruka Sakura",
+        "gender": "male",
+        "image": "assets/windbreaker/img/haruka_sakura.jpg"
+    },
+    {
+        "name": "Akihiko Nirei",
+        "gender": "male",
+        "image": "assets/windbreaker/img/akihiko_nirei.jpg"
+    },
+    {
+        "name": "Hayato Suo",
+        "gender": "male",
+        "image": "assets/windbreaker/img/hayato_suo.jpg"
+    },
+    {
+        "name": "Taiga Tsugeura",
+        "gender": "male",
+        "image": "assets/windbreaker/img/taiga_tsugeura.jpg"
+    },
+    {
+        "name": "Mitsuki Kiryu",
+        "gender": "male",
+        "image": "assets/windbreaker/img/mitsuki_kiryu.jpg"
+    },
+    {
+        "name": "Kyotaro Sugishita",
+        "gender": "male",
+        "image": "assets/windbreaker/img/kyotaro_sugishita.jpg"
+    },
+    {
+        "name": "Ren Kaji",
+        "gender": "male",
+        "image": "assets/windbreaker/img/ren_kaji.jpg"
+    },
+    {
+        "name": "Takeshi Enomoto",
+        "gender": "male",
+        "image": "assets/windbreaker/img/takeshi_enomoto.jpg"
+    },
+    {
+        "name": "Yuto Kusumi",
+        "gender": "male",
+        "image": "assets/windbreaker/img/yuto_kusumi.jpg"
+    },
+    {
+        "name": "Uryu Sakaki",
+        "gender": "male",
+        "image": "assets/windbreaker/img/uryu_sakaki.jpg"
+    },
+    {
+        "name": "Seiryu Sakaki",
+        "gender": "male",
+        "image": "assets/windbreaker/img/seiryu_sakaki.jpg"
+    },
+    {
+        "name": "Hajime Umemiya",
+        "gender": "male",
+        "image": "assets/windbreaker/img/hajime_umemiya.jpg"
+    },
+    {
+        "name": "Toma Hiragi",
+        "gender": "male",
+        "image": "assets/windbreaker/img/toma_hiragi.jpg"
+    },
+    {
+        "name": "Tasuku Tsubakino",
+        "gender": "male",
+        "image": "assets/windbreaker/img/tasuku_tsubakino.jpg"
+    },
+    {
+        "name": "Saku Mizuki",
+        "gender": "male",
+        "image": "assets/windbreaker/img/saku_mizuki.jpg"
+    },
+    {
+        "name": "Takumi Momose",
+        "gender": "male",
+        "image": "assets/windbreaker/img/takumi_momose.jpg"
+    },
+    {
+        "name": "Choji Tomiyama",
+        "gender": "male",
+        "image": "assets/windbreaker/img/choji_tomiyama.jpg"
+    },
+    {
+        "name": "Jo Togame",
+        "gender": "male",
+        "image": "assets/windbreaker/img/jo_togame.jpg"
+    },
+    {
+        "name": "Minoru Kanuma",
+        "gender": "male",
+        "image": "assets/windbreaker/img/minoru_kanuma.jpg"
+    },
+    {
+        "name": "Yukinari Arima",
+        "gender": "male",
+        "image": "assets/windbreaker/img/yukinari_arima.jpg"
+    },
+    {
+        "name": "Kota Sako",
+        "gender": "male",
+        "image": "assets/windbreaker/img/kota_sako.jpg"
+    },
+    {
+        "name": "Teruomi Inugami",
+        "gender": "male",
+        "image": "assets/windbreaker/img/teruomi_inugami.jpg"
+    },
+    {
+        "name": "Shingo Natori",
+        "gender": "male",
+        "image": "assets/windbreaker/img/shingo_natori.jpg"
+    },
+    {
+        "name": "Shuhei Suzuri",
+        "gender": "male",
+        "image": "assets/windbreaker/img/shuhei_suzuri.jpg"
+    },
+    {
+        "name": "Kanji Nakamura",
+        "gender": "male",
+        "image": "assets/windbreaker/img/kanji_nakamura.jpg"
+    },
+    {
+        "name": "Akihito Miyoshi",
+        "gender": "male",
+        "image": "assets/windbreaker/img/akihito_miyoshi.jpg"
+    },
+    {
+        "name": "Yamato Endo",
+        "gender": "male",
+        "image": "assets/windbreaker/img/yamato_endo.jpg"
+    },
+    {
+        "name": "Chika Takiishi",
+        "gender": "male",
+        "image": "assets/windbreaker/img/chika_takiishi.jpg"
+    },
+    {
+        "name": "Kanon Banjo",
+        "gender": "male",
+        "image": "assets/windbreaker/img/kanon_banjo.jpg"
+    },
+    {
+        "name": "Kaito Obiki",
+        "gender": "male",
+        "image": "assets/windbreaker/img/kaito_obiki.jpg"
+    },
+    {
+        "name": "Kotoha Tachibana",
+        "gender": "female",
+        "image": "assets/windbreaker/img/kotoha_tachibana.jpg"
+    },
+    {
+        "name": "Nagato",
+        "gender": "male",
+        "image": "assets/windbreaker/img/nagato.jpg"
+    },
+    {
+        "name": "Shizuka Narita",
+        "gender": "female",
+        "image": "assets/windbreaker/img/shizuka_narita.jpg"
+    }
+]
