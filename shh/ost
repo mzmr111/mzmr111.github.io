@@ -1,0 +1,694 @@
+<style>
+body {
+  background: #0d0d0d;
+  font-family: "Courier New", monospace;
+  color: #eee;
+  margin: 0;
+  padding: 2rem;
+  background-image: linear-gradient(145deg, #111 30%, #222 100%);
+}
+
+.mixtape {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+  border: 2px solid #444;
+  border-radius: 12px;
+  background: #1a1a1a;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+}
+
+.mixtape h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #fefefe;
+  text-shadow: 0 0 5px #cc00ff;
+  letter-spacing: 2px;
+}
+
+.category {
+  margin-bottom: 3rem;
+}
+
+h2.category {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #cc00ff;
+  border-bottom: 1px solid #cc00ff33;
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.track {
+  background: #141414;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid #cc00ff;
+  margin-bottom: 1.5rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.track:hover {
+  background: #1f1f1f;
+  transform: translateX(5px) scale(1.01);
+  box-shadow: 0 0 8px rgba(204, 0, 255, 0.3),
+    0 0 20px rgba(102, 255, 255, 0.1);
+  filter: contrast(1.2) brightness(1.1);
+}
+
+.track::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.015), transparent);
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.meta {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 0.5rem;
+}
+
+.character {
+  font-size: 1.4rem;
+  color: #fff;
+  margin: 0;
+}
+
+.song {
+  font-style: italic;
+  color: #ff66cc;
+  margin: 0.2rem 0;
+}
+
+.youtube {
+  color: #66ccff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-bottom: 0.3rem;
+}
+
+.youtube:hover {
+  text-decoration: underline;
+}
+
+.quote {
+  font-size: 0.8rem;
+  color: #aaa;
+  border-left: 3px solid #444;
+  padding-left: 0.7rem;
+  margin: 0.5rem 0;
+}
+
+.desc {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+</style>
+<div class="mixtape">
+  <h1>Bleach Headcanon OST</h1>
+  <h2 class="category">Shinigami</h2>
+  <div class="track">
+  <div class="meta">
+    <h3 class="character">&gt;Айзен Соске</h3>
+    <p class="song">Massive Attack — Angel</p>
+    <p>
+      <a
+        class="youtube"
+        href="https://www.youtube.com/watch?v=66A_3uwuZ_I"
+        rel="nofollow"
+        >▶ Слушать на YouTube</a
+      >
+    </p>
+    <p class="quote">"You are my angel<br />
+Come from way above"</p>
+    <p class="desc">Да, ангел, правда. Библейски-точных ангелов представили? Это уже преображенный Хогиоку Айзен почти потерявший человеческий облик. Он не замечает ничего вокруг, потому что ничто не имеет для него значения. Говорят, ангелы являются людям в человеческом облике, потому что человек слаб и не выдержит истинного видения… вот только Айзен больше не пытается казаться человеком.</p>
+  </div>
+</div>
+  <div class="track">
+    <div class="meta">
+      <h3 class="character">&gt;Зараки Кенпачи</h3>
+      <p class="song">Slipknot — Duality</p>
+      <p>
+        <a
+          class="youtube"
+          href="https://www.youtube.com/watch?v=6fVE8kSM43I"
+          rel="nofollow"
+          >▶ Слушать на Youtube</a
+        >
+      </p>
+      <p class="quote">"I guess I'll save the best for last<br />
+My future seems like one big past<br />
+You're left with me 'cause you left me no choice"</p>
+      <p class="desc">Хотелось немного другой стороны Зараки — где он выпивает с отрядом, укутывает Ячирку, по-отечески гоняет сержантов, но сердце привело к довольно очевидному, но, как мне кажется довольно точному варианту. Тому Зараки, который ищет сильных и не может сдержаться когда кто-то встает на его пути… но все же и эта его любимая мной дуальность на месте, хоть здесь она и за кадром.</p>
+    </div>
+  </div>
+  <div class="track">
+    <div class="meta">
+      <h3 class="character">&gt;Ичимару Гин</h3>
+      <p class="song">Дельфин — Весна</p>
+      <p>
+        <a
+          class="youtube"
+          href="https://www.youtube.com/watch?v=P47V4SASwGc"
+          rel="nofollow"
+          >▶ Слушать на YouTube</a
+        >
+      </p>
+      <p class="quote">"Мы обязательно встретимся, слышишь меня?<br />
+Прости"</p>
+      <p class="desc">Боженька видит я не собиралась, но искуственный интеллект победил настоящий. Я всего лишь хотела отсортировать список и добавить разметку, а ии-чат почему-то дописал туда Гина, и попал прямо в точку. Всем, кому стало больно не приношу никаких извинений, во всем виноват ИИ.</p>
+    </div>
+  </div>
+  <div class="track">
+    <div class="meta">
+      <h3 class="character">&gt;Кира Изуру</h3>
+      <p class="song">Hurt — Nine Inch Nails</p>
+      <p>
+        <a
+          class="youtube"
+          href="https://www.youtube.com/watch?v=acvs0DbsD_g"
+          rel="nofollow"
+          >▶ Слушать на YouTube</a
+        >
+        <p class="quote">"What have I become?<br />
+My sweetest friend<br />
+Everyone I know<br />
+Goes away in the end"</p>
+        <p class="desc">Больной, изломанный Кира потерявший многих и почти потерявший себя (держу его в ладошках бережно)</p>
+      </p>
+    </div>
+  </div>
+  <div class="track">
+    <div class="meta">
+      <h3 class="character">&gt;Куросаки Ичиго</h3>
+      <p class="song">Shinedown — Monsters</p>
+      <p>
+        <a
+          class="youtube"
+          href="https://www.youtube.com/watch?v=J6sIK2KnhH8"
+          rel="nofollow"
+          >▶ Слушать на Youtube</a
+        >
+      </p>
+      <p class="quote">
+        "Cause my monsters are real, and they're trained how to kill<br />
+        And there's no comin' back and they just laugh at how I feel<br />
+        And these monsters can fly, and they'll never say die<br />
+        And there's no goin' back, if I get trapped I'll never heal"
+      </p>
+      <p class="desc">Это та часть Куросаки Ичиго которая боится собственной силы, рожденной в нем, живущей в нем и рвущейся на волю. Он знает: пути назад уже нет. Поэтому вместо того, чтобы бороться с монстрами… он решает их возглавить.</p>
+    </div>
+  </div>
+  <div class="track">
+    <div class="meta">
+      <h3 class="character">&gt;Кучики Бьякуя</h3>
+      <p class="song">ASA-CHANG&amp;JUNRAY — Hana</p>
+      <p>
+        <a
+          class="youtube"
+          href="https://www.youtube.com/watch?v=sPrQ6HSQkAc"
+          rel="nofollow"
+          >▶ Слушать на Youtube</a
+        >
+      </p>
+      <p class="quote">"誰も見たことない花が咲いていたよ<br />
+И зацвели цветы, которые, казалось, не могли зацвести."</p>
+      <p class="desc">Здесь Бьякуя для меня в вязком ритме, в отзвуках традиционных инструментов. Уже переросший себя-беззаботного подростка, верный принципам и чести клана. Но даже в этом есть движение, есть перемена. Мягко, почти незаметно, он отходит от холодной верности принципам — направляя их не в ущерб близким, а ради них. Его песня — почти-статичная, сбивчивая, как шаг в нерешительности. И всё же в ней — медленно опадающие лепестки и внутренний сдвиг.</p>
+    </div>
+  </div>
+  <div class="track">
+    <div class="meta">
+      <h3 class="character">&gt;Маюри Куроцучи</h3>
+      <p class="song">Marilyn Manson - This Is The New Shit</p>
+      <p>
+        <a
+          class="youtube"
+          href="https://www.youtube.com/watch?v=4kQMDSw3Aqo"
+          rel="nofollow"
+          >▶ Слушать на Youtube</a
+        >
+      </p>
+      <p class="desc">Парничек с Заэлем</p>
+    </div>
+  </div>
+  <div class="track">
+    <div class="meta">
+      <h3 class="character">&gt;Оторибаши Роуз</h3>
+      <p class="song">Grieg In the Hall of the Mountain King (arr. Ginzburg)</p>
+      <p>
+        <a
+          class="youtube"
+          href="https://www.youtube.com/watch?v=AkANtM_3f_o"
+          rel="nofollow"
+          >▶ Слушать на Youtube</a
+        >
+      </p>
+      <p class="desc">
+        Хотела оставить в плейлисте только максимально близкие в моем понимании
+        к канону композиции, но эту нахэдила Роузу давно, и именно в этом
+        варианте — сложная, невероятно экспрессивная, но в несколько хулиганском
+        исполнении, безрассудном и отчаянном, как влияние на Роуза его
+        собственной, Пустой части себя.
+      </p>
+    </div>
+  </div>
+  <div class="track">
+    <div class="meta">
+      <h3 class="character">&gt;Укитаке Джууширо</h3>
+      <p class="song">Flёur — Оборвалось</p>
+      <p>
+        <a
+          class="youtube"
+          href="http://youtube.com/watch?v=qylYDN1aCOU"
+          rel="nofollow"
+          >▶ Слушать на YouTube</a
+        >
+      </p>
+      <p class="quote">"Безумно, безжалостно, невероятно<br />
+Сменяют друг друга фатальные кадры"</p>
+      <p class="desc">Дорогой дневник, мне не передать словами в каком я была шоке, когда с Укитаке вот это вот всё завертелось. Кубо и сценаристы добили кадрами из его юности с Кьераку, и этот тайтл официально получает титул самого насыщенного бьющими по моему черствому сердечку сценами. </p>
+    </div>
+  </div>
+  <div class="track">
+    <div class="meta">
+      <h3 class="character">&gt;Унохана Рецу</h3>
+      <p class="song">Ramsey — Dark Side</p>
+      <p>
+        <a
+          class="youtube"
+          href="https://www.youtube.com/watch?v=FJ68vrIdQBI"
+          rel="nofollow"
+          >▶ Слушать на Youtube</a
+        >
+      </p>
+      <p class="quote">"I wanna see your dark side<br />
+Sick of you acting<br />
+You’re faking something you shouldn’t hide"</p>
+      <p class="desc">Та самая темная и мрачная сторона Уноханы, сила с которой она обнажает меч, кровь стекающая с ее занпакто. Ее битва с Зараки для меня — один из самых впечатляющих моментов серии, и эта мелодия, как мне показалось, хорошо к нему подходит.</p>
+    </div>
+  </div>
+  <div class="track">
+    <div class="meta">
+      <h3 class="character">&gt;Юмичика Аясегава</h3>
+      <p class="song">Lady Gaga — Born This Way</p>
+      <p>
+        <a
+          class="youtube"
+          href="https://www.youtube.com/watch?v=wV1FrqwZyKw"
+          rel="nofollow"
+          >▶ Слушать на Youtube</a
+        >
+        <p class="quote">"I was born this way"</p>
+        <p class="desc">Что сказать, Юмичика и правда такой, и… гордится этим, но втайне от всех. Тешу себя надеждой что в том будущем где они с Иккаку воспитывают дочурку Ренджи, Юмичика уже вышел из шкафа, и именно под эту песню.</p>
+      </p>
+    </div>
+  </div>
+  <p></p>
+  <h2 class="category">Espada</h2>
+  <div class="track">
+    <div class="meta">
+      <h3 class="character">&gt;Вандервайс Маржела</h3>
+      <p class="song">Chris Cunningham — Rubber Johnny</p>
+      <p>
+        <a
+          class="youtube"
+          href="https://www.youtube.com/watch?v=9-gyf23k26I"
+          rel="nofollow"
+          >▶ Слушать на Youtube</a
+        >
+      </p>
+      <p class="desc">Триггер ворнинг, я серьезно</p>
+    </div>
+  </div>
+  <div class="track">
+    <div class="meta">
+      <h3 class="character">&gt;Гриммджо Джаггерджак</h3>
+      <p class="song">Saliva — Survival Of The Sickest</p>
+      <p>
+        <a
+          class="youtube"
+          href="https://www.youtube.com/watch?v=YqN2sRtC2Eo"
+          rel="nofollow"
+          >▶ Слушать на Youtube</a
+        >
+      </p>
+    </div>
+  </div>
+  <div class="track">
+    <div class="meta">
+      <h3 class="character">&gt;Заэль Апорро Гранц</h3>
+      <p class="song">Marilyn Manson - The Beautiful People</p>
+      <p>
+        <a
+          class="youtube"
+          href="https://www.youtube.com/watch?v=Ypkv0HeUvTc"
+          rel="nofollow"
+          >▶ Слушать на Youtube</a
+        >
+      </p>
+      <p class="desc">Парничек с Маюри</p>
+    </div>
+  </div>
+  <div class="track">
+    <div class="meta">
+      <h3 class="character">&gt;Ннойтра Гилга</h3>
+      <p class="song">Hatebreed — Defeatist</p>
+      <p>
+        <a
+          class="youtube"
+          href="https://www.youtube.com/watch?v=4J86Adx3iN4"
+          rel="nofollow"
+          >▶ Слушать на Youtube</a
+        >
+      </p>
+      <p class="quote">
+        "Cause you hate yourself<br />
+        And you hate this world<br />
+        And you hate the fact<br />
+        That you hate every moment"
+      </p>
+      <p class="desc">
+        А кто это у нас тут такой длинный злобный комок ненависти? А кто это у нас тут такой?? Накормит яростным неприятием всего подряд с большой ложки, честно? Обожаю. В моей мысленной альтернативной вселенной он выжил и Зараки утащил его к себе в Одинадцатый.
+      </p>
+    </div>
+  </div>
+  <div class="track">
+    <div class="meta">
+      <h3 class="character">&gt;Тесла Линдокруз</h3>
+      <p class="song">The Stooges — Now I Wanna Be Your Dog</p>
+      <p>
+        <a
+          class="youtube"
+          href="https://www.youtube.com/watch?v=3gsWt7ey6bo"
+          rel="nofollow"
+          >▶ Слушать на Youtube</a
+        >
+      </p>
+      <p class="quote">And now I wanna be your dog</p>
+      <p class="desc">
+      Тесла, детка, прости, но все так 
+      </p>
+    </div>
+  </div>
+  <div class="track">
+    <div class="meta">
+      <h3 class="character">&gt;Улькиорра Сифер</h3>
+      <p class="song">Nothing But Thieves — Itch</p>
+      <p>
+        <a
+          class="youtube"
+          href="https://www.youtube.com/watch?v=ORQX4QQwmII"
+          rel="nofollow"
+          >▶ Слушать на Youtube</a
+        >
+      </p>
+      <p class="quote">"I just wanna feel something real"</p>
+      <p class="desc">
+        Гимн жажде Улькиорры: желанию почувствовать, чтобы понять, что существуешь. Тоска по сердцу, которого нет.
+      </p>
+    </div>
+  </div>
+  <div class="track">
+    <div class="meta">
+      <h3 class="character">&gt;Чируччи Сандервиччи</h3>
+      <p class="song">The Runaways — Cherry Bomb</p>
+      <p>
+        <a
+          class="youtube"
+          href="https://www.youtube.com/watch?v=_EBvXpjudf8"
+          rel="nofollow"
+          >▶ Слушать на Youtube</a
+        >
+      </p>
+      <p class="quote">
+        "Hello, Daddy, hello, Mom<br />
+        I'm your ch-ch-ch-ch-ch-ch, cherry bomb<br />
+        Hello, world, I'm your wild girl<br />
+        I'm your ch-ch-ch-ch-ch-ch, cherry bomb"
+      </p>
+    </div>
+  </div>
+  <div class="track">
+    <div class="meta">
+      <h3 class="character">&gt;Шарлотта Кулхорн</h3>
+      <p class="song">Todrick Hall — Nails, Hair, Hips, Heels</p>
+      <p>
+        <a
+          class="youtube"
+          href="https://www.youtube.com/watch?v=TQ04gPb4LlY"
+          rel="nofollow"
+          >▶ Слушать на Youtube</a
+        >
+      </p>
+      <p class="quote">
+        "Left, right, left, right, left with a spin, bitch<br />
+        Where's my sash and crown? 'Cause I win, bitch<br />
+        I'm so fab, I'm gone with the wind, bitch<br />
+        Y'all six, seven, eight, nines, I'm a ten, bitch"
+      </p>
+      <p class="desc">
+        Битва? О, нет, детка. Это дефиле. Шарлотта выходит, чтобы блистать — и берет не силой, а убийственным (во всех смыслах) стилем. Один сплит — и соперник уже на коленях. Перед её великолепием, разумеется.
+      </p>
+    </div>
+  </div>
+  <h2 class="category">Quincy</h2>
+  <div class="track">
+    <div class="meta">
+      <h3 class="character">&gt;Бамбиэтта Бастербайн</h3>
+      <p class="song">IC3PEAK — DEAD BUT PRETTY</p>
+      <p>
+        <a
+          class="youtube"
+          href="https://www.youtube.com/watch?v=EqoLpfaVtB4"
+          rel="nofollow"
+          >▶ Слушать на Youtube</a
+        >
+      </p>
+      <p class="quote">"Ты напился моей крови аж до тошноты<br />
+Помню, я была живая, а теперь как ты"</p>
+      <p class="desc">Жиж ну ты чего, нормально же общались.</p>
+    </div>
+  </div>
+  <div class="track">
+    <div class="meta">
+      <h3 class="character">&gt;Гремми Тумо</h3>
+      <p class="song">Squarepusher — Ansromm-Feck4</p>
+      <p>
+        <a
+          class="youtube"
+          href="https://www.youtube.com/watch?v=-Y_JRR3udEo"
+          rel="nofollow"
+          >▶ Слушать на Youtube</a
+        >
+      </p>
+      <p class="quote">you're made out of fucking jelly, you know that?</p>
+      <p class="desc">Примерно так я представляю то, что происходит в голове у Гремми.</p>
+    </div>
+  </div>
+  <div class="track">
+    <div class="meta">
+      <h3 class="character">&gt;Жизель Жевелль</h3>
+      <p class="song">Aerosmith — Dude looks like a lady</p>
+      <p>
+        <a
+          class="youtube"
+          href="https://www.youtube.com/watch?v=nf0oXY4nDxE"
+          rel="nofollow"
+          >▶ Слушать на Youtube</a
+        >
+      </p>
+      <p class="quote">Dude looks like a lady</p>
+      <p class="desc">Because, of course</p>
+    </div>
+  </div>
+  <div class="track">
+    <div class="meta">
+      <h3 class="character">&gt;Жизель Жевелль</h3>
+      <p class="song">Poppy — Concrete</p>
+      <p>
+        <a
+          class="youtube"
+          href="https://www.youtube.com/watch?v=WwoGhpYdebQ"
+          rel="nofollow"
+          >▶ Слушать на Youtube</a
+        >
+      </p>
+      <p class="quote">
+        I tried to eat ice cream<br />
+        I tried to drink tea<br />
+        But I need the taste of young blood in my teeth
+      </p>
+      <p class="desc">
+        В равной степени милая и жесткая, эта песня могла бы идеально лечь на музыкальную аушку с Жижи, в которой она бы управляла своей фанбазой как армией зомби. Никто ведь не сможет устоять на месте, когда такая милашка выходит на сцену, да? (Для тех кто сможет доступна опция "Закатай меня в бетон"). Бонусом - чюи-чюи-ямми-ямми в вашей голове навечно, не благодарите!
+      </p>
+    </div>
+  </div>
+  <div class="track">
+    <div class="meta">
+      <h3 class="character">&gt;Исида Урью</h3>
+      <p class="song">Radiohead - Everything In Its Right Place</p>
+      <p>
+        <a
+          class="youtube"
+          href="https://www.youtube.com/watch?v=onRk0sjSgFU"
+          rel="nofollow"
+          >▶ Слушать на Youtube</a
+        >
+      </p>
+      <p class="quote">Everything in its right place</p>
+      <p class="desc">У Исиды Урью все (не) на своих местах: он до самого конца держится за наследие квинси, но по пути поступается таким количеством принципов (я-не-буду-помогать-шинигами-Исида, я смотрю на тебя), что весь его путь звучит для меня примерно так. Строчки про лимон — это когда ты эджи-подросток с идеалами, но проснувшись с утра понимаешь, что нужно снова выручать вообще совсем не друга (ни за что) который снова влез в неприятности.</p>
+    </div>
+  </div>
+  <div class="track">
+    <div class="meta">
+      <h3 class="character">&gt;Килге Опие</h3>
+      <p class="song">Oomph! — Augen auf</p>
+      <p>
+        <a
+          class="youtube"
+          href="https://www.youtube.com/watch?v=fuLPJg2gwjQ"
+          rel="nofollow"
+          >▶ Слушать на Youtube</a
+        >
+      </p>
+      <p class="quote">Aufgepasst, ich komme<br />
+Zeig dich nicht</p>
+      <p class="desc">Ауф</p>
+    </div>
+  </div>
+  <div class="track">
+    <div class="meta">
+      <h3 class="character">&gt;Лильтотто Лэмпард</h3>
+      <p class="song">T-STONE/Let's Get Eat Prod.KOTETSU</p>
+      <p>
+        <a
+          class="youtube"
+          href="https://youtu.be/Z0PJmEQFOPo?si=zbf57SDdHyhJ4fm1&t=82"
+          rel="nofollow"
+          >▶ Слушать на Youtube</a
+        >
+      </p>
+      <p class="quote">"狙う狩人BANG (Bang Bang)<br />
+食われるか食うかの問題<br />
+Съесть или быть съеденным — вот в чем вопрос"</p>
+      <p class="desc">Ну во-первых, название 👌🏻 Во-вторых Лил вайбит модной девчулей которая слушает трендовую музыку из тиктока. В третьих, они с Гремми бести, это не относится к песне, но мне нужно сообщить вам этот факт.</p>
+    </div>
+  </div>
+  <div class="track">
+    <div class="meta">
+      <h3 class="character">&gt;Нианзоль Вайзоль</h3>
+      <p class="song">DIE ANTWOORD — UGLY BOY</p>
+      <p>
+        <a
+          class="youtube"
+          href="https://www.youtube.com/watch?v=uMK0prafzw0"
+          rel="nofollow"
+          >▶ Слушать на Youtube</a
+        >
+      </p>
+      <p class="quote">Ooh, I love my ugly boy</p>
+      <p class="desc">У ай лав май агли бой</p>
+    </div>
+  </div>
+  <div class="track">
+    <div class="meta">
+      <h3 class="character">&gt;Пернида Парнкджас</h3>
+      <p class="song">Aphex Twin — Come To Daddy</p>
+      <p>
+        <a
+          class="youtube"
+          href="https://www.youtube.com/watch?v=TZ827lkktYs"
+          rel="nofollow"
+          >▶ Слушать на Youtube</a
+        >
+      </p>
+      <p class="quote">...</p>
+      <p class="desc">...</p>
+    </div>
+  </div>
+  <div class="track">
+    <div class="meta">
+      <h3 class="character">&gt;Цан Ду</h3>
+      <p class="song">IAMX — I Come With Knives</p>
+      <p>
+        <a
+          class="youtube"
+          href="https://www.youtube.com/watch?v=nt0MkotVIEc"
+          rel="nofollow"
+          >▶ Слушать на Youtube</a
+        >
+      </p>
+      <p class="quote">But I’m a human, I come with knives</p>
+      <p class="desc">Я человек простой — вижу песню на немецком про колюще-режущее — вспоминаю азиатского штерн-эмобоя Цан Ду. Появился — постоял — умер, но красиво, мне запомнился.</p>
+    </div>
+  </div>
+  <div class="track">
+    <div class="meta">
+      <h3 class="character">&gt;Эс Нодт</h3>
+      <p class="song">Molchat Doma — Судно</p>
+      <p>
+        <a
+          class="youtube"
+          href="https://www.youtube.com/watch?v=6KeEw0yp9_Q"
+          rel="nofollow"
+          >▶ Слушать на Youtube</a
+        >
+      </p>
+      <p class="quote">
+        Эмалированное судно<br />
+        Окошко, тумбочка, кровать<br />
+        Жить тяжело и неуютно
+      </p>
+      <p class="desc">
+      Здесь Эс Нодт в больничной постели. Страшно, тяжело дышать, страшно, больно, страшно. Страшнее от того, что смерть - необязательно спасение. Спасение приходит позже и говорит новое слово нового Бога, которому Эс Нодт предан до конца.
+      </p>
+    </div>
+  </div>
+  <div class="track">
+    <div class="meta">
+      <h3 class="character">&gt;Юграм Хашвальт</h3>
+      <p class="song">Depeche Mode — Policy of Truth</p>
+      <p>
+        <a
+          class="youtube"
+          href="https://www.youtube.com/watch?v=xIWT8enKI4I"
+          rel="nofollow"
+          >▶ Слушать на Youtube</a
+        >
+      </p>
+      <p class="quote">
+        It's too late to change events<br />
+        It's time to face the consequence<br />
+        For delivering the proof<br />
+        In the policy of truth
+      </p>
+      <p class="desc">...</p>
+    </div>
+  </div>
+  <div class="track">
+    <div class="meta">
+      <h3 class="character">&gt;Яхве</h3>
+      <p class="song">Rammstein — Die Sonne</p>
+      <p>
+        <a
+          class="youtube"
+          href="https://www.youtube.com/watch?v=StZcUAPRRac"
+          rel="nofollow"
+          >▶ Слушать на Youtube</a
+        >
+      </p>
+      <p class="quote">Here comes the sun</p>
+      <p class="desc">...</p>
+    </div>
+  </div>
+</div>
