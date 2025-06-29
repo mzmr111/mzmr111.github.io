@@ -11,7 +11,7 @@
 <body>
   <form id="ficForm">
     <h2>Если Вы Это Видите, То Вам Кажется:</h2>
-    <h2 class="bytheway">Совершенно Точно Не Генератор Сюжетов Фанфиков (улучшенный)✨</h2>
+    <h2 class="bytheway">Совершенно Точно Не Генератор Сюжетов Фанфиков (улучшенный) 1✨</h2>
 
     <div class="form-group">
       <label for="title">Фандом</label>
@@ -49,10 +49,8 @@
 
     <div class="form-group">
       <label for="factions">Фракции (необязательно)</label>
-<select name="factions" id="factions" multiple>
-  <!-- Заполняется динамически -->
-</select>
-      <small>Зажмите Ctrl (Cmd) для выбора нескольких. Если не выбрано — пофиг, всех мешаем.</small>
+      <select name="factions" id="factions" multiple>
+      </select>
     </div>
 
     <div class="form-group checkbox-group">
@@ -81,22 +79,21 @@
       try {
         const [charData, genreData, kinkData, tropeData, auData, keywordData, factionsData] = await Promise.all([
           fetch(`assets/${folder}/characters.json`).then(r => r.json()),
+          fetch(`assets/${folder}/factions.json`).then(r => r.json()),
           fetch('assets/genres.json').then(r => r.json()),
           fetch('assets/kinks.json').then(r => r.json()),
           fetch('assets/tropes.json').then(r => r.json()),
           fetch('assets/au.json').then(r => r.json()),
-          fetch('assets/keywords.json').then(r => r.json()),
-          fetch(`assets/${folder}/factions.json`).then(r => r.json())
+          fetch('assets/keywords.json').then(r => r.json())
         ]);
 
         characters = charData;
-
-updateFactionOptions(factionsData);
         genres = genreData;
         kinks = kinkData;
         tropes = tropeData;
         aus = auData;
         ficKeywords = keywordData;
+        updateFactionOptions(factionsData);
       } catch (error) {
         console.error('Error loading data:', error);
       }
@@ -117,17 +114,15 @@ updateFactionOptions(factionsData);
 
       await loadDataForTitle(title);
 
-      // Re-select previously chosen factions after reload
       const factionSelect = document.getElementById('factions');
       const selectedFactions = Array.from(factionSelect.selectedOptions).map(opt => opt.value);
-
+console.log(factionSelect.selectedOptions);
+console.log(selectedFactions);
       const relationshipSize = parseInt(form.get('relationshipSize'), 10) || 1;
       const type = form.get('type') || 'gen';
       let sideCount = parseInt(form.get('sideCount'), 10);
       sideCount = isNaN(sideCount) ? 0 : sideCount;
       const nsfw = form.get('nsfw') === 'on';
-
-      
 
       let genderFilter = () => true;
       if (type === 'slash') genderFilter = c => c.gender === 'male';
@@ -136,14 +131,13 @@ updateFactionOptions(factionsData);
       let factionFilter = () => true;
       if (selectedFactions.length > 0) {
         factionFilter = c => {
-  if (!c.faction) return false;
-  const factions = Array.isArray(c.faction) ? c.faction : c.faction.split(',').map(f => f.trim());
-  return factions.some(f => selectedFactions.includes(f));
-};
+          if (!c.faction) return false;
+          const factions = Array.isArray(c.faction) ? c.faction : c.faction.split(',').map(f => f.trim());
+          return factions.some(f => selectedFactions.includes(f));
+        };
       }
-
       const filteredChars = characters.filter(c => genderFilter(c) && factionFilter(c));
-
+console.log(filteredChars);
       const mainRelationship = getRandom(filteredChars, relationshipSize);
 
       const usedNames = new Set(mainRelationship.map(c => c.name));
