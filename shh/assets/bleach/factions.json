@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Синигами",
+        "faction": "shinigami"
+    },
+    {
+        "name": "Эспада",
+        "faction": "espada"
+    },
+    {
+        "name": "Штернриттеры",
+        "faction": "sternritters"
+    }
+]
