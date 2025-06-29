@@ -50,7 +50,9 @@
     <div class="form-group">
       <label for="factions">Фракции (необязательно)</label>
 <select name="factions" id="factions" multiple>
+  <!-- Заполняется динамически -->
 </select>
+      <small>Зажмите Ctrl (Cmd) для выбора нескольких. Если не выбрано — пофиг, всех мешаем.</small>
     </div>
 
     <div class="form-group checkbox-group">
@@ -113,7 +115,9 @@ updateFactionOptions(characters);
 
       await loadDataForTitle(title);
 
-      const selectedFactions = [...document.getElementById('factions').selectedOptions].map(opt => opt.value);
+      // Re-select previously chosen factions after reload
+      const factionSelect = document.getElementById('factions');
+      const selectedFactions = Array.from(factionSelect.selectedOptions).map(opt => opt.value);
 
       const relationshipSize = parseInt(form.get('relationshipSize'), 10) || 1;
       const type = form.get('type') || 'gen';
@@ -141,7 +145,7 @@ updateFactionOptions(characters);
       const mainRelationship = getRandom(filteredChars, relationshipSize);
 
       const usedNames = new Set(mainRelationship.map(c => c.name));
-      const remainingChars = characters.filter(c => !usedNames.has(c.name));
+      const remainingChars = characters.filter(c => !usedNames.has(c.name) && factionFilter(c));
       const sideCharacters = getRandom(remainingChars, sideCount);
 
       const genre = getRandom(genres)[0];
