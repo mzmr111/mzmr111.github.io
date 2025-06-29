@@ -2,17 +2,20 @@
       {
         "name": "Ичиго Куросаки",
         "gender": "male",
-        "image": "assets/bleach/img/ichigo.jpg"
+        "image": "assets/bleach/img/ichigo.jpg",
+        "faction": ["shinigami"]
       },
       {
         "name": "Рукия Кучики",
         "gender": "female",
-        "image": "assets/bleach/img/rukia.jpg"
+        "image": "assets/bleach/img/rukia.jpg",
+        "faction": ["shinigami"]
       },
       {
         "name": "Ренджи Абараи",
         "gender": "male",
-        "image": "assets/bleach/img/renji.jpg"
+        "image": "assets/bleach/img/renji.jpg",
+        "faction": ["shinigami"]
       },
       {
         "name": "Орихиме Иноуэ",
@@ -22,7 +25,8 @@
       {
         "name": "Куроцучи Маюри",
         "gender": "male",
-        "image": "assets/bleach/img/mayuri.jpg"
+        "image": "assets/bleach/img/mayuri.jpg",
+        "faction": ["shinigami"]
       },
       {
         "name": "Йоруичи",
@@ -47,17 +51,20 @@
       {
         "name": "Гриммджо",
         "gender": "male",
-        "image": "assets/bleach/img/grimmjow.jpg"
+        "image": "assets/bleach/img/grimmjow.jpg",
+        "faction": ["espada"]
       },
       {
         "name": "Улькиорра Шифер",
         "gender": "male",
-        "image": "assets/bleach/img/ulquiorra.jpg"
+        "image": "assets/bleach/img/ulquiorra.jpg",
+        "faction": ["espada"]
       },
       {
         "name": "Нелл",
         "gender": "female",
-        "image": "assets/bleach/img/nell.jpg"
+        "image": "assets/bleach/img/nell.jpg",
+        "faction": ["espada"]
       },
       {
         "name": "Кенпачи Зараки",
@@ -137,17 +144,20 @@
       {
         "name": "Юграм Хашвальт",
         "gender": "male",
-        "image": "assets/bleach/img/jugram.jpg"
+        "image": "assets/bleach/img/jugram.jpg",
+        "faction": ["sternritters"]
       },
       {
         "name": "Базз Би",
         "gender": "male",
-        "image": "assets/bleach/img/bazz.jpg"
+        "image": "assets/bleach/img/bazz.jpg",
+        "faction": ["sternritters"]
       },
       {
         "name": "Жижи",
         "gender": "male",
-        "image": "assets/bleach/img/giselle.jpg"
+        "image": "assets/bleach/img/giselle.jpg",
+        "faction": ["sternritters"]
       },
       {
         "name": "Ичимару Гин",
