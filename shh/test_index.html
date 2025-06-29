@@ -79,17 +79,19 @@
     async function loadDataForTitle(title) {
       const folder = titleFolders[title];
       try {
-        const [charData, genreData, kinkData, tropeData, auData, keywordData] = await Promise.all([
+        const [charData, genreData, kinkData, tropeData, auData, keywordData, factionsData] = await Promise.all([
           fetch(`assets/${folder}/characters.json`).then(r => r.json()),
           fetch('assets/genres.json').then(r => r.json()),
           fetch('assets/kinks.json').then(r => r.json()),
           fetch('assets/tropes.json').then(r => r.json()),
           fetch('assets/au.json').then(r => r.json()),
-          fetch('assets/keywords.json').then(r => r.json())
+          fetch('assets/keywords.json').then(r => r.json()),
+          fetch(`assets/${folder}/factions.json`).then(r => r.json())
         ]);
 
         characters = charData;
-updateFactionOptions(characters);
+
+updateFactionOptions(factionsData);
         genres = genreData;
         kinks = kinkData;
         tropes = tropeData;
@@ -242,14 +244,18 @@ updateFactionOptions(characters);
       return picks;
     }
 
-    function updateFactionOptions(characters) {
-  const factionSet = new Set();
-  characters.forEach(c => {
-    if (!c.faction) return;
-    const factions = Array.isArray(c.faction) ? c.faction : c.faction.split(',').map(f => f.trim());
-    factions.forEach(f => factionSet.add(f));
-  });
+    function updateFactionOptions(factions) {
   const factionSelect = document.getElementById('factions');
+  const currentValues = Array.from(factionSelect.selectedOptions).map(opt => opt.value);
+  factionSelect.innerHTML = '';
+  factions.forEach(({ name, faction }) => {
+    const opt = document.createElement('option');
+    opt.value = faction;
+    opt.textContent = name;
+    if (currentValues.includes(faction)) opt.selected = true;
+    factionSelect.appendChild(opt);
+  });
+} = document.getElementById('factions');
   factionSelect.innerHTML = '';
   [...factionSet].sort().forEach(faction => {
     const opt = document.createElement('option');
