@@ -11,7 +11,7 @@
 <body>
   <form id="ficForm">
     <h2>Если Вы Это Видите, То Вам Кажется:</h2>
-    <h2 class="bytheway">Совершенно Точно Не Генератор Сюжетов Фанфиков (улучшенный) 1✨</h2>
+    <h2 class="bytheway">Совершенно Точно Не Генератор Сюжетов Фанфиков (улучшенный)✨</h2>
 
     <div class="form-group">
       <label for="title">Фандом</label>
@@ -49,8 +49,8 @@
 
     <div class="form-group">
       <label for="factions">Фракции (необязательно)</label>
-      <select name="factions" id="factions" multiple>
-      </select>
+<select name="factions" id="factions" multiple>
+</select>
     </div>
 
     <div class="form-group checkbox-group">
@@ -113,8 +113,7 @@ updateFactionOptions(characters);
 
       await loadDataForTitle(title);
 
-      const factionOptions = [...document.getElementById('factions').selectedOptions];
-      const selectedFactions = factionOptions.map(opt => opt.value);
+      const selectedFactions = [...document.getElementById('factions').selectedOptions].map(opt => opt.value);
 
       const relationshipSize = parseInt(form.get('relationshipSize'), 10) || 1;
       const type = form.get('type') || 'gen';
@@ -122,8 +121,7 @@ updateFactionOptions(characters);
       sideCount = isNaN(sideCount) ? 0 : sideCount;
       const nsfw = form.get('nsfw') === 'on';
 
-      const factionOptions = [...document.getElementById('factions').selectedOptions];
-      const selectedFactions = factionOptions.map(opt => opt.value);
+      
 
       let genderFilter = () => true;
       if (type === 'slash') genderFilter = c => c.gender === 'male';
