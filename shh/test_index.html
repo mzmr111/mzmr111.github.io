@@ -11,7 +11,7 @@
 <body>
   <form id="ficForm">
     <h2>Если Вы Это Видите, То Вам Кажется:</h2>
-    <h2 class="bytheway">Совершенно Точно Не Генератор Сюжетов Фанфиков (улучшенный)✨</h2>
+    <h2 class="bytheway">Совершенно Точно Не Генератор Сюжетов Фанфиков (улучшенный) 1✨</h2>
 
     <div class="form-group">
       <label for="title">Фандом</label>
@@ -49,8 +49,8 @@
 
     <div class="form-group">
       <label for="factions">Фракции (необязательно)</label>
-        <select name="factions" id="factions" multiple>
-        </select>
+      <select name="factions" id="factions" multiple>
+      </select>
     </div>
 
     <div class="form-group checkbox-group">
@@ -113,6 +113,9 @@ updateFactionOptions(characters);
 
       await loadDataForTitle(title);
 
+      const factionOptions = [...document.getElementById('factions').selectedOptions];
+      const selectedFactions = factionOptions.map(opt => opt.value);
+
       const relationshipSize = parseInt(form.get('relationshipSize'), 10) || 1;
       const type = form.get('type') || 'gen';
       let sideCount = parseInt(form.get('sideCount'), 10);
@@ -158,7 +161,7 @@ updateFactionOptions(characters);
             ${mainRelationship.map(c => `
               <div class="char">
                 <img src="${c.image}" alt="${c.name}" class="char-icon" onerror="this.onerror=null;this.src='assets/noicon.jpg';">
-                <p>${c.name}${c.faction ? ` <span class='faction-tag'>(${Array.isArray(c.faction) ? c.faction.join(', ') : c.faction})</span>` : ''}</p>
+                <p>${c.name}</p>
               </div>
             `).join(`<span>${getEmoji()}</span>`)}
           </div>
@@ -178,7 +181,7 @@ updateFactionOptions(characters);
                 ${sideCharacters.map(c => `
                   <div class="char">
                     <img src="${c.image}" alt="${c.name}" class="char-icon" onerror="this.onerror=null;this.src='assets/noicon.jpg';">
-                    <p>${c.name}${c.faction ? ` <span class='faction-tag'>(${c.faction})</span>` : ''}</p>
+                    <p>${c.name}</p>
                   </div>
                 `).join('')}
               </div>
