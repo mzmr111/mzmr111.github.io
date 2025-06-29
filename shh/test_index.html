@@ -239,27 +239,19 @@ console.log(filteredChars);
     }
 
     function updateFactionOptions(factions) {
-  const factionSelect = document.getElementById('factions');
-  const currentValues = Array.from(factionSelect.selectedOptions).map(opt => opt.value);
-  factionSelect.innerHTML = '';
-  factions.forEach(({ name, faction }) => {
-    const opt = document.createElement('option');
-    opt.value = faction;
-    opt.textContent = name;
-    if (currentValues.includes(faction)) opt.selected = true;
-    factionSelect.appendChild(opt);
-  });
-} = document.getElementById('factions');
-  factionSelect.innerHTML = '';
-  [...factionSet].sort().forEach(faction => {
-    const opt = document.createElement('option');
-    opt.value = faction;
-    opt.textContent = faction.charAt(0).toUpperCase() + faction.slice(1);
-    factionSelect.appendChild(opt);
-  });
-}
+      const factionSelect = document.getElementById('factions');
+      const currentValues = Array.from(factionSelect.selectedOptions).map(opt => opt.value);
+      factionSelect.innerHTML = '';
+      factions.forEach(({ name, faction }) => {
+        const opt = document.createElement('option');
+        opt.value = faction;
+        opt.textContent = name;
+        if (currentValues.includes(faction)) opt.selected = true;
+        factionSelect.appendChild(opt);
+      });
+    } 
 
-function getEmoji() {
+    function getEmoji() {
       const emojis = ['❤️', '✨', '⚔️', '❄️', '🔥', '⚡️', '☠️', '🍓', '🌙', '💀', '🩸', '🌸', '🕊️', '🧨', '🔮'];
       return emojis[Math.floor(Math.random() * emojis.length)];
     }
