@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Герои",
+        "faction": "hero"
+    },
+    {
+        "name": "Злодеи",
+        "faction": "villain"
+    },
+    {
+        "name": "Студенты",
+        "faction": "student"
+    }
+]
