@@ -3,19 +3,19 @@
         "name": "Izuku Midoriya",
         "gender": "male",
         "image": "assets/mha/img/midoriya.jpg",
-        "faction": "hero, student"
+        "faction": ["hero", "student"]
     },
     {
         "name": "Katsuki Bakugo",
         "gender": "male",
         "image": "assets/mha/img/bakugo.jpg",
-        "faction": "hero, student"
+        "faction": ["hero", "student"]
     },
     {
         "name": "Shoto Todoroki",
         "gender": "male",
         "image": "assets/mha/img/todoroki.jpg",
-        "faction": "hero, student"
+        "faction": ["hero", "student"]
     },
     {
         "name": "Ochaco Uraraka",
@@ -121,13 +121,13 @@
         "name": "Tomura Shigaraki",
         "gender": "male",
         "image": "assets/mha/img/shigaraki.jpg",
-        "faction": "villain"
+        "faction": ["villain"]
     },
     {
         "name": "Dabi",
         "gender": "male",
         "image": "assets/mha/img/dabi.jpg",
-        "faction": "villain"
+        "faction": ["villain"]
     },
     {
         "name": "Toga Himiko",
