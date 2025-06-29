@@ -148,5 +148,10 @@
         "name": "Жижи",
         "gender": "male",
         "image": "assets/bleach/img/giselle.jpg"
+      },
+      {
+        "name": "Ичимару Гин",
+        "gender": "male",
+        "image": "assets/bleach/img/gin.jpg"
       }
     ]
