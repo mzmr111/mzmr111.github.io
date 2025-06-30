@@ -49,9 +49,8 @@
     </div>
 
     <div class="form-group">
-      <label for="factions">Принадлежность (необязательно)</label>
-      <select name="factions" id="factions" multiple>
-      </select>
+      <label>Фракции (необязательно)</label>
+      <div id="faction-buttons" class="faction-buttons"></div>
     </div>
 
     <div class="form-group checkbox-group">
@@ -79,182 +78,198 @@
     async function loadDataForTitle(title) {
       const folder = titleFolders[title];
       try {
-        const [charData, factionsData, genreData, kinkData, tropeData, auData, keywordData] = await Promise.all([
+        const [charData, genreData, kinkData, tropeData, auData, keywordData, factionsData] = await Promise.all([
           fetch(`assets/${folder}/characters.json`).then(r => r.json()),
-          fetch(`assets/${folder}/factions.json`).then(r => r.json()),
           fetch('assets/genres.json').then(r => r.json()),
           fetch('assets/kinks.json').then(r => r.json()),
           fetch('assets/tropes.json').then(r => r.json()),
           fetch('assets/au.json').then(r => r.json()),
-          fetch('assets/keywords.json').then(r => r.json())
+          fetch('assets/keywords.json').then(r => r.json()),
+          fetch(`assets/${folder}/factions.json`).then(r => r.json())
         ]);
 
         characters = charData;
-        genres = genreData;
-        kinks = kinkData;
-        tropes = tropeData;
-        aus = auData;
-        ficKeywords = keywordData;
+
         updateFactionOptions(factionsData);
-      } catch (error) {
-        console.error('Error loading data:', error);
-      }
-    }
+            genres = genreData;
+            kinks = kinkData;
+            tropes = tropeData;
+            aus = auData;
+            ficKeywords = keywordData;
+          } catch (error) {
+            console.error('Error loading data:', error);
+          }
+        }
 
-    document.getElementById('title').addEventListener('change', (e) => {
-      loadDataForTitle(e.target.value);
-    });
+        document.getElementById('title').addEventListener('change', (e) => {
+          loadDataForTitle(e.target.value);
+        });
 
-    document.addEventListener('DOMContentLoaded', () => {
-      loadDataForTitle('bleach');
-    });
+        document.addEventListener('DOMContentLoaded', () => {
+          loadDataForTitle('bleach');
+        });
 
-    document.getElementById('ficForm').addEventListener('submit', async function (e) {
-      e.preventDefault();
-      const form = new FormData(e.target);
-      const title = form.get('title') || 'bleach';
+        document.getElementById('ficForm').addEventListener('submit', async function (e) {
+          e.preventDefault();
+          const form = new FormData(e.target);
+          const title = form.get('title') || 'bleach';
 
-      await loadDataForTitle(title);
+          await loadDataForTitle(title);
 
-      const factionSelect = document.getElementById('factions');
-      const selectedFactions = Array.from(factionSelect.selectedOptions).map(opt => opt.value);
-      const relationshipSize = parseInt(form.get('relationshipSize'), 10) || 1;
-      const type = form.get('type') || 'gen';
-      let sideCount = parseInt(form.get('sideCount'), 10);
-      sideCount = isNaN(sideCount) ? 0 : sideCount;
-      const nsfw = form.get('nsfw') === 'on';
+          // Re-select previously chosen factions after reload
+          const selectedFactions = [...document.querySelectorAll('.faction-btn.selected')].map(btn => btn.dataset.faction);
 
-      let genderFilter = () => true;
-      if (type === 'slash') genderFilter = c => c.gender === 'male';
-      if (type === 'femslash') genderFilter = c => c.gender === 'female';
+          const relationshipSize = parseInt(form.get('relationshipSize'), 10) || 1;
+          const type = form.get('type') || 'gen';
+          let sideCount = parseInt(form.get('sideCount'), 10);
+          sideCount = isNaN(sideCount) ? 0 : sideCount;
+          const nsfw = form.get('nsfw') === 'on';
 
-      let factionFilter = () => true;
-      if (selectedFactions.length > 0) {
-        factionFilter = c => {
-          if (!c.faction) return false;
-          const factions = Array.isArray(c.faction) ? c.faction : c.faction.split(',').map(f => f.trim());
-          return factions.some(f => selectedFactions.includes(f));
-        };
-      }
+          
 
-      const filteredChars = characters.filter(c => genderFilter(c) && factionFilter(c));
-      const mainRelationship = getRandom(filteredChars, relationshipSize);
+          let genderFilter = () => true;
+          if (type === 'slash') genderFilter = c => c.gender === 'male';
+          if (type === 'femslash') genderFilter = c => c.gender === 'female';
 
-      const usedNames = new Set(mainRelationship.map(c => c.name));
-      const remainingChars = characters.filter(c => !usedNames.has(c.name) && factionFilter(c));
-      const sideCharacters = getRandom(remainingChars, sideCount);
+          let factionFilter = () => true;
+          if (selectedFactions.length > 0) {
+            factionFilter = c => {
+      if (!c.faction) return false;
+      const factions = Array.isArray(c.faction) ? c.faction : c.faction.split(',').map(f => f.trim());
+      return factions.some(f => selectedFactions.includes(f));
+    };
+          }
 
-      const genre = getRandom(genres)[0];
-      const au = getRandom(aus)[0];
-      const trope = getRandom(tropes)[0];
-      const kink = nsfw ? getRandom(kinks)[0] : null;
-      const keywords = getRandom(ficKeywords, 3);
+          const filteredChars = characters.filter(c => genderFilter(c) && factionFilter(c));
 
-      const resultDiv = document.getElementById('result');
+          const mainRelationship = getRandom(filteredChars, relationshipSize);
 
-      resultDiv.innerHTML = `<p><strong>Генерируем фичок...</strong></p>`;
-      setTimeout(() => {
-        resultDiv.innerHTML = `
-          <div class="relationship">
-            ${mainRelationship.map(c => `
-              <div class="char">
-                <img src="${c.image}" alt="${c.name}" class="char-icon" onerror="this.onerror=null;this.src='assets/noicon.jpg';">
-                <p>${c.name}</p>
-              </div>
-            `).join(`<span>${getEmoji()}</span>`)}
-          </div>
+          const usedNames = new Set(mainRelationship.map(c => c.name));
+          const remainingChars = characters.filter(c => !usedNames.has(c.name) && factionFilter(c));
+          const sideCharacters = getRandom(remainingChars, sideCount);
 
-          <p class='keywords'>«  ${keywords.join(' • ')}  »</p>
+          const genre = getRandom(genres)[0];
+          const au = getRandom(aus)[0];
+          const trope = getRandom(tropes)[0];
+          const kink = nsfw ? getRandom(kinks)[0] : null;
+          const keywords = getRandom(ficKeywords, 3);
 
-          <div class='info-block'>
-            ${generateInfoRow('Жанр', 'genre', genre)}
-            ${generateInfoRow('Троп', 'trope', trope)}
-            ${generateInfoRow('AU', 'au', au)}
-            ${kink ? generateInfoRow('Кинк', 'kink', kink) : ''}
-          </div>
+          const resultDiv = document.getElementById('result');
 
-          ${sideCharacters.length > 0 ? `
-            <h3>Второстепенные персонажи</h3>
-              <div class="side-chars">
-                ${sideCharacters.map(c => `
+          resultDiv.innerHTML = `<p><strong>Генерируем фичок...</strong></p>`;
+          setTimeout(() => {
+            resultDiv.innerHTML = `
+              <div class="relationship">
+                ${mainRelationship.map(c => `
                   <div class="char">
                     <img src="${c.image}" alt="${c.name}" class="char-icon" onerror="this.onerror=null;this.src='assets/noicon.jpg';">
                     <p>${c.name}</p>
                   </div>
-                `).join('')}
+                `).join(`<span>${getEmoji()}</span>`)}
               </div>
-          ` : ''}
-        `;
-      }, 500);
-    });
 
-    function generateInfoRow(label, type, item) {
-      if (!item) return '';
-      return `
-        <div class='info-row ${type}'>
-          <div class='info-label'>
-            ${label}
-            <button class="refresh-btn" data-type="${type}">
-              <svg class="refresh-icon" viewBox="0 0 24 24">
-                <path d="M12 4V1L8 5l4 4V6c3.3 0 6 2.7 6 6 0 1.1-.3 2.1-.8 3h2.1c.5-1 0-2 0-3 0-4.4-3.6-8-8-8zm-6 6c0-1.1.3-2.1.8-3H4.7C4.2 7 4 8 4 9c0 4.4 3.6 8 8 8v3l4-4-4-4v3c-3.3 0-6-2.7-6-6z" fill="currentColor"/>
-              </svg>
-            </button>
-          </div>
-          <div class='info-value'>
-            <span class='${type}-name'>${item.name}</span><br>
-            <span class='info-description ${type}-description'>${item.description || '—'}</span>
-          </div>
-        </div>`;
-    }
+              <p class='keywords'>«  ${keywords.join(' • ')}  »</p>
 
-    document.addEventListener('click', function (e) {
-      const refreshBtn = e.target.closest('.refresh-btn');
-      if (!refreshBtn) return;
+              <div class='info-block'>
+                ${generateInfoRow('Жанр', 'genre', genre)}
+                ${generateInfoRow('Троп', 'trope', trope)}
+                ${generateInfoRow('AU', 'au', au)}
+                ${kink ? generateInfoRow('Кинк', 'kink', kink) : ''}
+              </div>
 
-      const type = refreshBtn.dataset.type;
-      let container = refreshBtn.closest(`.${type}`);
-      if (!container) return console.warn(`Missing .${type} wrapper`);
+              ${sideCharacters.length > 0 ? `
+                <h3>Второстепенные персонажи</h3>
+                  <div class="side-chars">
+                    ${sideCharacters.map(c => `
+                      <div class="char">
+                        <img src="${c.image}" alt="${c.name}" class="char-icon" onerror="this.onerror=null;this.src='assets/noicon.jpg';">
+                        <p>${c.name}</p>
+                      </div>
+                    `).join('')}
+                  </div>
+              ` : ''}
+            `;
+          }, 500);
+        });
 
-      const dataMap = {
-        genre: [getRandom(genres)[0], 'genre-name', 'genre-description'],
-        trope: [getRandom(tropes)[0], 'trope-name', 'trope-description'],
-        au: [getRandom(aus)[0], 'au-name', 'au-description'],
-        kink: [getRandom(kinks)[0], 'kink-name', 'kink-description']
-      };
+        function generateInfoRow(label, type, item) {
+          if (!item) return '';
+          return `
+            <div class='info-row ${type}'>
+              <div class='info-label'>
+                ${label}
+                <button class="refresh-btn" data-type="${type}">
+                  <svg class="refresh-icon" viewBox="0 0 24 24">
+                    <path d="M12 4V1L8 5l4 4V6c3.3 0 6 2.7 6 6 0 1.1-.3 2.1-.8 3h2.1c.5-1 0-2 0-3 0-4.4-3.6-8-8-8zm-6 6c0-1.1.3-2.1.8-3H4.7C4.2 7 4 8 4 9c0 4.4 3.6 8 8 8v3l4-4-4-4v3c-3.3 0-6-2.7-6-6z" fill="currentColor"/>
+                  </svg>
+                </button>
+              </div>
+              <div class='info-value'>
+                <span class='${type}-name'>${item.name}</span><br>
+                <span class='info-description ${type}-description'>${item.description || '—'}</span>
+              </div>
+            </div>`;
+        }
 
-      const [newItem, nameClass, descClass] = dataMap[type] || [];
-      if (!newItem) return;
-      container.querySelector(`.${nameClass}`).textContent = newItem.name;
-      container.querySelector(`.${descClass}`).textContent = newItem.description || '—';
-    });
+        document.addEventListener('click', function (e) {
+          const refreshBtn = e.target.closest('.refresh-btn');
+          if (!refreshBtn) return;
 
-    function getRandom(arr, count = 1) {
-      const copy = [...arr];
-      const picks = [];
-      while (count-- && copy.length) {
-        const i = Math.floor(Math.random() * copy.length);
-        picks.push(copy.splice(i, 1)[0]);
-      }
-      return picks;
-    }
+          const type = refreshBtn.dataset.type;
+          let container = refreshBtn.closest(`.${type}`);
+          if (!container) return console.warn(`Missing .${type} wrapper`);
 
-    function updateFactionOptions(factions) {
-      const factionSelect = document.getElementById('factions');
-      const currentValues = Array.from(factionSelect.selectedOptions).map(opt => opt.value);
-      factionSelect.innerHTML = '';
+          const dataMap = {
+            genre: [getRandom(genres)[0], 'genre-name', 'genre-description'],
+            trope: [getRandom(tropes)[0], 'trope-name', 'trope-description'],
+            au: [getRandom(aus)[0], 'au-name', 'au-description'],
+            kink: [getRandom(kinks)[0], 'kink-name', 'kink-description']
+          };
+
+          const [newItem, nameClass, descClass] = dataMap[type] || [];
+          if (!newItem) return;
+          container.querySelector(`.${nameClass}`).textContent = newItem.name;
+          container.querySelector(`.${descClass}`).textContent = newItem.description || '—';
+        });
+
+        function getRandom(arr, count = 1) {
+          const copy = [...arr];
+          const picks = [];
+          while (count-- && copy.length) {
+            const i = Math.floor(Math.random() * copy.length);
+            picks.push(copy.splice(i, 1)[0]);
+          }
+          return picks;
+        }
+
+        function updateFactionOptions(factions) {
+      const container = document.getElementById('faction-buttons');
+      const previouslySelected = new Set([...container.querySelectorAll('.selected')].map(btn => btn.dataset.faction));
+
+      container.innerHTML = '';
       factions.forEach(({ name, faction }) => {
-        const opt = document.createElement('option');
-        opt.value = faction;
-        opt.textContent = name;
-        if (currentValues.includes(faction)) opt.selected = true;
-        factionSelect.appendChild(opt);
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'faction-btn';
+        btn.dataset.faction = faction;
+        btn.textContent = name;
+
+        if (previouslySelected.has(faction)) {
+          btn.classList.add('selected');
+        }
+
+        btn.addEventListener('click', () => {
+          btn.classList.toggle('selected');
+        });
+
+        container.appendChild(btn);
       });
-    } 
+    }
 
     function getEmoji() {
-      const emojis = ['❤️', '✨', '⚔️', '❄️', '🔥', '⚡️', '☠️', '🍓', '🌙', '💀', '🩸', '🌸', '🕊️', '🧨', '🔮'];
-      return emojis[Math.floor(Math.random() * emojis.length)];
-    }
+          const emojis = ['❤️', '✨', '⚔️', '❄️', '🔥', '⚡️', '☠️', '🍓', '🌙', '💀', '🩸', '🌸', '🕊️', '🧨', '🔮'];
+          return emojis[Math.floor(Math.random() * emojis.length)];
+        }
   </script>
 </body>
 </html>
