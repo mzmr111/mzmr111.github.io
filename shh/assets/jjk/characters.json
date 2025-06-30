@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Yuji Itadori",
+    "gender": "male",
+    "image": "assets/jujutsu/img/itadori.jpg",
+    "faction": ["student", "jujutsu-high"]
+  },
+  {
+    "name": "Megumi Fushiguro",
+    "gender": "male",
+    "image": "assets/jujutsu/img/megumi.jpg",
+    "faction": ["student", "jujutsu-high"]
+  },
+  {
+    "name": "Nobara Kugisaki",
+    "gender": "female",
+    "image": "assets/jujutsu/img/nobara.jpg",
+    "faction": ["student", "jujutsu-high"]
+  },
+  {
+    "name": "Satoru Gojo",
+    "gender": "male",
+    "image": "assets/jujutsu/img/gojo.jpg",
+    "faction": ["teacher", "jujutsu-high"]
+  },
+  {
+    "name": "Suguru Geto",
+    "gender": "male",
+    "image": "assets/jujutsu/img/geto.jpg",
+    "faction": ["villain", "ex-jujutsu", "jujutsu-high"]
+  },
+  {
+    "name": "Kento Nanami",
+    "gender": "male",
+    "image": "assets/jujutsu/img/nanami.jpg",
+    "faction": ["teacher", "jujutsu-high"]
+  },
+  {
+    "name": "Ryomen Sukuna",
+    "gender": "male",
+    "image": "assets/jujutsu/img/sukuna.jpg",
+    "faction": ["curse", "villain"]
+  },
+  {
+    "name": "Toji Fushiguro",
+    "gender": "male",
+    "image": "assets/jujutsu/img/toji.jpg",
+    "faction": ["villain", "mercenary"]
+  },
+  {
+    "name": "Yuta Okkotsu",
+    "gender": "male",
+    "image": "assets/jujutsu/img/yuta.jpg",
+    "faction": ["student", "jujutsu-high"]
+  },
+  {
+    "name": "Maki Zenin",
+    "gender": "female",
+    "image": "assets/jujutsu/img/maki.jpg",
+    "faction": ["student", "jujutsu-high"]
+  },
+  {
+    "name": "Toge Inumaki",
+    "gender": "male",
+    "image": "assets/jujutsu/img/inumaki.jpg",
+    "faction": ["student", "jujutsu-high"]
+  },
+  {
+    "name": "Panda",
+    "gender": "male",
+    "image": "assets/jujutsu/img/panda.jpg",
+    "faction": ["student", "jujutsu-high"]
+  },
+  {
+    "name": "Choso",
+    "gender": "male",
+    "image": "assets/jujutsu/img/choso.jpg",
+    "faction": ["curse", "villain"]
+  },
+  {
+    "name": "Mahito",
+    "gender": "male",
+    "image": "assets/jujutsu/img/mahito.jpg",
+    "faction": ["curse", "villain"]
+  },
+  {
+    "name": "Hanami",
+    "gender": "female",
+    "image": "assets/jujutsu/img/hanami.jpg",
+    "faction": ["curse", "villain"]
+  }
+]

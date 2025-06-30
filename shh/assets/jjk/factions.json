@@ -1,0 +1,9 @@
+[
+  { "name": "Студенты", "faction": "student" },
+  { "name": "Учителя", "faction": "teacher" },
+  { "name": "Проклятия", "faction": "curse" },
+  { "name": "Злодеи", "faction": "villain" },
+  { "name": "Школа магов", "faction": "jujutsu-high" },
+  { "name": "Наёмники", "faction": "mercenary" },
+  { "name": "Экс школа магов", "faction": "ex-jujutsu" }
+]
