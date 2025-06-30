@@ -182,7 +182,7 @@
       {
         "name": "Ичимару Гин",
         "gender": "male",
-        "image": "assets/bleach/img/gin.jpg",
+        "image": "assets/bleach/img/ichimaru.jpg",
         "faction": ["shinigami"]
       },
       {
@@ -279,6 +279,18 @@
         "name": "Зангецу",
         "gender": "male",
         "image": "assets/bleach/img/zangetsu.jpg",
+        "faction": ["zanpakuto", "ichigo"]
+      },
+      {
+        "name": "Мини Зангецу",
+        "gender": "male",
+        "image": "assets/bleach/img/cute_zangetsu.jpg",
+        "faction": ["zanpakuto", "ichigo"]
+      },
+      {
+        "name": "Пустой Ичиго",
+        "gender": "male",
+        "image": "assets/bleach/img/very_hollow_ichigo.jpg",
         "faction": ["zanpakuto", "ichigo"]
       },
       {
