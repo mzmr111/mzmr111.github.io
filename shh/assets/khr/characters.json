@@ -1,146 +1,194 @@
 [
-  {
-    "name": "Tsuna Sawada",
-    "gender": "male",
-    "image": "assets/khr/img/tsuna.jpg",
-    "faction": ["vongola"]
-  },
-  {
-    "name": "Reborn",
-    "gender": "male",
-    "image": "assets/khr/img/reborn.jpg",
-    "faction": ["vongola"]
-  },
-  {
-    "name": "Gokudera Hayato",
-    "gender": "male",
-    "image": "assets/khr/img/gokudera.jpg",
-    "faction": ["vongola"]
-  },
-  {
-    "name": "Yamamoto Takeshi",
-    "gender": "male",
-    "image": "assets/khr/img/yamamoto.jpg",
-    "faction": ["vongola"]
-  },
-  {
-    "name": "Ryohei Sasagawa",
-    "gender": "male",
-    "image": "assets/khr/img/ryohei.jpg",
-    "faction": ["vongola"]
-  },
-  {
-    "name": "Kyoko Sasagawa",
-    "gender": "female",
-    "image": "assets/khr/img/kyoko.jpg",
-    "faction": ["civilian"]
-  },
-  {
-    "name": "Haru Miura",
-    "gender": "female",
-    "image": "assets/khr/img/haru.jpg",
-    "faction": ["civilian"]
-  },
-  {
-    "name": "Lambo",
-    "gender": "male",
-    "image": "assets/khr/img/lambo.jpg",
-    "faction": ["vongola"]
-  },
-  {
-    "name": "Bianchi",
-    "gender": "female",
-    "image": "assets/khr/img/bianchi.jpg",
-    "faction": ["vongola"]
-  },
-  {
-    "name": "Fran",
-    "gender": "male",
-    "image": "assets/khr/img/fran.jpg",
-    "faction": ["varia"]
-  },
-  {
-    "name": "Viper",
-    "gender": "male",
-    "image": "assets/khr/img/viper.jpg",
-    "faction": ["varia"]
-  },
-  {
-    "name": "Chrome Dokuro",
-    "gender": "female",
-    "image": "assets/khr/img/chrome.jpg",
-    "faction": ["vongola"]
-  },
-  {
-    "name": "Mukuro Rokudo",
-    "gender": "male",
-    "image": "assets/khr/img/mukuro.jpg",
-    "faction": ["independent"]
-  },
-  {
-    "name": "Irie Shouichi",
-    "gender": "male",
-    "image": "assets/khr/img/irie.jpg",
-    "faction": ["millefiore"]
-  },
-  {
-    "name": "Byakuran",
-    "gender": "male",
-    "image": "assets/khr/img/byakuran.jpg",
-    "faction": ["millefiore"]
-  },
-  {
-    "name": "Squalo",
-    "gender": "male",
-    "image": "assets/khr/img/squalo.jpg",
-    "faction": ["varia"]
-  },
-  {
-    "name": "Belphegor",
-    "gender": "male",
-    "image": "assets/khr/img/belphegor.jpg",
-    "faction": ["varia"]
-  },
-  {
-    "name": "Mammon",
-    "gender": "male",
-    "image": "assets/khr/img/mammon.jpg",
-    "faction": ["varia"]
-  },
-  {
-    "name": "Hibari Kyoya",
-    "gender": "male",
-    "image": "assets/khr/img/hibari.jpg",
-    "faction": ["vongola"]
-  },
-  {
-    "name": "Lussuria",
-    "gender": "male",
-    "image": "assets/khr/img/lussuria.jpg",
-    "faction": ["varia"]
-  },
-  {
-    "name": "Vongola Primo (Giotto)",
-    "gender": "male",
-    "image": "assets/khr/img/primo.jpg",
-    "faction": ["vongola"]
-  },
-  {
-    "name": "Genkishi",
-    "gender": "male",
-    "image": "assets/khr/img/genkishi.jpg",
-    "faction": ["millefiore"]
-  },
-  {
-    "name": "Spanner",
-    "gender": "male",
-    "image": "assets/khr/img/spanner.jpg",
-    "faction": ["millefiore"]
-  },
-  {
-    "name": "Aria",
-    "gender": "female",
-    "image": "assets/khr/img/aria.jpg",
-    "faction": ["cervello"]
-  }
+    {
+        "name": "Tsuna Sawada",
+        "gender": "male",
+        "image": "assets/khr/img/tsuna.jpg",
+        "faction": [
+            "vongola"
+        ]
+    },
+    {
+        "name": "Reborn",
+        "gender": "male",
+        "image": "assets/khr/img/reborn.jpg",
+        "faction": [
+            "vongola"
+        ]
+    },
+    {
+        "name": "Gokudera Hayato",
+        "gender": "male",
+        "image": "assets/khr/img/gokudera.jpg",
+        "faction": [
+            "vongola"
+        ]
+    },
+    {
+        "name": "Yamamoto Takeshi",
+        "gender": "male",
+        "image": "assets/khr/img/yamamoto.jpg",
+        "faction": [
+            "vongola"
+        ]
+    },
+    {
+        "name": "Ryohei Sasagawa",
+        "gender": "male",
+        "image": "assets/khr/img/ryohei.jpg",
+        "faction": [
+            "vongola"
+        ]
+    },
+    {
+        "name": "Kyoko Sasagawa",
+        "gender": "female",
+        "image": "assets/khr/img/kyoko.jpg",
+        "faction": [
+            "civilian"
+        ]
+    },
+    {
+        "name": "Haru Miura",
+        "gender": "female",
+        "image": "assets/khr/img/haru.jpg",
+        "faction": [
+            "civilian"
+        ]
+    },
+    {
+        "name": "Lambo",
+        "gender": "male",
+        "image": "assets/khr/img/lambo.jpg",
+        "faction": [
+            "vongola"
+        ]
+    },
+    {
+        "name": "Bianchi",
+        "gender": "female",
+        "image": "assets/khr/img/bianchi.jpg",
+        "faction": [
+            "vongola"
+        ]
+    },
+    {
+        "name": "Fran",
+        "gender": "male",
+        "image": "assets/khr/img/fran.jpg",
+        "faction": [
+            "varia"
+        ]
+    },
+    {
+        "name": "Viper",
+        "gender": "male",
+        "image": "assets/khr/img/viper.jpg",
+        "faction": [
+            "varia"
+        ]
+    },
+    {
+        "name": "Chrome Dokuro",
+        "gender": "female",
+        "image": "assets/khr/img/chrome.jpg",
+        "faction": [
+            "vongola"
+        ]
+    },
+    {
+        "name": "Mukuro Rokudo",
+        "gender": "male",
+        "image": "assets/khr/img/mukuro.jpg",
+        "faction": [
+            "independent"
+        ]
+    },
+    {
+        "name": "Irie Shouichi",
+        "gender": "male",
+        "image": "assets/khr/img/irie.jpg",
+        "faction": [
+            "millefiore"
+        ]
+    },
+    {
+        "name": "Byakuran",
+        "gender": "male",
+        "image": "assets/khr/img/byakuran.jpg",
+        "faction": [
+            "millefiore"
+        ]
+    },
+    {
+        "name": "Squalo",
+        "gender": "male",
+        "image": "assets/khr/img/squalo.jpg",
+        "faction": [
+            "varia"
+        ]
+    },
+    {
+        "name": "Belphegor",
+        "gender": "male",
+        "image": "assets/khr/img/belphegor.jpg",
+        "faction": [
+            "varia"
+        ]
+    },
+    {
+        "name": "Mammon",
+        "gender": "male",
+        "image": "assets/khr/img/mammon.jpg",
+        "faction": [
+            "varia"
+        ]
+    },
+    {
+        "name": "Hibari Kyoya",
+        "gender": "male",
+        "image": "assets/khr/img/hibari.jpg",
+        "faction": [
+            "vongola"
+        ]
+    },
+    {
+        "name": "Lussuria",
+        "gender": "male",
+        "image": "assets/khr/img/lussuria.jpg",
+        "faction": [
+            "varia"
+        ]
+    },
+    {
+        "name": "Vongola Primo (Giotto)",
+        "gender": "male",
+        "image": "assets/khr/img/primo.jpg",
+        "faction": [
+            "vongola"
+        ]
+    },
+    {
+        "name": "Genkishi",
+        "gender": "male",
+        "image": "assets/khr/img/genkishi.jpg",
+        "faction": [
+            "millefiore"
+        ]
+    },
+    {
+        "name": "Spanner",
+        "gender": "male",
+        "image": "assets/khr/img/spanner.jpg",
+        "faction": [
+            "millefiore"
+        ]
+    },
+    {
+        "name": "Aria",
+        "gender": "female",
+        "image": "assets/khr/img/aria.jpg",
+        "faction": [
+            "cervello"
+        ]
+    }
 ]

@@ -1,242 +1,345 @@
 [
-  {
-    "name": "Izuku Midoriya",
-    "gender": "male",
-    "image": "assets/mha/img/midoriya.jpg",
-    "faction": ["first-year", "student"]
-  },
-  {
-    "name": "Katsuki Bakugo",
-    "gender": "male",
-    "image": "assets/mha/img/bakugo.jpg",
-    "faction": ["first-year", "student"]
-  },
-  {
-    "name": "Shoto Todoroki",
-    "gender": "male",
-    "image": "assets/mha/img/todoroki.jpg",
-    "faction": ["first-year", "student"]
-  },
-  {
-    "name": "Ochaco Uraraka",
-    "gender": "female",
-    "image": "assets/mha/img/uraraka.jpg",
-    "faction": ["first-year", "student"]
-  },
-  {
-    "name": "Tenya Iida",
-    "gender": "male",
-    "image": "assets/mha/img/iida.jpg",
-    "faction": ["first-year", "student"]
-  },
-  {
-    "name": "Tsuyu Asui",
-    "gender": "female",
-    "image": "assets/mha/img/asui.jpg",
-    "faction": ["first-year", "student"]
-  },
-  {
-    "name": "Momo Yaoyorozu",
-    "gender": "female",
-    "image": "assets/mha/img/yaoyorozu.jpg",
-    "faction": ["first-year", "student"]
-  },
-  {
-    "name": "Eijiro Kirishima",
-    "gender": "male",
-    "image": "assets/mha/img/kirishima.jpg",
-    "faction": ["first-year", "student"]
-  },
-  {
-    "name": "Denki Kaminari",
-    "gender": "male",
-    "image": "assets/mha/img/kaminari.jpg",
-    "faction": ["first-year", "student"]
-  },
-  {
-    "name": "Mina Ashido",
-    "gender": "female",
-    "image": "assets/mha/img/ashido.jpg",
-    "faction": ["first-year", "student"]
-  },
-  {
-    "name": "Fumikage Tokoyami",
-    "gender": "male",
-    "image": "assets/mha/img/tokoyami.jpg",
-    "faction": ["first-year", "student"]
-  },
-  {
-    "name": "Kyoka Jiro",
-    "gender": "female",
-    "image": "assets/mha/img/jiro.jpg",
-    "faction": ["first-year", "student"]
-  },
-  {
-    "name": "Hanta Sero",
-    "gender": "male",
-    "image": "assets/mha/img/sero.jpg",
-    "faction": ["first-year", "student"]
-  },
-  {
-    "name": "Yuga Aoyama",
-    "gender": "male",
-    "image": "assets/mha/img/aoyama.jpg",
-    "faction": ["first-year", "student"]
-  },
-  {
-    "name": "Toru Hagakure",
-    "gender": "female",
-    "image": "assets/mha/img/hagakure.jpg",
-    "faction": ["first-year", "student"]
-  },
-  {
-    "name": "Minoru Mineta",
-    "gender": "male",
-    "image": "assets/mha/img/mineta.jpg",
-    "faction": ["first-year", "student"]
-  },
-  {
-    "name": "All Might",
-    "gender": "male",
-    "image": "assets/mha/img/allmight.jpg",
-    "faction": ["hero"]
-  },
-  {
-    "name": "Aizawa Shouta",
-    "gender": "male",
-    "image": "assets/mha/img/aizawa.jpg",
-    "faction": ["hero"]
-  },
-  {
-    "name": "Endeavor",
-    "gender": "male",
-    "image": "assets/mha/img/endeavor.jpg",
-    "faction": ["hero"]
-  },
-  {
-    "name": "Hawks",
-    "gender": "male",
-    "image": "assets/mha/img/hawks.jpg",
-    "faction": ["hero"]
-  },
-  {
-    "name": "Mirko",
-    "gender": "female",
-    "image": "assets/mha/img/mirko.jpg",
-    "faction": ["hero"]
-  },
-  {
-    "name": "Mt. Lady",
-    "gender": "female",
-    "image": "assets/mha/img/mtlady.jpg",
-    "faction": ["hero"]
-  },
-  {
-    "name": "Present Mic",
-    "gender": "male",
-    "image": "assets/mha/img/presentmic.jpg",
-    "faction": ["hero"]
-  },
-  {
-    "name": "Tomura Shigaraki",
-    "gender": "male",
-    "image": "assets/mha/img/shigaraki.jpg",
-    "faction": ["villain"]
-  },
-  {
-    "name": "Dabi",
-    "gender": "male",
-    "image": "assets/mha/img/dabi.jpg",
-    "faction": ["villain"]
-  },
-  {
-    "name": "Toga Himiko",
-    "gender": "female",
-    "image": "assets/mha/img/toga.jpg",
-    "faction": ["villain"]
-  },
-  {
-    "name": "Twice",
-    "gender": "male",
-    "image": "assets/mha/img/twice.jpg",
-    "faction": ["villain"]
-  },
-  {
-    "name": "Spinner",
-    "gender": "male",
-    "image": "assets/mha/img/spinner.jpg",
-    "faction": ["villain"]
-  },
-  {
-    "name": "Mr. Compress",
-    "gender": "male",
-    "image": "assets/mha/img/compress.jpg",
-    "faction": ["villain"]
-  },
-  {
-    "name": "Nejire Hado",
-    "gender": "female",
-    "image": "assets/mha/img/nejire.jpg",
-    "faction": ["third-year", "student"]
-  },
-  {
-    "name": "Tamaki Amajiki",
-    "gender": "male",
-    "image": "assets/mha/img/tamaki.jpg",
-    "faction": ["third-year", "student"]
-  },
-  {
-    "name": "Mirio Togata",
-    "gender": "male",
-    "image": "assets/mha/img/mirio.jpg",
-    "faction": ["third-year", "student"]
-  },
-  {
-    "name": "Overhaul (Kai Chisaki)",
-    "gender": "male",
-    "image": "assets/mha/img/overhaul.jpg",
-    "faction": ["villain"]
-  },
-  {
-    "name": "Hitoshi Shinsou",
-    "gender": "male",
-    "image": "assets/mha/img/shinsou.jpg",
-    "faction": ["first-year", "student"]
-  },
-  {
-    "name": "Itsuka Kendo",
-    "gender": "female",
-    "image": "assets/mha/img/kendo.jpg",
-    "faction": ["first-year", "student"]
-  },
-  {
-    "name": "Neito Monoma",
-    "gender": "male",
-    "image": "assets/mha/img/monoma.jpg",
-    "faction": ["first-year", "student"]
-  },
-  {
-    "name": "Tetsutetsu Tetsutetsu",
-    "gender": "male",
-    "image": "assets/mha/img/tetsutetsu.jpg",
-    "faction": ["first-year", "student"]
-  },
-  {
-    "name": "Inasa Yoarashi",
-    "gender": "male",
-    "image": "assets/mha/img/inasa.jpg",
-    "faction": ["shiketsu"]
-  },
-  {
-    "name": "Camie Utsushimi",
-    "gender": "female",
-    "image": "assets/mha/img/camie.jpg",
-    "faction": ["shiketsu"]
-  },
-  {
-    "name": "Shishikura Seiji",
-    "gender": "male",
-    "image": "assets/mha/img/shishikura.jpg",
-    "faction": ["shiketsu"]
-  }
+    {
+        "name": "Izuku Midoriya",
+        "gender": "male",
+        "image": "assets/mha/img/midoriya.jpg",
+        "faction": [
+            "first-year",
+            "student"
+        ]
+    },
+    {
+        "name": "Katsuki Bakugo",
+        "gender": "male",
+        "image": "assets/mha/img/bakugo.jpg",
+        "faction": [
+            "first-year",
+            "student"
+        ]
+    },
+    {
+        "name": "Shoto Todoroki",
+        "gender": "male",
+        "image": "assets/mha/img/todoroki.jpg",
+        "faction": [
+            "first-year",
+            "student"
+        ]
+    },
+    {
+        "name": "Ochaco Uraraka",
+        "gender": "female",
+        "image": "assets/mha/img/uraraka.jpg",
+        "faction": [
+            "first-year",
+            "student"
+        ]
+    },
+    {
+        "name": "Tenya Iida",
+        "gender": "male",
+        "image": "assets/mha/img/iida.jpg",
+        "faction": [
+            "first-year",
+            "student"
+        ]
+    },
+    {
+        "name": "Tsuyu Asui",
+        "gender": "female",
+        "image": "assets/mha/img/asui.jpg",
+        "faction": [
+            "first-year",
+            "student"
+        ]
+    },
+    {
+        "name": "Momo Yaoyorozu",
+        "gender": "female",
+        "image": "assets/mha/img/yaoyorozu.jpg",
+        "faction": [
+            "first-year",
+            "student"
+        ]
+    },
+    {
+        "name": "Eijiro Kirishima",
+        "gender": "male",
+        "image": "assets/mha/img/kirishima.jpg",
+        "faction": [
+            "first-year",
+            "student"
+        ]
+    },
+    {
+        "name": "Denki Kaminari",
+        "gender": "male",
+        "image": "assets/mha/img/kaminari.jpg",
+        "faction": [
+            "first-year",
+            "student"
+        ]
+    },
+    {
+        "name": "Mina Ashido",
+        "gender": "female",
+        "image": "assets/mha/img/ashido.jpg",
+        "faction": [
+            "first-year",
+            "student"
+        ]
+    },
+    {
+        "name": "Fumikage Tokoyami",
+        "gender": "male",
+        "image": "assets/mha/img/tokoyami.jpg",
+        "faction": [
+            "first-year",
+            "student"
+        ]
+    },
+    {
+        "name": "Kyoka Jiro",
+        "gender": "female",
+        "image": "assets/mha/img/jiro.jpg",
+        "faction": [
+            "first-year",
+            "student"
+        ]
+    },
+    {
+        "name": "Hanta Sero",
+        "gender": "male",
+        "image": "assets/mha/img/sero.jpg",
+        "faction": [
+            "first-year",
+            "student"
+        ]
+    },
+    {
+        "name": "Yuga Aoyama",
+        "gender": "male",
+        "image": "assets/mha/img/aoyama.jpg",
+        "faction": [
+            "first-year",
+            "student"
+        ]
+    },
+    {
+        "name": "Toru Hagakure",
+        "gender": "female",
+        "image": "assets/mha/img/hagakure.jpg",
+        "faction": [
+            "first-year",
+            "student"
+        ]
+    },
+    {
+        "name": "Minoru Mineta",
+        "gender": "male",
+        "image": "assets/mha/img/mineta.jpg",
+        "faction": [
+            "first-year",
+            "student"
+        ]
+    },
+    {
+        "name": "All Might",
+        "gender": "male",
+        "image": "assets/mha/img/allmight.jpg",
+        "faction": [
+            "hero"
+        ]
+    },
+    {
+        "name": "Aizawa Shouta",
+        "gender": "male",
+        "image": "assets/mha/img/aizawa.jpg",
+        "faction": [
+            "hero"
+        ]
+    },
+    {
+        "name": "Endeavor",
+        "gender": "male",
+        "image": "assets/mha/img/endeavor.jpg",
+        "faction": [
+            "hero"
+        ]
+    },
+    {
+        "name": "Hawks",
+        "gender": "male",
+        "image": "assets/mha/img/hawks.jpg",
+        "faction": [
+            "hero"
+        ]
+    },
+    {
+        "name": "Mirko",
+        "gender": "female",
+        "image": "assets/mha/img/mirko.jpg",
+        "faction": [
+            "hero"
+        ]
+    },
+    {
+        "name": "Mt. Lady",
+        "gender": "female",
+        "image": "assets/mha/img/mtlady.jpg",
+        "faction": [
+            "hero"
+        ]
+    },
+    {
+        "name": "Present Mic",
+        "gender": "male",
+        "image": "assets/mha/img/presentmic.jpg",
+        "faction": [
+            "hero"
+        ]
+    },
+    {
+        "name": "Tomura Shigaraki",
+        "gender": "male",
+        "image": "assets/mha/img/shigaraki.jpg",
+        "faction": [
+            "villain"
+        ]
+    },
+    {
+        "name": "Dabi",
+        "gender": "male",
+        "image": "assets/mha/img/dabi.jpg",
+        "faction": [
+            "villain"
+        ]
+    },
+    {
+        "name": "Toga Himiko",
+        "gender": "female",
+        "image": "assets/mha/img/toga.jpg",
+        "faction": [
+            "villain"
+        ]
+    },
+    {
+        "name": "Twice",
+        "gender": "male",
+        "image": "assets/mha/img/twice.jpg",
+        "faction": [
+            "villain"
+        ]
+    },
+    {
+        "name": "Spinner",
+        "gender": "male",
+        "image": "assets/mha/img/spinner.jpg",
+        "faction": [
+            "villain"
+        ]
+    },
+    {
+        "name": "Mr. Compress",
+        "gender": "male",
+        "image": "assets/mha/img/compress.jpg",
+        "faction": [
+            "villain"
+        ]
+    },
+    {
+        "name": "Nejire Hado",
+        "gender": "female",
+        "image": "assets/mha/img/nejire.jpg",
+        "faction": [
+            "third-year",
+            "student"
+        ]
+    },
+    {
+        "name": "Tamaki Amajiki",
+        "gender": "male",
+        "image": "assets/mha/img/tamaki.jpg",
+        "faction": [
+            "third-year",
+            "student"
+        ]
+    },
+    {
+        "name": "Mirio Togata",
+        "gender": "male",
+        "image": "assets/mha/img/mirio.jpg",
+        "faction": [
+            "third-year",
+            "student"
+        ]
+    },
+    {
+        "name": "Overhaul (Kai Chisaki)",
+        "gender": "male",
+        "image": "assets/mha/img/overhaul.jpg",
+        "faction": [
+            "villain"
+        ]
+    },
+    {
+        "name": "Hitoshi Shinsou",
+        "gender": "male",
+        "image": "assets/mha/img/shinsou.jpg",
+        "faction": [
+            "first-year",
+            "student"
+        ]
+    },
+    {
+        "name": "Itsuka Kendo",
+        "gender": "female",
+        "image": "assets/mha/img/kendo.jpg",
+        "faction": [
+            "first-year",
+            "student"
+        ]
+    },
+    {
+        "name": "Neito Monoma",
+        "gender": "male",
+        "image": "assets/mha/img/monoma.jpg",
+        "faction": [
+            "first-year",
+            "student"
+        ]
+    },
+    {
+        "name": "Tetsutetsu Tetsutetsu",
+        "gender": "male",
+        "image": "assets/mha/img/tetsutetsu.jpg",
+        "faction": [
+            "first-year",
+            "student"
+        ]
+    },
+    {
+        "name": "Inasa Yoarashi",
+        "gender": "male",
+        "image": "assets/mha/img/inasa.jpg",
+        "faction": [
+            "shiketsu"
+        ]
+    },
+    {
+        "name": "Camie Utsushimi",
+        "gender": "female",
+        "image": "assets/mha/img/camie.jpg",
+        "faction": [
+            "shiketsu"
+        ]
+    },
+    {
+        "name": "Shishikura Seiji",
+        "gender": "male",
+        "image": "assets/mha/img/shishikura.jpg",
+        "faction": [
+            "shiketsu"
+        ]
+    }
 ]

@@ -1,200 +1,266 @@
 [
-  {
-    "name": "Haruka Sakura",
-    "gender": "male",
-    "image": "assets/windbreaker/img/haruka_sakura.jpg",
-    "faction": ["bofurin"]
-  },
-  {
-    "name": "Akihiko Nirei",
-    "gender": "male",
-    "image": "assets/windbreaker/img/akihiko_nirei.jpg",
-    "faction": ["bofurin"]
-  },
-  {
-    "name": "Hayato Suo",
-    "gender": "male",
-    "image": "assets/windbreaker/img/hayato_suo.jpg",
-    "faction": ["bofurin"]
-  },
-  {
-    "name": "Taiga Tsugeura",
-    "gender": "male",
-    "image": "assets/windbreaker/img/taiga_tsugeura.jpg",
-    "faction": ["bofurin"]
-  },
-  {
-    "name": "Mitsuki Kiryu",
-    "gender": "male",
-    "image": "assets/windbreaker/img/mitsuki_kiryu.jpg",
-    "faction": ["bofurin"]
-  },
-  {
-    "name": "Kyotaro Sugishita",
-    "gender": "male",
-    "image": "assets/windbreaker/img/kyotaro_sugishita.jpg",
-    "faction": ["bofurin"]
-  },
-  {
-    "name": "Ren Kaji",
-    "gender": "male",
-    "image": "assets/windbreaker/img/ren_kaji.jpg",
-    "faction": ["bofurin"]
-  },
-  {
-    "name": "Takeshi Enomoto",
-    "gender": "male",
-    "image": "assets/windbreaker/img/takeshi_enomoto.jpg",
-    "faction": ["bofurin"]
-  },
-  {
-    "name": "Yuto Kusumi",
-    "gender": "male",
-    "image": "assets/windbreaker/img/yuto_kusumi.jpg",
-    "faction": ["bofurin"]
-  },
-  {
-    "name": "Uryu Sakaki",
-    "gender": "male",
-    "image": "assets/windbreaker/img/uryu_sakaki.jpg",
-    "faction": ["shishitoren"]
-  },
-  {
-    "name": "Seiryu Sakaki",
-    "gender": "male",
-    "image": "assets/windbreaker/img/seiryu_sakaki.jpg",
-    "faction": ["shishitoren"]
-  },
-  {
-    "name": "Hajime Umemiya",
-    "gender": "male",
-    "image": "assets/windbreaker/img/hajime_umemiya.jpg",
-    "faction": ["shishitoren"]
-  },
-  {
-    "name": "Toma Hiragi",
-    "gender": "male",
-    "image": "assets/windbreaker/img/toma_hiragi.jpg",
-    "faction": ["shishitoren"]
-  },
-  {
-    "name": "Tasuku Tsubakino",
-    "gender": "male",
-    "image": "assets/windbreaker/img/tasuku_tsubakino.jpg",
-    "faction": ["shishitoren"]
-  },
-  {
-    "name": "Saku Mizuki",
-    "gender": "male",
-    "image": "assets/windbreaker/img/saku_mizuki.jpg",
-    "faction": ["shishitoren"]
-  },
-  {
-    "name": "Takumi Momose",
-    "gender": "male",
-    "image": "assets/windbreaker/img/takumi_momose.jpg",
-    "faction": ["shishitoren"]
-  },
-  {
-    "name": "Choji Tomiyama",
-    "gender": "male",
-    "image": "assets/windbreaker/img/choji_tomiyama.jpg",
-    "faction": ["shishitoren"]
-  },
-  {
-    "name": "Jo Togame",
-    "gender": "male",
-    "image": "assets/windbreaker/img/jo_togame.jpg",
-    "faction": ["shishitoren"]
-  },
-  {
-    "name": "Minoru Kanuma",
-    "gender": "male",
-    "image": "assets/windbreaker/img/minoru_kanuma.jpg",
-    "faction": ["shishitoren"]
-  },
-  {
-    "name": "Yukinari Arima",
-    "gender": "male",
-    "image": "assets/windbreaker/img/yukinari_arima.jpg",
-    "faction": ["shishitoren"]
-  },
-  {
-    "name": "Kota Sako",
-    "gender": "male",
-    "image": "assets/windbreaker/img/kota_sako.jpg",
-    "faction": ["shishitoren"]
-  },
-  {
-    "name": "Teruomi Inugami",
-    "gender": "male",
-    "image": "assets/windbreaker/img/teruomi_inugami.jpg",
-    "faction": ["shishitoren"]
-  },
-  {
-    "name": "Shingo Natori",
-    "gender": "male",
-    "image": "assets/windbreaker/img/shingo_natori.jpg",
-    "faction": ["outsider"]
-  },
-  {
-    "name": "Shuhei Suzuri",
-    "gender": "male",
-    "image": "assets/windbreaker/img/shuhei_suzuri.jpg",
-    "faction": ["outsider"]
-  },
-  {
-    "name": "Kanji Nakamura",
-    "gender": "male",
-    "image": "assets/windbreaker/img/kanji_nakamura.jpg",
-    "faction": ["outsider"]
-  },
-  {
-    "name": "Akihito Miyoshi",
-    "gender": "male",
-    "image": "assets/windbreaker/img/akihito_miyoshi.jpg",
-    "faction": ["outsider"]
-  },
-  {
-    "name": "Yamato Endo",
-    "gender": "male",
-    "image": "assets/windbreaker/img/yamato_endo.jpg",
-    "faction": ["outsider"]
-  },
-  {
-    "name": "Chika Takiishi",
-    "gender": "male",
-    "image": "assets/windbreaker/img/chika_takiishi.jpg",
-    "faction": ["outsider"]
-  },
-  {
-    "name": "Kanon Banjo",
-    "gender": "male",
-    "image": "assets/windbreaker/img/kanon_banjo.jpg",
-    "faction": ["outsider"]
-  },
-  {
-    "name": "Kaito Obiki",
-    "gender": "male",
-    "image": "assets/windbreaker/img/kaito_obiki.jpg",
-    "faction": ["outsider"]
-  },
-  {
-    "name": "Kotoha Tachibana",
-    "gender": "female",
-    "image": "assets/windbreaker/img/kotoha_tachibana.jpg",
-    "faction": ["civilian"]
-  },
-  {
-    "name": "Nagato",
-    "gender": "male",
-    "image": "assets/windbreaker/img/nagato.jpg",
-    "faction": ["civilian"]
-  },
-  {
-    "name": "Shizuka Narita",
-    "gender": "female",
-    "image": "assets/windbreaker/img/shizuka_narita.jpg",
-    "faction": ["civilian"]
-  }
+    {
+        "name": "Haruka Sakura",
+        "gender": "male",
+        "image": "assets/windbreaker/img/haruka_sakura.jpg",
+        "faction": [
+            "bofurin"
+        ]
+    },
+    {
+        "name": "Akihiko Nirei",
+        "gender": "male",
+        "image": "assets/windbreaker/img/akihiko_nirei.jpg",
+        "faction": [
+            "bofurin"
+        ]
+    },
+    {
+        "name": "Hayato Suo",
+        "gender": "male",
+        "image": "assets/windbreaker/img/hayato_suo.jpg",
+        "faction": [
+            "bofurin"
+        ]
+    },
+    {
+        "name": "Taiga Tsugeura",
+        "gender": "male",
+        "image": "assets/windbreaker/img/taiga_tsugeura.jpg",
+        "faction": [
+            "bofurin"
+        ]
+    },
+    {
+        "name": "Mitsuki Kiryu",
+        "gender": "male",
+        "image": "assets/windbreaker/img/mitsuki_kiryu.jpg",
+        "faction": [
+            "bofurin"
+        ]
+    },
+    {
+        "name": "Kyotaro Sugishita",
+        "gender": "male",
+        "image": "assets/windbreaker/img/kyotaro_sugishita.jpg",
+        "faction": [
+            "bofurin"
+        ]
+    },
+    {
+        "name": "Ren Kaji",
+        "gender": "male",
+        "image": "assets/windbreaker/img/ren_kaji.jpg",
+        "faction": [
+            "bofurin"
+        ]
+    },
+    {
+        "name": "Takeshi Enomoto",
+        "gender": "male",
+        "image": "assets/windbreaker/img/takeshi_enomoto.jpg",
+        "faction": [
+            "bofurin"
+        ]
+    },
+    {
+        "name": "Yuto Kusumi",
+        "gender": "male",
+        "image": "assets/windbreaker/img/yuto_kusumi.jpg",
+        "faction": [
+            "bofurin"
+        ]
+    },
+    {
+        "name": "Uryu Sakaki",
+        "gender": "male",
+        "image": "assets/windbreaker/img/uryu_sakaki.jpg",
+        "faction": [
+            "shishitoren"
+        ]
+    },
+    {
+        "name": "Seiryu Sakaki",
+        "gender": "male",
+        "image": "assets/windbreaker/img/seiryu_sakaki.jpg",
+        "faction": [
+            "shishitoren"
+        ]
+    },
+    {
+        "name": "Hajime Umemiya",
+        "gender": "male",
+        "image": "assets/windbreaker/img/hajime_umemiya.jpg",
+        "faction": [
+            "shishitoren"
+        ]
+    },
+    {
+        "name": "Toma Hiragi",
+        "gender": "male",
+        "image": "assets/windbreaker/img/toma_hiragi.jpg",
+        "faction": [
+            "shishitoren"
+        ]
+    },
+    {
+        "name": "Tasuku Tsubakino",
+        "gender": "male",
+        "image": "assets/windbreaker/img/tasuku_tsubakino.jpg",
+        "faction": [
+            "shishitoren"
+        ]
+    },
+    {
+        "name": "Saku Mizuki",
+        "gender": "male",
+        "image": "assets/windbreaker/img/saku_mizuki.jpg",
+        "faction": [
+            "shishitoren"
+        ]
+    },
+    {
+        "name": "Takumi Momose",
+        "gender": "male",
+        "image": "assets/windbreaker/img/takumi_momose.jpg",
+        "faction": [
+            "shishitoren"
+        ]
+    },
+    {
+        "name": "Choji Tomiyama",
+        "gender": "male",
+        "image": "assets/windbreaker/img/choji_tomiyama.jpg",
+        "faction": [
+            "shishitoren"
+        ]
+    },
+    {
+        "name": "Jo Togame",
+        "gender": "male",
+        "image": "assets/windbreaker/img/jo_togame.jpg",
+        "faction": [
+            "shishitoren"
+        ]
+    },
+    {
+        "name": "Minoru Kanuma",
+        "gender": "male",
+        "image": "assets/windbreaker/img/minoru_kanuma.jpg",
+        "faction": [
+            "shishitoren"
+        ]
+    },
+    {
+        "name": "Yukinari Arima",
+        "gender": "male",
+        "image": "assets/windbreaker/img/yukinari_arima.jpg",
+        "faction": [
+            "shishitoren"
+        ]
+    },
+    {
+        "name": "Kota Sako",
+        "gender": "male",
+        "image": "assets/windbreaker/img/kota_sako.jpg",
+        "faction": [
+            "shishitoren"
+        ]
+    },
+    {
+        "name": "Teruomi Inugami",
+        "gender": "male",
+        "image": "assets/windbreaker/img/teruomi_inugami.jpg",
+        "faction": [
+            "shishitoren"
+        ]
+    },
+    {
+        "name": "Shingo Natori",
+        "gender": "male",
+        "image": "assets/windbreaker/img/shingo_natori.jpg",
+        "faction": [
+            "outsider"
+        ]
+    },
+    {
+        "name": "Shuhei Suzuri",
+        "gender": "male",
+        "image": "assets/windbreaker/img/shuhei_suzuri.jpg",
+        "faction": [
+            "outsider"
+        ]
+    },
+    {
+        "name": "Kanji Nakamura",
+        "gender": "male",
+        "image": "assets/windbreaker/img/kanji_nakamura.jpg",
+        "faction": [
+            "outsider"
+        ]
+    },
+    {
+        "name": "Akihito Miyoshi",
+        "gender": "male",
+        "image": "assets/windbreaker/img/akihito_miyoshi.jpg",
+        "faction": [
+            "outsider"
+        ]
+    },
+    {
+        "name": "Yamato Endo",
+        "gender": "male",
+        "image": "assets/windbreaker/img/yamato_endo.jpg",
+        "faction": [
+            "outsider"
+        ]
+    },
+    {
+        "name": "Chika Takiishi",
+        "gender": "male",
+        "image": "assets/windbreaker/img/chika_takiishi.jpg",
+        "faction": [
+            "outsider"
+        ]
+    },
+    {
+        "name": "Kanon Banjo",
+        "gender": "male",
+        "image": "assets/windbreaker/img/kanon_banjo.jpg",
+        "faction": [
+            "outsider"
+        ]
+    },
+    {
+        "name": "Kaito Obiki",
+        "gender": "male",
+        "image": "assets/windbreaker/img/kaito_obiki.jpg",
+        "faction": [
+            "outsider"
+        ]
+    },
+    {
+        "name": "Kotoha Tachibana",
+        "gender": "female",
+        "image": "assets/windbreaker/img/kotoha_tachibana.jpg",
+        "faction": [
+            "civilian"
+        ]
+    },
+    {
+        "name": "Nagato",
+        "gender": "male",
+        "image": "assets/windbreaker/img/nagato.jpg",
+        "faction": [
+            "civilian"
+        ]
+    },
+    {
+        "name": "Shizuka Narita",
+        "gender": "female",
+        "image": "assets/windbreaker/img/shizuka_narita.jpg",
+        "faction": [
+            "civilian"
+        ]
+    }
 ]

@@ -1,26 +1,26 @@
 [
-  {
-    "name": "Первокурсники",
-    "faction": "first-year"
-  },
-  {
-    "name": "Третьекурсники",
-    "faction": "third-year"
-  },
-  {
-    "name": "Ученики",
-    "faction": "student"
-  },
-  {
-    "name": "Профессиональные герои",
-    "faction": "hero"
-  },
-  {
-    "name": "Злодеи",
-    "faction": "villain"
-  },
-  {
-    "name": "Шикецу",
-    "faction": "shiketsu"
-  }
+    {
+        "name": "Первокурсники",
+        "faction": "first-year"
+    },
+    {
+        "name": "Третьекурсники",
+        "faction": "third-year"
+    },
+    {
+        "name": "Ученики",
+        "faction": "student"
+    },
+    {
+        "name": "Профессиональные герои",
+        "faction": "hero"
+    },
+    {
+        "name": "Злодеи",
+        "faction": "villain"
+    },
+    {
+        "name": "Шикецу",
+        "faction": "shiketsu"
+    }
 ]

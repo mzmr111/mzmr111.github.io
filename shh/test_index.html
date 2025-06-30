@@ -116,7 +116,7 @@
 
       const factionSelect = document.getElementById('factions');
       const selectedFactions = Array.from(factionSelect.selectedOptions).map(opt => opt.value);
-
+console.log('selectedFactions', selectedFactions);
       const relationshipSize = parseInt(form.get('relationshipSize'), 10) || 1;
       const type = form.get('type') || 'gen';
       let sideCount = parseInt(form.get('sideCount'), 10);
@@ -135,8 +135,9 @@
           return factions.some(f => selectedFactions.includes(f));
         };
       }
+      console.log('characters', characters);
       const filteredChars = characters.filter(c => genderFilter(c) && factionFilter(c));
-
+console.log('filteredChars', filteredChars);
       const mainRelationship = getRandom(filteredChars, relationshipSize);
 
       const usedNames = new Set(mainRelationship.map(c => c.name));
@@ -240,7 +241,9 @@
     function updateFactionOptions(factions) {
       const factionSelect = document.getElementById('factions');
       const currentValues = Array.from(factionSelect.selectedOptions).map(opt => opt.value);
-
+      console.log('factionSelect', factionSelect);
+      console.log('currentValues', currentValues);
+      console.log('factions', factions);
       factionSelect.innerHTML = '';
       factions.forEach(({ name, faction }) => {
         const opt = document.createElement('option');

@@ -1,26 +1,26 @@
 [
-  {
-    "name": "Вонгола",
-    "faction": "vongola"
-  },
-  {
-    "name": "Вария",
-    "faction": "varia"
-  },
-  {
-    "name": "Миллефиоре",
-    "faction": "millefiore"
-  },
-  {
-    "name": "Гражданские",
-    "faction": "civilian"
-  },
-  {
-    "name": "Независимые",
-    "faction": "independent"
-  },
-  {
-    "name": "Червелло",
-    "faction": "cervello"
-  }
+    {
+        "name": "Вонгола",
+        "faction": "vongola"
+    },
+    {
+        "name": "Вария",
+        "faction": "varia"
+    },
+    {
+        "name": "Миллефиоре",
+        "faction": "millefiore"
+    },
+    {
+        "name": "Гражданские",
+        "faction": "civilian"
+    },
+    {
+        "name": "Независимые",
+        "faction": "independent"
+    },
+    {
+        "name": "Червелло",
+        "faction": "cervello"
+    }
 ]
