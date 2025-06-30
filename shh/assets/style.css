@@ -10,7 +10,7 @@ h1 {
   text-align: center;
   margin-bottom: 1em;
   font-size: 2rem;
-  color: #ff4fa2;
+  color: #f86204;
 }
 
 ul {
@@ -20,7 +20,7 @@ ul {
 
 h2, h3 {
   text-align: center;
-  color: #ff4fa2;
+  color: #f86204;
   font-size: 1.5rem;
 }
 
@@ -32,7 +32,7 @@ h3 {
   text-align: left;
   margin-top: 1.5em;
   font-size: 1.3rem;
-  border-bottom: solid 2px #ff4fa2;
+  border-bottom: solid 2px #f86204;
   padding: 10px 0;
   font-size: 0.9em;
 }
@@ -49,13 +49,13 @@ form {
   background: #1e1e1e;
   padding: 2em;
   border-radius: 1em;
-  box-shadow: 0 8px 20px rgba(255, 105, 180, 0.1);
+  box-shadow: 0 8px 20px #4a28104d;
   margin-bottom: 2em;
 }
 
 form h2 {
   text-align: center;
-  color: #ff4fa2;
+  color: #f86204;
 }
 
 .form-group {
@@ -66,7 +66,7 @@ form h2 {
   display: block;
   margin-bottom: 0.5em;
   font-weight: bold;
-  color: #ff4fa2;
+  color: #f86204;
   font-size: 1rem;
 }
 
@@ -78,7 +78,7 @@ form h2 {
   font-size: 1rem;
   border: 1px solid #666;
   border-radius: 0.5em;
-  background: #222 url('data:image/svg+xml;utf8,<svg fill="%23ff4fa2" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat right 1em center;
+  background: #222 url('data:image/svg+xml;utf8,<svg fill="%23f86204" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat right 1em center;
   background-size: 1.5em;
   color: #eee;
   appearance: none;
@@ -92,7 +92,7 @@ form h2 {
 .form-group select:focus,
 .form-group input[type="number"]:focus,
 .form-group input[type="text"]:focus {
-  border-color: #ff87d0;
+  border-color: #ffa56c;
   background-color: #111;
 }
 
@@ -106,7 +106,7 @@ button.submit-btn {
   display: block;
   width: auto;
   min-width: 150px;
-  background: linear-gradient(135deg, #ff87d0, #ff4fa2);
+  background: linear-gradient(135deg, #ffa56c, #f86204);
   color: white;
   border: none;
   padding: 0.6em 1.5em;
@@ -115,10 +115,11 @@ button.submit-btn {
   cursor: pointer;
   transition: all 0.3s ease;
   margin: 1em auto 0 auto;
+  font-weight: bold;
 }
 
 button.submit-btn:hover {
-  background: linear-gradient(135deg, #ff4fa2, #ff87d0);
+  background: linear-gradient(135deg, #f86204, #ffa56c);
   transform: scale(1.05);
 }
 
@@ -126,7 +127,7 @@ button.submit-btn:hover {
   background: #1e1e1e;
   padding: 2em;
   border-radius: 1em;
-  box-shadow: 0 8px 20px rgba(255, 105, 180, 0.1);
+  box-shadow: 0 8px 20px #4a28104d;
 }
 
 .relationship {
@@ -151,13 +152,13 @@ button.submit-btn:hover {
   object-fit: cover;
   border-radius: 50%;
   transition: 0.3s ease;
-  border: 3px solid #ff4fa2;
-  box-shadow: 0 8px 20px rgba(255, 105, 180, 0.3);
+  border: 3px solid #f86204;
+  box-shadow: 0 8px 20px #ffc3984d;
 }
 
 .char-icon:hover {
   transform: scale(1.1) rotate(5deg);
-  box-shadow: 0 8px 20px rgba(255, 105, 180, 0.5);
+  box-shadow: 0 8px 20px #f86204a3;
 }
 
 .side-chars {
@@ -200,7 +201,7 @@ button.submit-btn:hover {
   font-style: italic;
   font-weight: bold;
   font-size: 1.2em;
-  color: #ff4fa2;
+  color: #f86204;
 }
 
 .keywords:before, .keywords:after { 
@@ -212,15 +213,15 @@ button.submit-btn:hover {
 }
 
 .keywords:before {
-  border-left: solid 3px #ff4fa2;
-  border-top: solid 3px #ff4fa2;
+  border-left: solid 3px #f86204;
+  border-top: solid 3px #f86204;
   top:0;
   left: 0;
 }
 
 .keywords:after {
-  border-right: solid 3px #ff4fa2;
-  border-bottom: solid 3px #ff4fa2;
+  border-right: solid 3px #f86204;
+  border-bottom: solid 3px #f86204;
   bottom:0;
   right: 0;
 }
@@ -230,7 +231,7 @@ button.submit-btn:hover {
   padding: 1.5em;
   border-radius: 8px;
   margin-top: 2em;
-  border: 0.1em dashed #ff87d0;
+  border: 0.1em dashed #ffa56c;
 }
 
 .info-row {
@@ -239,7 +240,7 @@ button.submit-btn:hover {
 }
 
 .info-label {
-  color: #ff4fa2;
+  color: #f86204;
   width: 6em;
   font-weight: bold;
   flex-shrink: 0;
@@ -259,7 +260,7 @@ span.info-description {
 .refresh-btn {
   width: 1em;
   height: 1em;
-  color: #ff87d0;
+  color: #ffa56c;
   font-weight: bold;
   display: block;
   width: auto;
@@ -286,7 +287,7 @@ span.info-description {
 }
 .faction-btn {
   background-color: #333;
-  border: 2px solid #ff4fa2;
+  border: 2px solid #f86204;
   border-radius: 0.5em;
   padding: 0.4em 1em;
   color: #eee;
@@ -295,7 +296,7 @@ span.info-description {
   transition: all 0.2s ease-in-out;
 }
 .faction-btn.selected {
-  background-color: #ff4fa2;
+  background-color: #f86204;
   color: #000;
 }
 .faction-btn:hover {
