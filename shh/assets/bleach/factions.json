@@ -10,5 +10,22 @@
     {
         "name": "Штернриттеры",
         "faction": "sternritters"
+    },
+    {
+        "name": "Занпакто",
+        "faction": "zanpakuto"
+    },
+    {
+        "name": "Люди",
+        "faction": "human"
+    },
+    {
+        "name": "Вайзарды",
+        "faction": "visored"
+    },
+    {
+        "name": "Глубокий внутренний мир Ичиго",
+        "faction": "ichigo"
     }
+
 ]

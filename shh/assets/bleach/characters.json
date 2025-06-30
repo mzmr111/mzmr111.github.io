@@ -3,7 +3,7 @@
         "name": "Ичиго Куросаки",
         "gender": "male",
         "image": "assets/bleach/img/ichigo.jpg",
-        "faction": ["shinigami"]
+        "faction": ["shinigami", "human"]
       },
       {
         "name": "Рукия Кучики",
@@ -20,7 +20,8 @@
       {
         "name": "Орихиме Иноуэ",
         "gender": "female",
-        "image": "assets/bleach/img/orihime.jpg"
+        "image": "assets/bleach/img/orihime.jpg",
+        "faction": ["shinigami"]
       },
       {
         "name": "Куроцучи Маюри",
@@ -31,22 +32,26 @@
       {
         "name": "Йоруичи",
         "gender": "female",
-        "image": "assets/bleach/img/yoruichi.jpg"
+        "image": "assets/bleach/img/yoruichi.jpg",
+        "faction": ["shinigami"]
       },
       {
         "name": "Урахара Киске",
         "gender": "male",
-        "image": "assets/bleach/img/urahara.jpg"
+        "image": "assets/bleach/img/urahara.jpg",
+        "faction": ["shinigami"]
       },
       {
         "name": "Бьякуя Кучики",
         "gender": "male",
-        "image": "assets/bleach/img/byakuya.jpg"
+        "image": "assets/bleach/img/byakuya.jpg",
+        "faction": ["shinigami"]
       },
       {
         "name": "Сой Фон",
         "gender": "female",
-        "image": "assets/bleach/img/suifeng.jpg"
+        "image": "assets/bleach/img/suifeng.jpg",
+        "faction": ["shinigami"]
       },
       {
         "name": "Гриммджо",
@@ -69,99 +74,247 @@
       {
         "name": "Кенпачи Зараки",
         "gender": "male",
-        "image": "assets/bleach/img/zaraki.jpg"
+        "image": "assets/bleach/img/zaraki.jpg",
+        "faction": ["shinigami"]
       },
       {
         "name": "Рангику Мацумото",
         "gender": "female",
-        "image": "assets/bleach/img/rangiku.jpg"
+        "image": "assets/bleach/img/rangiku.jpg",
+        "faction": ["shinigami"]
       },
       {
         "name": "Айзен Соске",
         "gender": "male",
-        "image": "assets/bleach/img/aizen.jpg"
+        "image": "assets/bleach/img/aizen.jpg",
+        "faction": ["shinigami"]
       },
       {
         "name": "Хирако",
         "gender": "male",
-        "image": "assets/bleach/img/hirako.jpg"
+        "image": "assets/bleach/img/hirako.jpg",
+        "faction": ["shinigami", "visored"]
       },
       {
         "name": "Иккаку",
         "gender": "male",
-        "image": "assets/bleach/img/ikkaku.jpg"
+        "image": "assets/bleach/img/ikkaku.jpg",
+        "faction": ["shinigami"]
       },
       {
         "name": "Юмичика",
         "gender": "male",
-        "image": "assets/bleach/img/yumichika.jpg"
+        "image": "assets/bleach/img/yumichika.jpg",
+        "faction": ["shinigami"]
       },
       {
         "name": "Исида Урью",
         "gender": "male",
-        "image": "assets/bleach/img/ishida.jpg"
+        "image": "assets/bleach/img/ishida.jpg",
+        "faction": ["quincy"]
       },
       {
         "name": "Тиа Халлибел",
         "gender": "female",
-        "image": "assets/bleach/img/tia.jpg"
+        "image": "assets/bleach/img/tia.jpg",
+        "faction": ["espada"]
       },
       {
         "name": "Унохана",
         "gender": "female",
-        "image": "assets/bleach/img/unohana.jpg"
+        "image": "assets/bleach/img/unohana.jpg",
+        "faction": ["shinigami"]
       },
       {
         "name": "Луппи",
         "gender": "male",
-        "image": "assets/bleach/img/luppi.jpg"
+        "image": "assets/bleach/img/luppi.jpg",
+        "faction": ["espada"]
       },
       {
         "name": "Чируччи",
         "gender": "female",
-        "image": "assets/bleach/img/cirucci.jpg"
+        "image": "assets/bleach/img/cirucci.jpg",
+        "faction": ["espada"]
       },
       {
-        "name": "Нноитра",
+        "name": "Нноитра Гилга",
         "gender": "male",
-        "image": "assets/bleach/img/nnoitra.jpg"
+        "image": "assets/bleach/img/nnoitra.jpg",
+        "faction": ["espada"]
       },
       {
         "name": "Заэль",
         "gender": "male",
-        "image": "assets/bleach/img/szayel.jpg"
+        "image": "assets/bleach/img/szayel.jpg",
+        "faction": ["espada"]
       },
       {
         "name": "Тесла",
         "gender": "male",
-        "image": "assets/bleach/img/tesla.jpg"
+        "image": "assets/bleach/img/tesla.jpg",
+        "faction": ["espada"]
       },
       {
         "name": "Яхве",
         "gender": "male",
-        "image": "assets/bleach/img/yhwach.jpg"
+        "image": "assets/bleach/img/yhwach.jpg",
+        "faction": ["quincy"]
       },
       {
         "name": "Юграм Хашвальт",
         "gender": "male",
         "image": "assets/bleach/img/jugram.jpg",
-        "faction": ["sternritters"]
+        "faction": ["quincy"]
       },
       {
         "name": "Базз Би",
         "gender": "male",
         "image": "assets/bleach/img/bazz.jpg",
-        "faction": ["sternritters"]
+        "faction": ["quincy"]
       },
       {
         "name": "Жижи",
         "gender": "male",
         "image": "assets/bleach/img/giselle.jpg",
-        "faction": ["sternritters"]
+        "faction": ["quincy"]
       },
       {
         "name": "Ичимару Гин",
         "gender": "male",
-        "image": "assets/bleach/img/gin.jpg"
+        "image": "assets/bleach/img/gin.jpg",
+        "faction": ["shinigami"]
+      },
+      {
+        "name": "Кира Изуру",
+        "gender": "male",
+        "image": "assets/bleach/img/kira.jpg",
+        "faction": ["shinigami"]
+      },
+      {
+        "name": "Хисаги Шухей",
+        "gender": "male",
+        "image": "assets/bleach/img/hisagi.jpg",
+        "faction": ["shinigami"]
+      },
+      {
+        "name": "Хачиген Усода",
+        "gender": "male",
+        "image": "assets/bleach/img/hachigen.jpg",
+        "faction": ["shinigami", "visored"]
+      },
+      {
+        "name": "Ядомару Лиза",
+        "gender": "female",
+        "image": "assets/bleach/img/lisa.jpg",
+        "faction": ["shinigami", "visored"]
+      },
+      {
+        "name": "Маширо Куна",
+        "gender": "female",
+        "image": "assets/bleach/img/mashiro.jpg",
+        "faction": ["shinigami", "visored"]
+      },
+      {
+        "name": "Мугурума Кенсей",
+        "gender": "male",
+        "image": "assets/bleach/img/kensei.jpg",
+        "faction": ["shinigami", "visored"]
+      },
+      {
+        "name": "Лав",
+        "gender": "male",
+        "image": "assets/bleach/img/love.jpg",
+        "faction": ["shinigami", "visored"]
+      },
+      {
+        "name": "Токинада Цунаёшимару",
+        "gender": "male",
+        "image": "assets/bleach/img/tokinada.jpg",
+        "faction": ["shinigami"]
+      },
+      {
+        "name": "Казешини",
+        "gender": "male",
+        "image": "assets/bleach/img/kazeshini.jpg",
+        "faction": ["zanpakuto"]
+      },
+      {
+        "name": "Мурамаса",
+        "gender": "male",
+        "image": "assets/bleach/img/muramasa.jpg",
+        "faction": ["zanpakuto"]
+      },
+      {
+        "name": "Сэнбонзакура",
+        "gender": "male",
+        "image": "assets/bleach/img/senbonzakura.jpg",
+        "faction": ["zanpakuto"]
+      },
+      {
+        "name": "Херинмару",
+        "gender": "male",
+        "image": "assets/bleach/img/hyorinmaru.jpg",
+        "faction": ["zanpakuto"]
+      },
+      {
+        "name": "Вабиске",
+        "gender": "male",
+        "image": "assets/bleach/img/wabisuke.jpg",
+        "faction": ["zanpakuto"]
+      },
+      {
+        "name": "Забимару",
+        "gender": "male",
+        "image": "assets/bleach/img/zabimaru.jpg",
+        "faction": ["zanpakuto"]
+      },
+      {
+        "name": "Хичиго",
+        "gender": "male",
+        "image": "assets/bleach/img/hichigo.jpg",
+        "faction": ["zanpakuto", "ichigo"]
+      },
+      {
+        "name": "Зангецу",
+        "gender": "male",
+        "image": "assets/bleach/img/zangetsu.jpg",
+        "faction": ["zanpakuto", "ichigo"]
+      },
+      {
+        "name": "Рурииро Кудзяку",
+        "gender": "male",
+        "image": "assets/bleach/img/ruriiro_kujaku.jpg",
+        "faction": ["zanpakuto"]
+      },
+      {
+        "name": "Аскин Накк ле Варр",
+        "gender": "male",
+        "image": "assets/bleach/img/askin.jpg",
+        "faction": ["quincy"]
+      },
+      {
+        "name": "Бамбиетта Бастербайн",
+        "gender": "female",
+        "image": "assets/bleach/img/bambietta.jpg",
+        "faction": ["quincy"]
+      },
+      {
+        "name": "Кандис Кэтнил",
+        "gender": "female",
+        "image": "assets/bleach/img/candice.jpg",
+        "faction": ["quincy"]
+      },
+      {
+        "name": "Менина Макаллон",
+        "gender": "female",
+        "image": "assets/bleach/img/meninas.jpg",
+        "faction": ["quincy"]
+      },
+      {
+        "name": "Лилтотто Лампард",
+        "gender": "female",
+        "image": "assets/bleach/img/liltotto.jpg",
+        "faction": ["quincy"]
       }
-    ]
+]

@@ -77,7 +77,7 @@
     async function loadDataForTitle(title) {
       const folder = titleFolders[title];
       try {
-        const [charData, genreData, kinkData, tropeData, auData, keywordData, factionsData] = await Promise.all([
+        const [charData, factionsData, genreData, kinkData, tropeData, auData, keywordData] = await Promise.all([
           fetch(`assets/${folder}/characters.json`).then(r => r.json()),
           fetch(`assets/${folder}/factions.json`).then(r => r.json()),
           fetch('assets/genres.json').then(r => r.json()),
@@ -116,8 +116,7 @@
 
       const factionSelect = document.getElementById('factions');
       const selectedFactions = Array.from(factionSelect.selectedOptions).map(opt => opt.value);
-console.log(factionSelect.selectedOptions);
-console.log(selectedFactions);
+
       const relationshipSize = parseInt(form.get('relationshipSize'), 10) || 1;
       const type = form.get('type') || 'gen';
       let sideCount = parseInt(form.get('sideCount'), 10);
@@ -137,7 +136,7 @@ console.log(selectedFactions);
         };
       }
       const filteredChars = characters.filter(c => genderFilter(c) && factionFilter(c));
-console.log(filteredChars);
+
       const mainRelationship = getRandom(filteredChars, relationshipSize);
 
       const usedNames = new Set(mainRelationship.map(c => c.name));
@@ -241,6 +240,7 @@ console.log(filteredChars);
     function updateFactionOptions(factions) {
       const factionSelect = document.getElementById('factions');
       const currentValues = Array.from(factionSelect.selectedOptions).map(opt => opt.value);
+
       factionSelect.innerHTML = '';
       factions.forEach(({ name, faction }) => {
         const opt = document.createElement('option');
