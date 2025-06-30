@@ -1,77 +1,92 @@
 [
-    {
-        "name": "Victor",
-        "gender": "male",
-        "image": "assets/arcane/img/viktor.jpg"
-    },
-    {
-        "name": "Jayce",
-        "gender": "male",
-        "image": "assets/arcane/img/jayce.jpg"
-    },
-    {
-        "name": "Mel",
-        "gender": "female",
-        "image": "assets/arcane/img/mel.jpg"
-    },
-    {
-        "name": "Kate",
-        "gender": "female",
-        "image": "assets/arcane/img/kate.jpg"
-    },
-    {
-        "name": "Vi",
-        "gender": "female",
-        "image": "assets/arcane/img/vi.jpg"
-    },
-    {
-        "name": "Jinx",
-        "gender": "female",
-        "image": "assets/arcane/img/jinx.jpg"
-    },
-    {
-        "name": "Silco",
-        "gender": "male",
-        "image": "assets/arcane/img/silco.jpg"
-    },
-    {
-        "name": "Ekko",
-        "gender": "male",
-        "image": "assets/arcane/img/ekko.jpg"
-    },
-    {
-        "name": "Heimerdinger",
-        "gender": "male",
-        "image": "assets/arcane/img/heimerdinger.jpg"
-    },
-    {
-        "name": "Lest",
-        "gender": "male",
-        "image": "assets/arcane/img/lest.jpg"
-    },
-    {
-        "name": "Scar",
-        "gender": "male",
-        "image": "assets/arcane/img/scar.jpg"
-    },
-    {
-        "name": "Grayson",
-        "gender": "female",
-        "image": "assets/arcane/img/grayson.jpg"
-    },
-    {
-        "name": "Sevika",
-        "gender": "female",
-        "image": "assets/arcane/img/sevika.jpg"
-    },
-    {
-        "name": "Salo",
-        "gender": "male",
-        "image": "assets/arcane/img/salo.jpg"
-    },
-    {
-        "name": "Steb",
-        "gender": "male",
-        "image": "assets/arcane/img/steb.jpg"
-    }
+  {
+    "name": "Victor",
+    "gender": "male",
+    "image": "assets/arcane/img/viktor.jpg",
+    "faction": ["piltover"]
+  },
+  {
+    "name": "Jayce",
+    "gender": "male",
+    "image": "assets/arcane/img/jayce.jpg",
+    "faction": ["piltover"]
+  },
+  {
+    "name": "Mel",
+    "gender": "female",
+    "image": "assets/arcane/img/mel.jpg",
+    "faction": ["piltover"]
+  },
+  {
+    "name": "Kate",
+    "gender": "female",
+    "image": "assets/arcane/img/kate.jpg",
+    "faction": ["piltover"]
+  },
+  {
+    "name": "Vi",
+    "gender": "female",
+    "image": "assets/arcane/img/vi.jpg",
+    "faction": ["zaun"]
+  },
+  {
+    "name": "Jinx",
+    "gender": "female",
+    "image": "assets/arcane/img/jinx.jpg",
+    "faction": ["zaun"]
+  },
+  {
+    "name": "Silco",
+    "gender": "male",
+    "image": "assets/arcane/img/silco.jpg",
+    "faction": ["zaun"]
+  },
+  {
+    "name": "Ekko",
+    "gender": "male",
+    "image": "assets/arcane/img/ekko.jpg",
+    "faction": ["zaun"]
+  },
+  {
+    "name": "Heimerdinger",
+    "gender": "male",
+    "image": "assets/arcane/img/heimerdinger.jpg",
+    "faction": ["piltover"]
+  },
+  {
+    "name": "Lest",
+    "gender": "male",
+    "image": "assets/arcane/img/lest.jpg",
+    "faction": ["zaun"]
+  },
+  {
+    "name": "Scar",
+    "gender": "male",
+    "image": "assets/arcane/img/scar.jpg",
+    "faction": ["zaun"]
+  },
+  {
+    "name": "Grayson",
+    "gender": "female",
+    "image": "assets/arcane/img/grayson.jpg",
+    "faction": ["piltover"]
+  },
+  {
+    "name": "Sevika",
+    "gender": "female",
+    "image": "assets/arcane/img/sevika.jpg",
+    "faction": ["zaun"]
+  },
+  {
+    "name": "Salo",
+    "gender": "male",
+    "image": "assets/arcane/img/salo.jpg",
+    "faction": ["zaun"]
+  },
+  {
+    "name": "Steb",
+    "gender": "male",
+    "image": "assets/arcane/img/steb.jpg",
+    "faction": ["zaun"]
+  }
 ]
