@@ -129,7 +129,7 @@ button.submit-btn:hover {
 .relationship {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: baseline;
   justify-content: center;
   gap: 1em;
   margin-bottom: 2em;
