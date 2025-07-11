@@ -135,40 +135,39 @@
 
       const resultDiv = document.getElementById('result');
 
-      resultDiv.innerHTML = `<p><strong>Генерируем фичок...</strong></p>`;
-      setTimeout(() => {
-        resultDiv.innerHTML = `
-              <div class="relationship">
-          ${mainRelationship.map(c => `
-                  <div class="char">
-                    <img src="${c.image}" alt="${c.name}" class="char-icon" onerror="this.onerror=null;this.src='assets/noicon.jpg';">
-                    <p>${c.name}</p>
-                  </div>
-            `).join(`<span>${getEmoji()}</span>`)}
-              </div>
+      resultDiv.innerHTML = `
+            <div class="relationship">
+        ${mainRelationship.map(c => `
+                <div class="char">
+                  <img src="${c.image}" alt="${c.name}" class="char-icon" onerror="this.onerror=null;this.src='assets/noicon.jpg';">
+                  <p>${c.name}</p>
+                </div>
+          `).join(`<span>${getEmoji()}</span>`)}
+            </div>
 
-              <p class='keywords'>«  ${keywords.join(' • ')}  »</p>
+            <p class='keywords'>«  ${keywords.join(' • ')}  »</p>
 
-              <div class='info-block'>
-                ${generateInfoRow('Жанр', 'genre', genre)}
-                ${generateInfoRow('Троп', 'trope', trope)}
-                ${generateInfoRow('AU', 'au', au)}
-                ${kink ? generateInfoRow('Кинк', 'kink', kink) : ''}
-              </div>
+            <div class='info-block'>
+              ${generateInfoRow('Жанр', 'genre', genre)}
+              ${generateInfoRow('Троп', 'trope', trope)}
+              ${generateInfoRow('AU', 'au', au)}
+              ${kink ? generateInfoRow('Кинк', 'kink', kink) : ''}
+            </div>
 
-          ${sideCharacters.length > 0 ? `
-                <h3>Второстепенные персонажи</h3>
-                  <div class="side-chars">
-            ${sideCharacters.map(c => `
-                      <div class="char">
-                        <img src="${c.image}" alt="${c.name}" class="char-icon" onerror="this.onerror=null;this.src='assets/noicon.jpg';">
-                        <p>${c.name}</p>
-                      </div>
-              `).join('')}
-                  </div>
-            ` : ''}
-          `;
-        }, 500);
+        ${sideCharacters.length > 0 ? `
+              <h3>Второстепенные персонажи</h3>
+                <div class="side-chars">
+          ${sideCharacters.map(c => `
+                    <div class="char">
+                      <img src="${c.image}" alt="${c.name}" class="char-icon" onerror="this.onerror=null;this.src='assets/noicon.jpg';">
+                      <p>${c.name}</p>
+                    </div>
+            `).join('')}
+                </div>
+          ` : ''}
+        `;
+
+      resultDiv.scrollIntoView({ behavior: 'smooth' });
     });
 
     function generateInfoRow(label, type, item) {
