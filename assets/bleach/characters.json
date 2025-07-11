@@ -129,13 +129,25 @@
         "name": "Луппи Антенор",
         "gender": "male",
         "image": "assets/bleach/img/luppi.jpg",
-        "faction": ["espada"]
+        "faction": ["arrancar"]
+      },
+      {
+        "name": "Шарлотта Кулхорн",
+        "gender": "male",
+        "image": "assets/bleach/img/charlotta.jpg",
+        "faction": ["arrancar"]
+      },
+      {
+        "name": "Дордони Алессандро дель Сокаччио",
+        "gender": "male",
+        "image": "assets/bleach/img/dordoni.jpg",
+        "faction": ["arrancar"]
       },
       {
         "name": "Чируччи Сандервиччи",
         "gender": "female",
         "image": "assets/bleach/img/cirucci.jpg",
-        "faction": ["espada"]
+        "faction": ["arrancar"]
       },
       {
         "name": "Нноитра Гилга",
@@ -153,7 +165,7 @@
         "name": "Тесла Линдокруз",
         "gender": "male",
         "image": "assets/bleach/img/tesla.jpg",
-        "faction": ["espada"]
+        "faction": ["arrancar"]
       },
       {
         "name": "Яхве",
@@ -255,6 +267,12 @@
         "name": "Бамбиетта Бастербайн",
         "gender": "female",
         "image": "assets/bleach/img/bambietta.jpg",
+        "faction": ["quincy"]
+      },
+      {
+        "name": "Опие Килге",
+        "gender": "male",
+        "image": "assets/bleach/img/quilge.jpg",
         "faction": ["quincy"]
       },
       {
