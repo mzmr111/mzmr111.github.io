@@ -278,7 +278,7 @@
       {
         "name": "Кандис Кэтнипп",
         "gender": "female",
-        "image": "assets/bleach/img/candice.jpg",
+        "image": "assets/bleach/img/catnice.jpg",
         "faction": ["quincy"]
       },
       {
@@ -303,6 +303,12 @@
         "name": "Гремми Тумо",
         "gender": "male",
         "image": "assets/bleach/img/gremmy.jpg",
+        "faction": ["quincy"]
+      },
+      {
+        "name": "Ньянзол Виазоль",
+        "gender": "male",
+        "image": "assets/bleach/img/nianzol.jpg",
         "faction": ["quincy"]
       },
       {
@@ -356,7 +362,7 @@
       {
         "name": "Кьёраку Шунсуй",
         "gender": "male",
-        "image": "assets/bleach/img/shunsui.jpg",
+        "image": "assets/bleach/img/kyoraku.jpg",
         "faction": ["shinigami"]
       },
       {
