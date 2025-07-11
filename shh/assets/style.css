@@ -26,6 +26,7 @@ h2, h3 {
 
 h2.bytheway {
   font-size: 1rem;
+  font-weight: normal!important;
 }
 
 h3 {

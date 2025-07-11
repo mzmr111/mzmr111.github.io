@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Синигами",
+        "faction": "shinigami"
+    },
+    {
+        "name": "Эспада",
+        "faction": "espada"
+    },
+    {
+        "name": "Арранкары",
+        "faction": "arrancar"
+    },
+    {
+        "name": "Квинси",
+        "faction": "quincy"
+    },
+    {
+        "name": "Вайзарды",
+        "faction": "visored"
+    },
+    {
+        "name": "Глубокий внутренний мир Ичиго",
+        "faction": "ichigo"
+    }
+]

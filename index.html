@@ -5,15 +5,14 @@
   <title>Генератор идей для фиков</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
   <form id="ficForm">
-    <h2>Создай свой фанфик ✨</h2>
+    <h2>Генератор идей для фанфиков</h2>
+    <h2 class="bytheway">Полезное, питательное и увлекательное топливо для фантазии 🍓</h2>
 
-    <div class="form-group"><span class="fifteen">15</span> тропов, <span class="fifteen">15</span> жанров, <span class="fifteen">15</span> альтернативных вселенных, <span class="fifteen">15</span> кинков (для тех, кому исполнилось 15 + 3), <span class="fifteen">150</span> ключевых слов и <span class="fifteen">30</span> персонажей: все для того, чтобы расшевелить фантазию!</div>
-  
     <div class="form-group">
       <label for="relationshipSize">Основные персонажи</label>
       <select name="relationshipSize" id="relationshipSize">
@@ -22,7 +21,7 @@
         <option value="3">3 (настроение для тройничка)</option>
       </select>
     </div>
-  
+
     <div class="form-group">
       <label for="type">Тип</label>
       <select name="type" id="type">
@@ -31,228 +30,225 @@
         <option value="gen">Джен</option>
       </select>
     </div>
-  
+
     <div class="form-group">
       <label for="sideCount">Второстепенные персонажи (0-5)</label>
       <input type="number" name="sideCount" id="sideCount" min="0" max="5" value="2">
     </div>
-  
+
+    <div class="form-group">
+      <label>Фракции (необязательно)</label>
+      <div id="faction-buttons" class="faction-buttons"></div>
+    </div>
+
     <div class="form-group checkbox-group">
       <input type="checkbox" name="nsfw" id="nsfw">
       <label for="nsfw">NSFW</label>
     </div>
-  
-    <button type="submit">Го!</button>
+
+    <button class="submit-btn" type="submit">Го!</button>
   </form>
-  
+
   <div id="result"></div>
 
-  <script>  
-    let characters = [];
-    let genres = [];
-    let settings = [];
-    let kinks = [];
-    let situations = [];
-    let tropes = [];
-    let aus = [];
-    let ficKeywords = [];
-    
+  <script>
+    let characters = [], genres = [], settings = [], kinks = [], situations = [], tropes = [], aus = [], ficKeywords = [];
 
-    const fetchWithLog = (url) => 
-      fetch(url)
-        .then(r => {
-          if (!r.ok) throw new Error(`Failed to load ${url}: ${r.status}`);
-          return r.json();
-        })
-        .catch(err => {
-          console.error(`Error loading ${url}:`, err);
-          throw err; // re-throw so Promise.all can still catch it
-        });
+    const titleFolders = {
+      bleach: 'bleach'
+    };
 
-    Promise.all([
-      fetchWithLog(`assets/bleach/characters.json`),
-      fetchWithLog('assets/genres.json'),
-      fetchWithLog('assets/kinks.json'),
-      fetchWithLog('assets/tropes.json'),
-      fetchWithLog('assets/au.json'),
-      fetchWithLog('assets/keywords.json')
-    ])
-    .then(([charData, genreData, kinkData, tropeData, auData, keywordData]) => {
-      characters = charData;
-      genres = genreData;
-      kinks = kinkData;
-      tropes = tropeData;
-      aus = auData;
-      ficKeywords = keywordData;
-    })
-    .catch(error => {
-      console.error('Error loading data:', error);
+    async function loadDataForTitle(title) {
+      const folder = titleFolders[title];
+      try {
+        const [charData, genreData, kinkData, tropeData, auData, keywordData, factionsData] = await Promise.all([
+          fetch(`assets/${folder}/characters.json`).then(r => r.json()),
+          fetch('assets/genres.json').then(r => r.json()),
+          fetch('assets/kinks.json').then(r => r.json()),
+          fetch('assets/tropes.json').then(r => r.json()),
+          fetch('assets/au.json').then(r => r.json()),
+          fetch('assets/keywords.json').then(r => r.json()),
+          fetch(`assets/${folder}/factions.json`).then(r => r.json())
+        ]);
+
+        characters = charData;
+
+        updateFactionOptions(factionsData);
+        genres = genreData;
+        kinks = kinkData;
+        tropes = tropeData;
+        aus = auData;
+        ficKeywords = keywordData;
+      } catch (error) {
+        console.error('Error loading data:', error);
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      loadDataForTitle('bleach');
     });
 
-    document.addEventListener('click', function(e) {
-      if (e.target.classList.contains('refresh-btn')) {
-        const type = e.target.dataset.type;
-    
-        if (type === 'char') {
-          const newChar = getRandomChar();
-          const charDiv = e.target.closest('.char');
-          charDiv.querySelector('.char-name').textContent = newChar.name;
-          charDiv.querySelector('.char-icon').src = newChar.image;
-        } 
-        else if (type === 'trope') {
-          const newTrope = getRandomTrope();
-          const tropeDiv = e.target.closest('.trope');
-          tropeDiv.querySelector('.trope-name').textContent = newTrope.name;
-          tropeDiv.querySelector('.trope-description').textContent = newTrope.description;
-        } 
-        else if (type === 'genre') {
-          const newGenre = getRandomGenre();
-          const genreDiv = e.target.closest('.genre');
-          genreDiv.querySelector('.genre-name').textContent = newGenre.name;
-          genreDiv.querySelector('.genre-description').textContent = newGenre.description;
-        }
-        else if (type === 'au') {
-          const newAU = getRandomAU();
-          const auDiv = e.target.closest('.au');
-          auDiv.querySelector('.au-name').textContent = newAU.name;
-          auDiv.querySelector('.au-description').textContent = newAU.description;
-        }
-        else if (type === 'kink') {
-          const newKink = getRandomKink();
-          const kinkDiv = e.target.closest('.kink');
-          kinkDiv.querySelector('.kink-name').textContent = newKink.name;
-          kinkDiv.querySelector('.kink-description').textContent = newKink.description;
-        }
-      }
-    });
-
-    function getRandomChar() {
-      return characters[Math.floor(Math.random() * characters.length)];
-    }
-    
-    function getRandomTrope() {
-      return tropes[Math.floor(Math.random() * tropes.length)];
-    }
-    
-    function getRandomGenre() {
-      return genres[Math.floor(Math.random() * genres.length)];
-    }
-    
-    function getRandomAU() {
-      return aus[Math.floor(Math.random() * aus.length)];
-    }
-    
-    function getRandomKink() {
-      return kinks[Math.floor(Math.random() * kinks.length)];
-    }
-
-    function getRandom(arr, count = 1) {
-      const copy = [...arr];
-      const picks = [];
-      while (count-- && copy.length) {
-        const i = Math.floor(Math.random() * copy.length);
-        picks.push(copy.splice(i, 1)[0]);
-      }
-      return picks;
-    }
-  
-    function getEmoji() {
-      const emojis = ['❤️', '✨', '⚔️', '❄️', '🔥', '⚡️', '☠️', '🍓', '🌙', '💀', '🩸', '🌸', '🕊️', '🧨', '🔮'];
-      return emojis[Math.floor(Math.random() * emojis.length)];
-    }
-  
-    document.getElementById('ficForm').addEventListener('submit', function (e) {
+    document.getElementById('ficForm').addEventListener('submit', async function (e) {
       e.preventDefault();
       const form = new FormData(e.target);
-  
-      const data = {
-        relationshipSize: parseInt(form.get('relationshipSize')) || 1,
-        type: form.get('type') || 'gen',
-        sideCount: parseInt(form.get('sideCount')) || 0,
-        nsfw: form.get('nsfw') === 'on'
-      };
-  
+      const title = form.get('title') || 'bleach';
+
+      await loadDataForTitle(title);
+
+          // Re-select previously chosen factions after reload
+      const selectedFactions = [...document.querySelectorAll('.faction-btn.selected')].map(btn => btn.dataset.faction);
+
+      const relationshipSize = parseInt(form.get('relationshipSize'), 10) || 1;
+      const type = form.get('type') || 'gen';
+      let sideCount = parseInt(form.get('sideCount'), 10);
+      sideCount = isNaN(sideCount) ? 0 : sideCount;
+      const nsfw = form.get('nsfw') === 'on';
+
+
+
       let genderFilter = () => true;
-      if (data.type === 'slash') genderFilter = c => c.gender === 'male';
-      if (data.type === 'femslash') genderFilter = c => c.gender === 'female';
-  
-      const filteredChars = characters.filter(genderFilter);
-      const mainRelationship = getRandom(filteredChars, data.relationshipSize);
-  
+      if (type === 'slash') genderFilter = c => c.gender === 'male';
+      if (type === 'femslash') genderFilter = c => c.gender === 'female';
+
+      let factionFilter = () => true;
+      if (selectedFactions.length > 0) {
+        factionFilter = c => {
+          if (!c.faction) return false;
+          const factions = Array.isArray(c.faction) ? c.faction : c.faction.split(',').map(f => f.trim());
+          return factions.some(f => selectedFactions.includes(f));
+        };
+      }
+
+      const filteredChars = characters.filter(c => genderFilter(c) && factionFilter(c));
+
+      const mainRelationship = getRandom(filteredChars, relationshipSize);
+
       const usedNames = new Set(mainRelationship.map(c => c.name));
-      const remainingChars = characters.filter(c => !usedNames.has(c.name));
-      const sideCharacters = getRandom(remainingChars, data.sideCount);
-  
+      const remainingChars = characters.filter(c => !usedNames.has(c.name) && factionFilter(c));
+      const sideCharacters = getRandom(remainingChars, sideCount);
+
       const genre = getRandom(genres)[0];
       const au = getRandom(aus)[0];
       const trope = getRandom(tropes)[0];
-      const kink = data.nsfw ? getRandom(kinks)[0] : null;
+      const kink = nsfw ? getRandom(kinks)[0] : null;
       const keywords = getRandom(ficKeywords, 3);
-  
+
       const resultDiv = document.getElementById('result');
 
-      resultDiv.innerHTML = `
-        <div class="relationship">
+      resultDiv.innerHTML = `<p><strong>Генерируем фичок...</strong></p>`;
+      setTimeout(() => {
+        resultDiv.innerHTML = `
+              <div class="relationship">
           ${mainRelationship.map(c => `
-            <div class="char">
-              <img src="${c.image}" alt="${c.name}" class="char-icon">
-              <p>${c.name}</p>
-            </div>
-          `).join(`<span>${getEmoji()}</span>`)}
-        </div>  
-
-        <p class='keywords'>«  ${keywords.join(' • ')}  »</p>
-
-        <div class='info-block'>
-          <div class='info-row genre'>
-            <div class='info-label'>Жанр</div>
-            <div class='info-value'>
-              <span class='genre-name'>${genre.name}</span>
-              <br>
-              <span class='info-description genre-description'>${genre.description}</span>
-            </div>
-          </div>
-          <div class='info-row trope'>
-            <div class='info-label'>Троп</div>
-            <div class='info-value'>
-              <span class='trope-name'>${trope.name}</span>
-              <br>
-              <span class='info-description trope-description'>${trope.description}</span>
-            </div>
-          </div>
-          <div class='info-row au'>
-            <div class='info-label'>AU</div>
-            <div class='info-value'>
-              <span class='au-name'>${au.name}</span>
-              <br>
-              <span class='info-description au-description'>${au.description}</span>
-            </div>
-          </div>
-          ${kink ? `
-            <div class='info-row kink'>
-              <div class='info-label'>Кинк</div>
-              <div class='info-value'>
-                <span class='kink-name'>${kink.name}</span>
-                <br>
-                <span class='info-description kink-description'>${kink.description}</span>
+                  <div class="char">
+                    <img src="${c.image}" alt="${c.name}" class="char-icon" onerror="this.onerror=null;this.src='assets/noicon.jpg';">
+                    <p>${c.name}</p>
+                  </div>
+            `).join(`<span>${getEmoji()}</span>`)}
               </div>
-            </div>
-          ` : ''}
-        </div>
-  
-        ${sideCharacters.length > 0 ? `
-          <h3>Второстепенные персонажи</h3>
-            <div class="side-chars">
-              ${sideCharacters.map(c => `
-                <div class="char">
-                  <img src="${c.image}" alt="${c.name}" class="char-icon">
-                  <p>${c.name}</p>
-                </div>
+
+              <p class='keywords'>«  ${keywords.join(' • ')}  »</p>
+
+              <div class='info-block'>
+                ${generateInfoRow('Жанр', 'genre', genre)}
+                ${generateInfoRow('Троп', 'trope', trope)}
+                ${generateInfoRow('AU', 'au', au)}
+                ${kink ? generateInfoRow('Кинк', 'kink', kink) : ''}
+              </div>
+
+          ${sideCharacters.length > 0 ? `
+                <h3>Второстепенные персонажи</h3>
+                  <div class="side-chars">
+            ${sideCharacters.map(c => `
+                      <div class="char">
+                        <img src="${c.image}" alt="${c.name}" class="char-icon" onerror="this.onerror=null;this.src='assets/noicon.jpg';">
+                        <p>${c.name}</p>
+                      </div>
               `).join('')}
-            </div>
-        ` : ''}
-      `;
+                  </div>
+            ` : ''}
+          `;
+        }, 500);
     });
-  </script>
-</body>
-</html>
+
+    function generateInfoRow(label, type, item) {
+      if (!item) return '';
+      return `
+            <div class='info-row ${type}'>
+              <div class='info-label'>
+                ${label}
+                <button class="refresh-btn" data-type="${type}">
+                  <svg class="refresh-icon" viewBox="0 0 24 24">
+                    <path d="M12 4V1L8 5l4 4V6c3.3 0 6 2.7 6 6 0 1.1-.3 2.1-.8 3h2.1c.5-1 0-2 0-3 0-4.4-3.6-8-8-8zm-6 6c0-1.1.3-2.1.8-3H4.7C4.2 7 4 8 4 9c0 4.4 3.6 8 8 8v3l4-4-4-4v3c-3.3 0-6-2.7-6-6z" fill="currentColor"/>
+                  </svg>
+                </button>
+              </div>
+              <div class='info-value'>
+                <span class='${type}-name'>${item.name}</span><br>
+                <span class='info-description ${type}-description'>${item.description || '—'}</span>
+              </div>
+        </div>`;
+      }
+
+      document.addEventListener('click', function (e) {
+        const refreshBtn = e.target.closest('.refresh-btn');
+        if (!refreshBtn) return;
+
+        const type = refreshBtn.dataset.type;
+        let container = refreshBtn.closest(`.${type}`);
+        if (!container) return console.warn(`Missing .${type} wrapper`);
+
+        const dataMap = {
+          genre: [getRandom(genres)[0], 'genre-name', 'genre-description'],
+          trope: [getRandom(tropes)[0], 'trope-name', 'trope-description'],
+          au: [getRandom(aus)[0], 'au-name', 'au-description'],
+          kink: [getRandom(kinks)[0], 'kink-name', 'kink-description']
+        };
+
+        const [newItem, nameClass, descClass] = dataMap[type] || [];
+        if (!newItem) return;
+        container.querySelector(`.${nameClass}`).textContent = newItem.name;
+        container.querySelector(`.${descClass}`).textContent = newItem.description || '—';
+      });
+
+      function getRandom(arr, count = 1) {
+        const copy = [...arr];
+        const picks = [];
+        while (count-- && copy.length) {
+          const i = Math.floor(Math.random() * copy.length);
+          picks.push(copy.splice(i, 1)[0]);
+        }
+        return picks;
+      }
+
+      function updateFactionOptions(factions) {
+        const container = document.getElementById('faction-buttons');
+        const previouslySelected = new Set([...container.querySelectorAll('.selected')].map(btn => btn.dataset.faction));
+
+        container.innerHTML = '';
+        factions.forEach(({ name, faction }) => {
+          const btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = 'faction-btn';
+          btn.dataset.faction = faction;
+          btn.textContent = name;
+
+          if (previouslySelected.has(faction)) {
+            btn.classList.add('selected');
+          }
+
+          btn.addEventListener('click', () => {
+            btn.classList.toggle('selected');
+          });
+
+          container.appendChild(btn);
+        });
+      }
+
+      function getEmoji() {
+        const emojis = ['🍓', '🥔', '🍇', '🍒', '🥕', '🌽', '🍎', '🍉', '🥑', '🍌', '🍍', '🫐', '🍑', '🥦', '🍅'];
+        return emojis[Math.floor(Math.random() * emojis.length)];
+      }
+    </script>
+  </body>
+  </html>
