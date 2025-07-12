@@ -27,6 +27,7 @@
       <select name="type" id="type">
         <option value="slash">Слеш</option>
         <option value="femslash">Фемслеш</option>
+        <option value="get">Гет</option>
         <option value="gen">Джен</option>
       </select>
     </div>
@@ -105,11 +106,6 @@
       const nsfw = form.get('nsfw') === 'on';
 
 
-
-      let genderFilter = () => true;
-      if (type === 'slash') genderFilter = c => c.gender === 'male';
-      if (type === 'femslash') genderFilter = c => c.gender === 'female';
-
       let factionFilter = () => true;
       if (selectedFactions.length > 0) {
         factionFilter = c => {
@@ -119,9 +115,28 @@
         };
       }
 
-      const filteredChars = characters.filter(c => genderFilter(c) && factionFilter(c));
+      let filteredChars = characters.filter(c => factionFilter(c));
+      let mainRelationship = [];
 
-      const mainRelationship = getRandom(filteredChars, relationshipSize);
+      if (type === 'slash') {
+        filteredChars = filteredChars.filter(c => c.gender === 'male');
+        mainRelationship = getRandom(filteredChars, relationshipSize);
+      } else if (type === 'femslash') {
+        filteredChars = filteredChars.filter(c => c.gender === 'female');
+        mainRelationship = getRandom(filteredChars, relationshipSize);
+      } else if (type === 'get') {
+        const first = getRandom(filteredChars, 1)[0];
+        const oppositeGender = first.gender === 'male' ? 'female' : 'male';
+        const rest = filteredChars.filter(c => c.name !== first.name && c.gender === oppositeGender);
+
+        const others = rest.length >= relationshipSize - 1
+          ? getRandom(rest, relationshipSize - 1)
+          : getRandom(filteredChars.filter(c => c.name !== first.name), relationshipSize - 1); // fallback to any gender
+
+        mainRelationship = [first, ...others];
+      } else {
+        mainRelationship = getRandom(filteredChars, relationshipSize);
+      }
 
       const usedNames = new Set(mainRelationship.map(c => c.name));
       const remainingChars = characters.filter(c => !usedNames.has(c.name) && factionFilter(c));
