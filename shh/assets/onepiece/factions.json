@@ -1,0 +1,17 @@
+[
+  { "name": "Пираты Соломенной Шляпы", "faction": "strawhat" },
+  { "name": "Пираты Красноволосого", "faction": "redhair" },
+  { "name": "Пираты Белоуса", "faction": "whitebeard" },
+  { "name": "Пираты Биг Мам", "faction": "bigmom" },
+  { "name": "Пираты Кайдо", "faction": "beasts" },
+  { "name": "Пираты Чёрной Бороды", "faction": "blackbeard" },
+  { "name": "Пираты Сердца", "faction": "heart" },
+  { "name": "Пираты Кида", "faction": "kid" },
+  { "name": "Шичибукай", "faction": "shichibukai" },
+  { "name": "Морской Дозор", "faction": "marines" },
+  { "name": "Мировое Правительство", "faction": "worldgov" },
+  { "name": "Революционная армия", "faction": "revolutionary" },
+  { "name": "Гражданские", "faction": "civilian" },
+  { "name": "Независимые", "faction": "independent" },
+  { "name": "Небесные Драконы", "faction": "celestial" }
+]
