@@ -1,0 +1,150 @@
+[
+  {
+    "id": "forehead",
+    "nom": "лоб",
+    "acc": "лоб",
+    "dat": "лбу",
+    "tags": [
+      "hittable",
+      "kissable"
+    ]
+  },
+  {
+    "id": "cheek",
+    "nom": "щека",
+    "acc": "щёку",
+    "dat": "щеке",
+    "tags": [
+      "hittable",
+      "kissable"
+    ]
+  },
+  {
+    "id": "hand",
+    "nom": "рука",
+    "acc": "руку",
+    "dat": "руке",
+    "tags": [
+      "hittable",
+      "grabbable",
+      "biteable",
+      "kissable"
+    ],
+    "actionOverrides": {
+      "kiss": {
+        "preposition": "",
+        "case": "acc"
+      }
+    }
+  },
+  {
+    "id": "finger",
+    "nom": "палец",
+    "acc": "палец",
+    "dat": "пальцу",
+    "tags": [
+      "grabbable",
+      "biteable"
+    ]
+  },
+  {
+    "id": "shoulder",
+    "nom": "плечо",
+    "acc": "плечо",
+    "dat": "плечу",
+    "tags": [
+      "hittable",
+      "grabbable",
+      "biteable",
+      "kissable"
+    ]
+  },
+  {
+    "id": "sleeve",
+    "nom": "рукав",
+    "acc": "рукав",
+    "dat": "рукаву",
+    "tags": [
+      "grabbable",
+      "fixable"
+    ]
+  },
+  {
+    "id": "collar",
+    "nom": "воротник",
+    "acc": "воротник",
+    "dat": "воротнику",
+    "tags": [
+      "grabbable",
+      "fixable",
+      "unbuttonable"
+    ]
+  },
+  {
+    "id": "scarf",
+    "nom": "шарф",
+    "acc": "шарф",
+    "dat": "шарфу",
+    "tags": [
+      "grabbable",
+      "fixable"
+    ]
+  },
+  {
+    "id": "coat",
+    "nom": "плащ",
+    "acc": "плащ",
+    "dat": "плащу",
+    "tags": [
+      "grabbable",
+      "fixable"
+    ]
+  },
+  {
+    "id": "jacket",
+    "nom": "куртка",
+    "acc": "куртку",
+    "dat": "куртке",
+    "tags": [
+      "fixable",
+      "unbuttonable"
+    ]
+  },
+  {
+    "id": "bag",
+    "nom": "сумка",
+    "acc": "сумку",
+    "dat": "сумке",
+    "tags": [
+      "grabbable",
+      "unbuttonable"
+    ]
+  },
+  {
+    "id": "hair",
+    "nom": "чёлка",
+    "acc": "чёлку",
+    "dat": "чёлке",
+    "tags": [
+      "fixable"
+    ]
+  },
+  {
+    "id": "glasses",
+    "nom": "очки",
+    "acc": "очки",
+    "dat": "очкам",
+    "tags": [
+      "fixable"
+    ]
+  },
+  {
+    "id": "self_esteem",
+    "nom": "самооценка",
+    "acc": "самооценку",
+    "dat": "самооценке",
+    "tags": [
+      "hittable"
+    ]
+  }
+]

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bleach story</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main>
+    <section id="setup">
+      <h1>о ком рассказ сегодня?</h1>
+
+      <p>
+        <label>
+          кто действует:
+          <select id="actorSelect"></select>
+        </label>
+      </p>
+
+      <p id="customActorWrap" hidden>
+        <label>
+          своё имя:
+          <input id="customActorInput" type="text" value="Кянма">
+        </label>
+      </p>
+
+      <p>
+        <label>
+          кого встречаем:
+          <select id="targetSelect"></select>
+        </label>
+      </p>
+
+      <button id="startBtn">начать</button>
+    </section>
+
+    <section id="game" hidden>
+      <div id="story"></div>
+
+      <hr>
+
+      <div id="turn">
+        <h2>что делаем?</h2>
+
+        <p>
+          <label>
+            действие:
+            <select id="actionSelect"></select>
+          </label>
+        </p>
+
+        <div id="dynamicFields"></div>
+
+        <p id="preview"></p>
+
+        <button id="doBtn">сделать</button>
+        <button id="randomBtn" type="button">рандомное действие</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>

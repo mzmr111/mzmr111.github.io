@@ -1,0 +1,175 @@
+[
+  {
+    "id": "say",
+    "label": "говорит",
+    "verb": "говорит",
+    "template": "{actor} {verb} {targetDat}: «{text}».",
+    "reactionType": "speech",
+    "fields": [
+      {
+        "name": "text",
+        "label": "что говорит?",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "id": "hit",
+    "label": "бьёт",
+    "verb": "бьёт",
+    "template": "{actor} {verb} {targetAcc} {objectPhrase}.",
+    "reactionType": "aggression",
+    "fields": [
+      {
+        "name": "object",
+        "label": "куда?",
+        "type": "object",
+        "tags": [
+          "hittable"
+        ],
+        "preposition": "по",
+        "case": "dat"
+      }
+    ]
+  },
+  {
+    "id": "grab",
+    "label": "хватает",
+    "verb": "хватает",
+    "template": "{actor} {verb} {targetAcc} {objectPhrase}.",
+    "reactionType": "touch",
+    "fields": [
+      {
+        "name": "object",
+        "label": "за что?",
+        "type": "object",
+        "tags": [
+          "grabbable"
+        ],
+        "preposition": "за",
+        "case": "acc"
+      }
+    ]
+  },
+  {
+    "id": "bite",
+    "label": "кусает",
+    "verb": "кусает",
+    "template": "{actor} {verb} {targetAcc} {objectPhrase}.",
+    "reactionType": "aggression",
+    "fields": [
+      {
+        "name": "object",
+        "label": "куда/за что?",
+        "type": "object",
+        "tags": [
+          "biteable"
+        ],
+        "preposition": "за",
+        "case": "acc"
+      }
+    ]
+  },
+  {
+    "id": "kiss",
+    "label": "целует",
+    "verb": "целует",
+    "template": "{actor} {verb} {targetAcc} {objectPhrase}.",
+    "reactionType": "romance",
+    "fields": [
+      {
+        "name": "object",
+        "label": "куда?",
+        "type": "object",
+        "tags": [
+          "kissable"
+        ],
+        "preposition": "в",
+        "case": "acc"
+      }
+    ]
+  },
+  {
+    "id": "fix",
+    "label": "поправляет",
+    "verb": "поправляет",
+    "template": "{actor} {verb} {targetDat} {objectPhrase}.",
+    "reactionType": "clothing",
+    "fields": [
+      {
+        "name": "object",
+        "label": "что?",
+        "type": "object",
+        "tags": [
+          "fixable"
+        ],
+        "preposition": "",
+        "case": "acc"
+      }
+    ]
+  },
+  {
+    "id": "unbutton",
+    "label": "расстёгивает",
+    "verb": "расстёгивает",
+    "template": "{actor} {verb} {targetDat} {objectPhrase}.",
+    "reactionType": "clothing",
+    "fields": [
+      {
+        "name": "object",
+        "label": "что?",
+        "type": "object",
+        "tags": [
+          "unbuttonable"
+        ],
+        "preposition": "",
+        "case": "acc"
+      }
+    ]
+  },
+  {
+    "id": "give",
+    "label": "даёт",
+    "verb": "даёт",
+    "template": "{actor} {verb} {targetDat} {item}.",
+    "reactionType": "gift",
+    "fields": [
+      {
+        "name": "item",
+        "label": "что?",
+        "type": "poolOrCustom",
+        "source": "items"
+      }
+    ]
+  },
+  {
+    "id": "sit",
+    "label": "садится",
+    "verb": "садится",
+    "template": "{actor} {verb} {place}.",
+    "reactionType": "presence",
+    "fields": [
+      {
+        "name": "place",
+        "label": "куда?",
+        "type": "poolOrCustom",
+        "source": "placesSmall"
+      }
+    ]
+  },
+  {
+    "id": "stare",
+    "label": "смотрит",
+    "verb": "смотрит",
+    "template": "{actor} {verb} на {targetAcc} {manner}.",
+    "reactionType": "presence",
+    "fields": [
+      {
+        "name": "manner",
+        "label": "как?",
+        "type": "poolOrCustom",
+        "source": "manners"
+      }
+    ]
+  }
+]

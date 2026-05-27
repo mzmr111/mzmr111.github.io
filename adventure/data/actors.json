@@ -1,0 +1,37 @@
+[
+  {
+    "type": "custom",
+    "id": "custom",
+    "name": "свой вариант"
+  },
+  {
+    "type": "character",
+    "id": "ichigo",
+    "name": "Ичиго"
+  },
+  {
+    "type": "character",
+    "id": "rukia",
+    "name": "Рукия"
+  },
+  {
+    "type": "character",
+    "id": "byakuya",
+    "name": "Бьякуя"
+  },
+  {
+    "type": "character",
+    "id": "grimmjow",
+    "name": "Гриммджо"
+  },
+  {
+    "type": "character",
+    "id": "urahara",
+    "name": "Урахара"
+  },
+  {
+    "type": "character",
+    "id": "aizen",
+    "name": "Айзен"
+  }
+]

@@ -1,0 +1,44 @@
+body {
+  font-family: system-ui, sans-serif;
+  max-width: 760px;
+  margin: 32px auto;
+  padding: 0 16px;
+  line-height: 1.5;
+}
+
+select, input, textarea, button {
+  font: inherit;
+  padding: 6px;
+  margin-top: 4px;
+}
+
+textarea {
+  width: 100%;
+  min-height: 70px;
+}
+
+.story-line {
+  margin: 0 0 14px;
+}
+
+.scene {
+  font-weight: 700;
+}
+
+.action {
+  color: #333;
+}
+
+.reaction {
+  white-space: pre-line;
+}
+
+#preview {
+  padding: 10px;
+  background: #f3f3f3;
+}
+
+.small {
+  font-size: 0.9em;
+  color: #666;
+}
