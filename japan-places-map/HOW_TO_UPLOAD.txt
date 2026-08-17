@@ -1,0 +1,15 @@
+Что загрузить
+=============
+
+Замените содержимое папки japan-places-map в репозитории mzmr111.github.io
+всем содержимым этой папки:
+
+- index.html
+- assets/
+- HOW_TO_UPLOAD.txt (можно удалить после загрузки)
+
+После commit подождите 1–10 минут и откройте:
+https://mzmr111.github.io/japan-places-map/
+
+Исходные файлы page.tsx, globals.css и package.json в опубликованной папке
+больше не нужны: они уже собраны в assets/.
