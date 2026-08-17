@@ -120,6 +120,14 @@
         ]
     },
     {
+        "name": "Xanxus",
+        "gender": "male",
+        "image": "assets/khr/img/xanxus.jpg",
+        "faction": [
+            "varia"
+        ]
+    },
+    {
         "name": "Squalo",
         "gender": "male",
         "image": "assets/khr/img/squalo.jpg",
