@@ -1,0 +1,17 @@
+GITHUB PAGES — mzmr111.github.io/japan-places-map
+
+1. Open the japan-places-map directory in the repository.
+2. Upload the CONTENTS of this folder, not the folder itself:
+   - index.html
+   - japan_places_map_data.json
+   - HOW_TO_UPLOAD.txt
+   - assets/
+3. Commit the changes to main.
+
+The generated JavaScript and CSS are intentionally not minified.
+
+To change the source later:
+1. Edit src/App.tsx or src/styles.css.
+2. Replace public/japan_places_map_data.json when the map data changes.
+3. Run npm install, then npm run build.
+4. Upload the new contents of dist/.
