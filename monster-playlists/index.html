@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="robots" content="noindex, nofollow">
+<title>Monster Playlists</title>
+<style>
+:root{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color-scheme:light dark;--bg:#fafafa;--fg:#1b1b1b;--muted:#747474;--rule:#e3e3e3;--link:#294c9a}
+@media(prefers-color-scheme:dark){:root{--bg:#151515;--fg:#f2f2f2;--muted:#a8a8a8;--rule:#343434;--link:#a6bcff}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg)}main{max-width:760px;padding:48px 20px 100px;margin:auto}h1{font-size:clamp(1.6rem,5vw,2.25rem);margin:0;font-weight:680;letter-spacing:-.04em}.subtitle{margin:10px 0 38px;color:var(--muted);font-size:.94rem}.empty{border-top:1px solid var(--rule);padding:54px 0;text-align:center;color:var(--muted);line-height:1.7}.group{margin:0 0 38px}.group h2{font-size:1.2rem;letter-spacing:-.025em;margin:0 0 12px}.song{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:center;padding:13px 0;border-top:1px solid var(--rule)}.song:last-child{border-bottom:1px solid var(--rule)}.song-title{font-size:.95rem;font-weight:600;overflow-wrap:anywhere}.artist{color:var(--muted);font-size:.82rem;margin-top:3px}.links{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}a{color:var(--link);text-decoration:none;font-size:.83rem;border:1px solid var(--rule);border-radius:6px;padding:7px 10px;white-space:nowrap}a:hover{text-decoration:underline;border-color:var(--muted)}.missing{color:var(--muted);font-size:.8rem}@media(max-width:420px){main{padding-top:30px}.song{grid-template-columns:1fr}.links{justify-content:flex-start}}
+</style>
+</head>
+<body>
+<main>
+<header><h1>Monster Playlists</h1><p class="subtitle">Плейлисты персонажей и пар · Как поймать монстра</p></header>
+<div id="playlists"></div>
+</main>
+<script>
+/*
+  Вся коллекция будет храниться здесь.
+  Формат группы: { name: "Имя персонажа или пары", songs: [
+    { title: "Название", artist: "Исполнитель", apple: "https://...", spotify: "https://..." }
+  ]}
+  Пока ничего не добавлено.
+*/
+const playlists = [];
+const root = document.getElementById("playlists");
+const make=(tag,cls,text)=>{const el=document.createElement(tag);if(cls)el.className=cls;if(text!==undefined)el.textContent=text;return el;};
+if(!playlists.length){
+  root.appendChild(make("div","empty","Пока здесь нет песен. Скоро появятся."));
+}else{
+  for(const group of playlists){
+    const section=make("section","group");
+    section.appendChild(make("h2","",group.name));
+    for(const song of (group.songs||[])){
+      const item=make("div","song"),meta=make("div",""),links=make("div","links");
+      meta.appendChild(make("div","song-title",song.title));
+      meta.appendChild(make("div","artist",song.artist));
+      for(const [name,url] of [["Apple Music",song.apple],["Spotify",song.spotify]]){
+        if(typeof url==="string" && /^https:\/\//.test(url)){
+          const a=make("a","",name);a.href=url;a.target="_blank";a.rel="noopener noreferrer";links.appendChild(a);
+        }else{links.appendChild(make("span","missing",name+" —"));}
+      }
+      item.append(meta,links);section.appendChild(item);
+    }
+    root.appendChild(section);
+  }
+}
+</script>
+</body>
+</html>
